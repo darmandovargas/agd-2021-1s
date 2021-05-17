@@ -17,7 +17,7 @@ Este repositorio contiene los archivos relacionados al primer taller.
 
 ## Modelo del Dominio
 
-![](https://github.com/darmandovargas/agd-2021-1s/blob/main/Diagrama%20del%20Dominio.png)
+![](https://github.com/darmandovargas/agd-2021-1s/blob/main/diagramas/Diagrama%20del%20Dominio.png)
 
 ## Diagrama Entidad Relacón
-![](https://github.com/darmandovargas/agd-2021-1s/blob/main/Diagrama%20Entidad%20Relaci%C3%B3n.png)
+![](https://github.com/darmandovargas/agd-2021-1s/blob/main/diagramas/Diagrama%20Entidad%20Relaci%C3%B3n.png)
