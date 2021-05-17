@@ -1038,39 +1038,6 @@ INSERT INTO `municipio` VALUES (968, '25899', 'Zipaquira', 11);
 INSERT INTO `municipio` VALUES (969, '47980', 'Zona Bananera', 15);
 COMMIT;
 
-
--- ----------------------------
--- Records of tipo_vehiculo
--- ----------------------------
-BEGIN;
-INSERT INTO `tipo_vehiculo` VALUES (1, 'Automovil');
-INSERT INTO `tipo_vehiculo` VALUES (2, 'Bicicleta');
-INSERT INTO `tipo_vehiculo` VALUES (3, 'Bus');
-INSERT INTO `tipo_vehiculo` VALUES (4, 'Buseta');
-INSERT INTO `tipo_vehiculo` VALUES (5, 'Camión');
-INSERT INTO `tipo_vehiculo` VALUES (6, 'Camioneta');
-INSERT INTO `tipo_vehiculo` VALUES (7, 'Campero');
-INSERT INTO `tipo_vehiculo` VALUES (8, 'Carro De Golf');
-INSERT INTO `tipo_vehiculo` VALUES (9, 'Cuatrimoto');
-INSERT INTO `tipo_vehiculo` VALUES (10, 'Maquinaria Agrícola');
-INSERT INTO `tipo_vehiculo` VALUES (11, 'Maquinaria Industrial');
-INSERT INTO `tipo_vehiculo` VALUES (12, 'Microbus');
-INSERT INTO `tipo_vehiculo` VALUES (13, 'Motocarro');
-INSERT INTO `tipo_vehiculo` VALUES (14, 'Motocicleta');
-INSERT INTO `tipo_vehiculo` VALUES (15, 'Motociclo');
-INSERT INTO `tipo_vehiculo` VALUES (16, 'Mototriciclo');
-INSERT INTO `tipo_vehiculo` VALUES (17, 'No Aplica');
-INSERT INTO `tipo_vehiculo` VALUES (18, 'Peatón');
-INSERT INTO `tipo_vehiculo` VALUES (19, 'Remolque');
-INSERT INTO `tipo_vehiculo` VALUES (20, 'Segway');
-INSERT INTO `tipo_vehiculo` VALUES (21, 'Semi Remolque');
-INSERT INTO `tipo_vehiculo` VALUES (22, 'Sin Información');
-INSERT INTO `tipo_vehiculo` VALUES (23, 'Tracción Animal');
-INSERT INTO `tipo_vehiculo` VALUES (24, 'Tracción Humana');
-INSERT INTO `tipo_vehiculo` VALUES (25, 'Tractocamión');
-INSERT INTO `tipo_vehiculo` VALUES (26, 'Volqueta');
-COMMIT;
-
 -- ----------------------------
 -- Records of objeto_colision
 -- ----------------------------
