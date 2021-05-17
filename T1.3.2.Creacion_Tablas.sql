@@ -11,7 +11,7 @@
  Target Server Version : 50542
  File Encoding         : 65001
 
- Date: 02/05/2021 11:48:18
+ Date: 17/05/2021 06:40:16
 */
 
 SET NAMES utf8mb4;
@@ -30,7 +30,7 @@ CREATE TABLE `accidente` (
   `id_vehiculo` int(11) NOT NULL,
   `id_lesionado` int(11) NOT NULL,
   `id_objeto_colision` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id_accidente`) USING BTREE,
   KEY `fk_accidente_objeto_colision_1` (`id_objeto_colision`),
   KEY `fk_accidente_departamento_1` (`id_departamento`),
   KEY `fk_accidente_lesionado_1` (`id_lesionado`),
@@ -41,20 +41,14 @@ CREATE TABLE `accidente` (
   CONSTRAINT `fk_accidente_municipio_1` FOREIGN KEY (`id_municipio`) REFERENCES `municipio` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_accidente_objeto_colision_1` FOREIGN KEY (`id_objeto_colision`) REFERENCES `objeto_colision` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_accidente_vehiculo_1` FOREIGN KEY (`id_vehiculo`) REFERENCES `vehiculo` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of accidente
--- ----------------------------
-BEGIN;
-COMMIT;
+) ENGINE=InnoDB AUTO_INCREMENT=124837 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for departamento
 -- ----------------------------
 DROP TABLE IF EXISTS `departamento`;
 CREATE TABLE `departamento` (
-  `id_departamento` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(255) NOT NULL,
   `codigo_departamento` varchar(5) NOT NULL,
   PRIMARY KEY (`id`)
@@ -71,26 +65,10 @@ COMMIT;
 -- ----------------------------
 DROP TABLE IF EXISTS `lesionado`;
 CREATE TABLE `lesionado` (
-  `id_lesionado` int(11) NOT NULL AUTO_INCREMENT,
-  `tipo_lesionado` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Table structure for lesionado
--- ----------------------------
-DROP TABLE IF EXISTS `edad`;
-CREATE TABLE `edad` (
-  `id_edad` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `rango_edad` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of lesionado
--- ----------------------------
-BEGIN;
-COMMIT;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for municipio
@@ -102,15 +80,28 @@ CREATE TABLE `municipio` (
   `nombre` varchar(255) NOT NULL,
   `id_departamento` int(10) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_municipio_id_departamento_1` (`id_departamento`),
-  CONSTRAINT `fk_municipio_id_departamento_1` FOREIGN KEY (`id_departamento`) REFERENCES `departamento` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1127 DEFAULT CHARSET=latin1;
+  KEY `fk_municipio_id_departamento_1` (`id_departamento`)
+) ENGINE=InnoDB AUTO_INCREMENT=970 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
--- Records of municipio
+-- Table structure for objeto_colision
 -- ----------------------------
-BEGIN;
-COMMIT;
+DROP TABLE IF EXISTS `objeto_colision`;
+CREATE TABLE `objeto_colision` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for tipo_vehiculo
+-- ----------------------------
+DROP TABLE IF EXISTS `tipo_vehiculo`;
+CREATE TABLE `tipo_vehiculo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for objeto_colision
@@ -123,17 +114,11 @@ CREATE TABLE `objeto_colision` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
--- Records of objeto_colision
--- ----------------------------
-BEGIN;
-COMMIT;
-
--- ----------------------------
 -- Table structure for tipo_vehiculo
 -- ----------------------------
-DROP TABLE IF EXISTS `grupo_vehiculo`;
-CREATE TABLE `grupo_vehiculo` (
-  `id_grupo` int(11) NOT NULL AUTO_INCREMENT,
+DROP TABLE IF EXISTS `tipo_vehiculo`;
+CREATE TABLE `tipo_vehiculo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
@@ -149,12 +134,6 @@ CREATE TABLE `vehiculo` (
   PRIMARY KEY (`id`),
   KEY `fk_vehiculo_tipo_vehiculo_1` (`id_tipo_de_vehiculo`),
   CONSTRAINT `fk_vehiculo_tipo_vehiculo_1` FOREIGN KEY (`id_tipo_de_vehiculo`) REFERENCES `tipo_vehiculo` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of vehiculo
--- ----------------------------
-BEGIN;
-COMMIT;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 SET FOREIGN_KEY_CHECKS = 1;

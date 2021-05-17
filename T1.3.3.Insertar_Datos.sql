@@ -1,1032 +1,1042 @@
-INSERT INTO `departamento` (`id`, `nombre`, `codigo_departamento`) VALUES
-(1, 'Antioquia', '05'),
-(2, 'Atlantico', '08'),
-(3, 'D. C. Santa Fe de Bogotá', '11'),
-(4, 'Bolivar', '13'),
-(5, 'Boyaca', '15'),
-(6, 'Caldas', '17'),
-(7, 'Caqueta', '18'),
-(8, 'Cauca', '19'),
-(9, 'Cesar', '20'),
-(10, 'Cordoba', '23'),
-(11, 'Cundinamarca', '25'),
-(12, 'Choco', '27'),
-(13, 'Huila', '41'),
-(14, 'La Guajira', '44'),
-(15, 'Magdalena', '47'),
-(16, 'Meta', '50'),
-(17, 'Nariño', '52'),
-(18, 'Norte de Santander', '54'),
-(19, 'Quindio', '63'),
-(20, 'Risaralda', '66'),
-(21, 'Santander', '68'),
-(22, 'Sucre', '70'),
-(23, 'Tolima', '73'),
-(24, 'Valle', '76'),
-(25, 'Arauca', '81'),
-(26, 'Casanare', '85'),
-(27, 'Putumayo', '86'),
-(28, 'San Andres', '88'),
-(29, 'Amazonas', '91'),
-(30, 'Guainia', '94'),
-(31, 'Guaviare', '95'),
-(32, 'Vaupes', '97'),
-(33, 'Vichada', '99');
+-- ----------------------------
+-- Records of departamento
+-- ----------------------------
+BEGIN;
+INSERT INTO `departamento` VALUES (1, 'Antioquia', '05');
+INSERT INTO `departamento` VALUES (2, 'Atlantico', '08');
+INSERT INTO `departamento` VALUES (3, 'D. C. Santa Fe de Bogotá', '11');
+INSERT INTO `departamento` VALUES (4, 'Bolivar', '13');
+INSERT INTO `departamento` VALUES (5, 'Boyaca', '15');
+INSERT INTO `departamento` VALUES (6, 'Caldas', '17');
+INSERT INTO `departamento` VALUES (7, 'Caqueta', '18');
+INSERT INTO `departamento` VALUES (8, 'Cauca', '19');
+INSERT INTO `departamento` VALUES (9, 'Cesar', '20');
+INSERT INTO `departamento` VALUES (10, 'Cordoba', '23');
+INSERT INTO `departamento` VALUES (11, 'Cundinamarca', '25');
+INSERT INTO `departamento` VALUES (12, 'Choco', '27');
+INSERT INTO `departamento` VALUES (13, 'Huila', '41');
+INSERT INTO `departamento` VALUES (14, 'La Guajira', '44');
+INSERT INTO `departamento` VALUES (15, 'Magdalena', '47');
+INSERT INTO `departamento` VALUES (16, 'Meta', '50');
+INSERT INTO `departamento` VALUES (17, 'Nariño', '52');
+INSERT INTO `departamento` VALUES (18, 'Norte de Santander', '54');
+INSERT INTO `departamento` VALUES (19, 'Quindio', '63');
+INSERT INTO `departamento` VALUES (20, 'Risaralda', '66');
+INSERT INTO `departamento` VALUES (21, 'Santander', '68');
+INSERT INTO `departamento` VALUES (22, 'Sucre', '70');
+INSERT INTO `departamento` VALUES (23, 'Tolima', '73');
+INSERT INTO `departamento` VALUES (24, 'Valle', '76');
+INSERT INTO `departamento` VALUES (25, 'Arauca', '81');
+INSERT INTO `departamento` VALUES (26, 'Casanare', '85');
+INSERT INTO `departamento` VALUES (27, 'Putumayo', '86');
+INSERT INTO `departamento` VALUES (28, 'San Andres', '88');
+INSERT INTO `departamento` VALUES (29, 'Amazonas', '91');
+INSERT INTO `departamento` VALUES (30, 'Guainia', '94');
+INSERT INTO `departamento` VALUES (31, 'Guaviare', '95');
+INSERT INTO `departamento` VALUES (32, 'Vaupes', '97');
+INSERT INTO `departamento` VALUES (33, 'Vichada', '99');
+COMMIT;
 
-INSERT INTO `lesionado` (`id`, `rango_edad`) VALUES
-(1, '0-5'),
-(2, '6-10'),
-(3, '11-15'),
-(4, '16-20'),
-(5, '21-25'),
-(6, '26-30'),
-(7, '31-35'),
-(8, '36-40'),
-(9, '41-45'),
-(10, '46-50'),
-(11, '51-55'),
-(12, '56-60'),
-(13, '61-65'),
-(14, '66-70'),
-(15, '71-75'),
-(16, '76-80'),
-(17, '81-85'),
-(18, '86-90'),
-(19, '91-95'),
-(20, '96-100');
+-- ----------------------------
+-- Records of lesionado
+-- ----------------------------
+BEGIN;
+INSERT INTO `lesionado` VALUES (1, '0-5');
+INSERT INTO `lesionado` VALUES (2, '6-10');
+INSERT INTO `lesionado` VALUES (3, '11-15');
+INSERT INTO `lesionado` VALUES (4, '16-20');
+INSERT INTO `lesionado` VALUES (5, '21-25');
+INSERT INTO `lesionado` VALUES (6, '26-30');
+INSERT INTO `lesionado` VALUES (7, '31-35');
+INSERT INTO `lesionado` VALUES (8, '36-40');
+INSERT INTO `lesionado` VALUES (9, '41-45');
+INSERT INTO `lesionado` VALUES (10, '46-50');
+INSERT INTO `lesionado` VALUES (11, '51-55');
+INSERT INTO `lesionado` VALUES (12, '56-60');
+INSERT INTO `lesionado` VALUES (13, '61-65');
+INSERT INTO `lesionado` VALUES (14, '66-70');
+INSERT INTO `lesionado` VALUES (15, '71-75');
+INSERT INTO `lesionado` VALUES (16, '76-80');
+INSERT INTO `lesionado` VALUES (17, '81-85');
+INSERT INTO `lesionado` VALUES (18, '86-90');
+INSERT INTO `lesionado` VALUES (19, '91-95');
+INSERT INTO `lesionado` VALUES (20, '96-100');
+COMMIT;
 
--- Tupla de municipios actualizada
-
-INSERT INTO `municipio` (`id`, `codigo_municipio`,`nombre`,`id_departamento`) VALUES
-(1,'05002',Abejorral,1),
-(2,'54003',Abrego,18),
-(3,'50006',Acacias,16),
-(4,'41006',Acevedo,13),
-(5,'41013',Agrado,13),
-(6,'25001',Agua De Dios,11),
-(7,'20011',Aguachica,9),
-(8,'68013',Aguada,21),
-(9,'17013',Aguadas,6),
-(10,'85010',Aguazul,26),
-(11,'20013',Agustin Codazzi,9),
-(12,'41016',Aipe,13),
-(13,'52019',Alban,17),
-(14,'25019',Alban,11),
-(15,'18029',Albania,7),
-(16,'44035',Albania,14),
-(17,'76020',Alcala,24),
-(18,'52022',Aldana,17),
-(19,'05021',Alejandria,1),
-(20,'47030',Algarrobo,15),
-(21,'41020',Algeciras,13),
-(22,'19022',Almaguer,8),
-(23,'73024',Alpujarra,23),
-(24,'41026',Altamira,13),
-(25,'73026',Alvarado,23),
-(26,'05030',Amaga,1),
-(27,'05031',Amalfi,1),
-(28,'73030',Ambalema,23),
-(29,'25035',Anapoima,11),
-(30,'52036',Ancuya,17),
-(31,'76036',Andalucia,24),
-(32,'05034',Andes,1),
-(33,'05036',Angelopolis,1),
-(34,'05038',Angostura,1),
-(35,'25040',Anolaima,11),
-(36,'05040',Anori,1),
-(37,'17042',Anserma,6),
-(38,'76041',Ansermanuevo,24),
-(39,'73043',Anzoategui,23),
-(40,'05045',Apartado,1),
-(41,'66045',Apia,20),
-(42,'25599',Apulo,11),
-(43,'15047',Aquitania,5),
-(44,'47053',Aracataca,15),
-(45,'17050',Aranzazu,6),
-(46,'68051',Aratoca,21),
-(47,'81001',Arauca,25),
-(48,'81065',Arauquita,25),
-(49,'25053',Arbelaez,11),
-(50,'54051',Arboledas,18),
-(51,'05051',Arboletes,1),
-(52,'15051',Arcabuco,5),
-(53,'19050',Argelia,8),
-(54,'76054',Argelia,24),
-(55,'05055',Argelia,1),
-(56,'47058',Ariguani,15),
-(57,'13052',Arjona,4),
-(58,'63001',Armenia,19),
-(59,'05059',Armenia,1),
-(60,'73055',Armero,23),
-(61,'13062',Arroyohondo,4),
-(62,'20032',Astrea,9),
-(63,'73067',Ataco,23),
-(64,'27050',Atrato,12),
-(65,'23068',Ayapel,10),
-(66,'19075',Balboa,8),
-(67,'66075',Balboa,20),
-(68,'08078',Baranoa,2),
-(69,'41078',Baraya,13),
-(70,'52079',Barbacoas,17),
-(71,'68077',Barbosa,21),
-(72,'05079',Barbosa,1),
-(73,'68079',Barichara,21),
-(74,'50110',Barranca De Upia,16),
-(75,'68081',Barrancabermeja,21),
-(76,'44078',Barrancas,14),
-(77,'13074',Barranco De Loba,4),
-(78,'08001',Barranquilla,2),
-(79,'20045',Becerril,9),
-(80,'17088',Belalcazar,6),
-(81,'15087',Belen,5),
-(82,'18094',Belen De Los Andaquies,7),
-(83,'66088',Belen De Umbria,20),
-(84,'05088',Bello,1),
-(85,'05086',Belmira,1),
-(86,'25086',Beltran,11),
-(87,'15090',Berbeo,5),
-(88,'05091',Betania,1),
-(89,'15092',Beteitiva,5),
-(90,'68092',Betulia,21),
-(91,'05093',Betulia,1),
-(92,'25095',Bituima,11),
-(93,'15097',Boavita,5),
-(94,'54099',Bochalema,18),
-(95,'11001',Bogota, D.C.,3),
-(96,'25099',Bojaca,11),
-(97,'68101',Bolivar,21),
-(98,'76100',Bolivar,24),
-(99,'19100',Bolivar,8),
-(100,'20060',Bosconia,9),
-(101,'15104',Boyaca,5),
-(102,'05107',Briceno,1),
-(103,'68001',Bucaramanga,21),
-(104,'54109',Bucarasica,18),
-(105,'76109',Buenaventura,24),
-(106,'15109',Buenavista,5),
-(107,'23079',Buenavista,10),
-(108,'63111',Buenavista,19),
-(109,'70110',Buenavista,22),
-(110,'19110',Buenos Aires,8),
-(111,'52110',Buesaco,17),
-(112,'76113',Bugalagrande,24),
-(113,'05113',Buritica,1),
-(114,'15114',Busbanza,5),
-(115,'25120',Cabrera,11),
-(116,'50124',Cabuyaro,16),
-(117,'05120',Caceres,1),
-(118,'25123',Cachipay,11),
-(119,'54128',Cachira,18),
-(120,'54125',Cacota,18),
-(121,'05125',Caicedo,1),
-(122,'76122',Caicedonia,24),
-(123,'70124',Caimito,22),
-(124,'73124',Cajamarca,23),
-(125,'19130',Cajibio,8),
-(126,'25126',Cajica,11),
-(127,'13140',Calamar,4),
-(128,'95015',Calamar,31),
-(129,'63130',Calarca,19),
-(130,'05129',Caldas,1),
-(131,'19137',Caldono,8),
-(132,'76001',Cali,24),
-(133,'68132',California,21),
-(134,'76126',Calima,24),
-(135,'19142',Caloto,8),
-(136,'05134',Campamento,1),
-(137,'08137',Campo La Cruz,2),
-(138,'41132',Campoalegre,13),
-(139,'23090',Canalete,10),
-(140,'05138',Canasgordas,1),
-(141,'76130',Candelaria,24),
-(142,'13160',Cantagallo,4),
-(143,'25148',Caparrapi,11),
-(144,'68147',Capitanejo,21),
-(145,'25151',Caqueza,11),
-(146,'68152',Carcasi,21),
-(147,'05147',Carepa,1),
-(148,'73148',Carmen De Apicala,23),
-(149,'25154',Carmen De Carupa,11),
-(150,'05150',Carolina,1),
-(151,'13001',Cartagena,4),
-(152,'18150',Cartagena Del Chaira,7),
-(153,'76147',Cartago,24),
-(154,'73152',Casabianca,23),
-(155,'50150',Castilla La Nueva,16),
-(156,'05154',Caucasia,1),
-(157,'23162',Cerete,10),
-(158,'15162',Cerinza,5),
-(159,'68162',Cerrito,21),
-(160,'27160',Certegui,12),
-(161,'52240',Chachagüi,17),
-(162,'25168',Chaguani,11),
-(163,'85015',Chameza,26),
-(164,'73168',Chaparral,23),
-(165,'68167',Charala,21),
-(166,'68169',Charta,21),
-(167,'25175',Chia,11),
-(168,'05172',Chigorodo,1),
-(169,'23168',Chima,10),
-(170,'68176',Chima,21),
-(171,'20175',Chimichagua,9),
-(172,'54172',Chinacota,18),
-(173,'15172',Chinavita,5),
-(174,'17174',Chinchina,6),
-(175,'23182',Chinu,10),
-(176,'25178',Chipaque,11),
-(177,'68179',Chipata,21),
-(178,'15176',Chiquinquira,5),
-(179,'15232',Chiquiza,5),
-(180,'20178',Chiriguana,9),
-(181,'15180',Chiscas,5),
-(182,'15183',Chita,5),
-(183,'54174',Chitaga,18),
-(184,'15185',Chitaraque,5),
-(185,'15187',Chivata,5),
-(186,'47170',Chivolo,15),
-(187,'15236',Chivor,5),
-(188,'25181',Choachi,11),
-(189,'25183',Choconta,11),
-(190,'13188',Cicuco,4),
-(191,'47189',Cienaga,15),
-(192,'23189',Cienaga De Oro,10),
-(193,'15189',Cienega,5),
-(194,'68190',Cimitarra,21),
-(195,'63190',Circasia,19),
-(196,'05190',Cisneros,1),
-(197,'05101',Ciudad Bolivar,1),
-(198,'13222',Clemencia,4),
-(199,'05197',Cocorna,1),
-(200,'73200',Coello,23),
-(201,'25200',Cogua,11),
-(202,'41206',Colombia,13),
-(203,'52203',Colon,17),
-(204,'86219',Colon,27),
-(205,'70204',Coloso,22),
-(206,'15204',Combita,5),
-(207,'68207',Concepcion,21),
-(208,'05209',Concordia,1),
-(209,'27205',Condoto,12),
-(210,'68209',Confines,21),
-(211,'52207',Consaca,17),
-(212,'52210',Contadero,17),
-(213,'54206',Convencion,18),
-(214,'05212',Copacabana,1),
-(215,'63212',Cordoba,19),
-(216,'52215',Cordoba,17),
-(217,'13212',Cordoba,4),
-(218,'19212',Corinto,8),
-(219,'68217',Coromoro,21),
-(220,'70215',Corozal,22),
-(221,'15215',Corrales,5),
-(222,'25214',Cota,11),
-(223,'23300',Cotorra,10),
-(224,'15218',Covarachia,5),
-(225,'70221',Coveñas,22),
-(226,'73217',Coyaima,23),
-(227,'81220',Cravo Norte,25),
-(228,'52224',Cuaspud,17),
-(229,'15224',Cucaita,5),
-(230,'25224',Cucunuba,11),
-(231,'54001',Cucuta,18),
-(232,'54223',Cucutilla,18),
-(233,'15226',Cuitiva,5),
-(234,'50226',Cumaral,16),
-(235,'99773',Cumaribo,33),
-(236,'52227',Cumbal,17),
-(237,'52233',Cumbitara,17),
-(238,'73226',Cunday,23),
-(239,'18205',Curillo,7),
-(240,'68229',Curiti,21),
-(241,'20228',Curumani,9),
-(242,'05234',Dabeiba,1),
-(243,'76233',Dagua,24),
-(244,'44090',Dibulla,14),
-(245,'44098',Distraccion,14),
-(246,'73236',Dolores,23),
-(247,'05237',Don Matias,1),
-(248,'66170',Dosquebradas,20),
-(249,'15238',Duitama,5),
-(250,'54239',Durania,18),
-(251,'05240',Ebejico,1),
-(252,'76243',El Aguila,24),
-(253,'05250',El Bagre,1),
-(254,'47245',El Banco,15),
-(255,'76246',El Cairo,24),
-(256,'50245',El Calvario,16),
-(257,'54245',El Carmen,18),
-(258,'27245',El Carmen De Atrato,12),
-(259,'13244',El Carmen De Bolivar,4),
-(260,'68235',El Carmen De Chucuri,21),
-(261,'05148',El Carmen Viboral,1),
-(262,'50251',El Castillo,16),
-(263,'76248',El Cerrito,24),
-(264,'25245',El Colegio,11),
-(265,'20238',El Copey,9),
-(266,'18247',El Doncello,7),
-(267,'50270',El Dorado,16),
-(268,'76250',El Dovio,24),
-(269,'68245',El Guacamayo,21),
-(270,'44110',El Molino,14),
-(271,'20250',El Paso,9),
-(272,'18256',El Paujil,7),
-(273,'52254',El Peñol,17),
-(274,'68250',El Peñon,21),
-(275,'25258',El Peñon,11),
-(276,'13268',El Peñon,4),
-(277,'47258',El Piñon,15),
-(278,'68255',El Playon,21),
-(279,'47268',El Reten,15),
-(280,'95025',El Retorno,31),
-(281,'25260',El Rosal,11),
-(282,'52256',El Rosario,17),
-(283,'05697',El Santuario,1),
-(284,'19256',El Tambo,8),
-(285,'52260',El Tambo,17),
-(286,'54250',El Tarra,18),
-(287,'54261',El Zulia,18),
-(288,'41244',Elias,13),
-(289,'05264',Entrerrios,1),
-(290,'05266',Envigado,1),
-(291,'73268',Espinal,23),
-(292,'25269',Facatativa,11),
-(293,'73270',Falan,23),
-(294,'17272',Filadelfia,6),
-(295,'63272',Filandia,19),
-(296,'15272',Firavitoba,5),
-(297,'73275',Flandes,23),
-(298,'18001',Florencia,7),
-(299,'19290',Florencia,8),
-(300,'15276',Floresta,5),
-(301,'68271',Florian,21),
-(302,'76275',Florida,24),
-(303,'68276',Floridablanca,21),
-(304,'25279',Fomeque,11),
-(305,'44279',Fonseca,14),
-(306,'81300',Fortul,25),
-(307,'25281',Fosca,11),
-(308,'05282',Fredonia,1),
-(309,'73283',Fresno,23),
-(310,'05284',Frontino,1),
-(311,'50287',Fuente De Oro,16),
-(312,'47288',Fundacion,15),
-(313,'52287',Funes,17),
-(314,'25286',Funza,11),
-(315,'25288',Fuquene,11),
-(316,'25290',Fusagasuga,11),
-(317,'25293',Gachala,11),
-(318,'25295',Gachancipa,11),
-(319,'15293',Gachantiva,5),
-(320,'25297',Gacheta,11),
-(321,'68296',Galan,21),
-(322,'08296',Galapa,2),
-(323,'70235',Galeras,22),
-(324,'20295',Gamarra,9),
-(325,'68298',Gambita,21),
-(326,'15296',Gameza,5),
-(327,'15299',Garagoa,5),
-(328,'41298',Garzon,13),
-(329,'63302',Genova,19),
-(330,'41306',Gigante,13),
-(331,'76306',Ginebra,24),
-(332,'05306',Giraldo,1),
-(333,'25307',Girardot,11),
-(334,'05308',Girardota,1),
-(335,'68307',Giron,21),
-(336,'05310',Gomez Plata,1),
-(337,'20310',Gonzalez,9),
-(338,'54313',Gramalote,18),
-(339,'50313',Granada,16),
-(340,'25312',Granada,11),
-(341,'05313',Granada,1),
-(342,'68318',Guaca,21),
-(343,'76318',Guacari,24),
-(344,'19300',Guachene,8),
-(345,'25317',Guacheta,11),
-(346,'52317',Guachucal,17),
-(347,'76111',Guadalajara De Buga,24),
-(348,'68320',Guadalupe,21),
-(349,'05315',Guadalupe,1),
-(350,'41319',Guadalupe,13),
-(351,'25320',Guaduas,11),
-(352,'52320',Guaitarilla,17),
-(353,'52323',Gualmatan,17),
-(354,'47318',Guamal,15),
-(355,'50318',Guamal,16),
-(356,'73319',Guamo,23),
-(357,'68322',Guapota,21),
-(358,'05318',Guarne,1),
-(359,'25322',Guasca,11),
-(360,'05321',Guatape,1),
-(361,'25324',Guataqui,11),
-(362,'25326',Guatavita,11),
-(363,'15322',Guateque,5),
-(364,'66318',Guatica,20),
-(365,'68324',Guavata,21),
-(366,'25328',Guayabal De Siquima,11),
-(367,'25335',Guayabetal,11),
-(368,'15325',Guayata,5),
-(369,'68327',Güepsa,21),
-(370,'25339',Gutierrez,11),
-(371,'13300',Hatillo De Loba,4),
-(372,'68344',Hato,21),
-(373,'85125',Hato Corozal,26),
-(374,'44378',Hatonuevo,14),
-(375,'05347',Heliconia,1),
-(376,'54347',Herran,18),
-(377,'73347',Herveo,23),
-(378,'05353',Hispania,1),
-(379,'41349',Hobo,13),
-(380,'73349',Honda,23),
-(381,'73001',Ibague,23),
-(382,'73352',Icononzo,23),
-(383,'52352',Iles,17),
-(384,'52354',Imues,17),
-(385,'94001',Inirida,30),
-(386,'19355',Inza,8),
-(387,'52356',Ipiales,17),
-(388,'41359',Isnos,13),
-(389,'27361',Istmina,12),
-(390,'05360',Itagui,1),
-(391,'05361',Ituango,1),
-(392,'15362',Iza,5),
-(393,'76364',Jamundi,24),
-(394,'05364',Jardin,1),
-(395,'15367',Jenesano,5),
-(396,'05368',Jerico,1),
-(397,'25368',Jerusalen,11),
-(398,'68368',Jesus Maria,21),
-(399,'08372',Juan Acosta,2),
-(400,'25372',Junin,11),
-(401,'23350',La Apartada,10),
-(402,'41378',La Argentina,13),
-(403,'25377',La Calera,11),
-(404,'15380',La Capilla,5),
-(405,'05376',La Ceja,1),
-(406,'66383',La Celia,20),
-(407,'52378',La Cruz,17),
-(408,'76377',La Cumbre,24),
-(409,'17380',La Dorada,6),
-(410,'54385',La Esperanza,18),
-(411,'05380',La Estrella,1),
-(412,'52381',La Florida,17),
-(413,'20383',La Gloria,9),
-(414,'20400',La Jagua De Ibirico,9),
-(415,'44420',La Jagua Del Pilar,14),
-(416,'52385',La Llanada,17),
-(417,'50350',La Macarena,16),
-(418,'17388',La Merced,6),
-(419,'25386',La Mesa,11),
-(420,'18410',La Montañita,7),
-(421,'68397',La Paz,21),
-(422,'20621',La Paz,9),
-(423,'25398',La Peña,11),
-(424,'05390',La Pintada,1),
-(425,'41396',La Plata,13),
-(426,'54398',La Playa,18),
-(427,'85136',La Salina,26),
-(428,'19392',La Sierra,8),
-(429,'63401',La Tebaida,19),
-(430,'76400',La Union,24),
-(431,'05400',La Union,1),
-(432,'52399',La Union,17),
-(433,'25402',La Vega,11),
-(434,'19397',La Vega,8),
-(435,'76403',La Victoria,24),
-(436,'66400',La Virginia,20),
-(437,'54377',Labateca,18),
-(438,'68385',Landazuri,21),
-(439,'68406',Lebrija,21),
-(440,'52405',Leiva,17),
-(441,'50400',Lejanias,16),
-(442,'25407',Lenguazaque,11),
-(443,'73408',Lerida,23),
-(444,'91001',Leticia,29),
-(445,'73411',Libano,23),
-(446,'23417',Lorica,10),
-(447,'52418',Los Andes,17),
-(448,'23419',Los Cordobas,10),
-(449,'70418',Los Palmitos,22),
-(450,'54405',Los Patios,18),
-(451,'68418',Los Santos,21),
-(452,'54418',Lourdes,18),
-(453,'08421',Luruaco,2),
-(454,'05425',Maceo,1),
-(455,'25426',Macheta,11),
-(456,'25430',Madrid,11),
-(457,'13430',Magangue,4),
-(458,'13433',Mahates,4),
-(459,'44430',Maicao,14),
-(460,'70429',Majagual,22),
-(461,'68432',Malaga,21),
-(462,'08433',Malambo,2),
-(463,'52435',Mallama,17),
-(464,'08436',Manati,2),
-(465,'44560',Manaure,14),
-(466,'20443',Manaure,9),
-(467,'85139',Mani,26),
-(468,'17001',Manizales,6),
-(469,'25436',Manta,11),
-(470,'17433',Manzanares,6),
-(471,'50325',Mapiripan,16),
-(472,'13442',Maria La Baja,4),
-(473,'05440',Marinilla,1),
-(474,'15442',Maripi,5),
-(475,'17442',Marmato,6),
-(476,'66440',Marsella,20),
-(477,'68444',Matanza,21),
-(478,'05001',Medellin,1),
-(479,'25438',Medina,11),
-(480,'27450',Medio San Juan,12),
-(481,'73449',Melgar,23),
-(482,'19450',Mercaderes,8),
-(483,'50330',Mesetas,16),
-(484,'19455',Miranda,8),
-(485,'66456',Mistrato,20),
-(486,'86001',Mocoa,27),
-(487,'68464',Mogotes,21),
-(488,'68468',Molagavita,21),
-(489,'23464',Momil,10),
-(490,'13468',Mompos,4),
-(491,'15464',Mongua,5),
-(492,'15466',Mongui,5),
-(493,'15469',Moniquira,5),
-(494,'05467',Montebello,1),
-(495,'23466',Montelibano,10),
-(496,'63470',Montenegro,19),
-(497,'23001',Monteria,10),
-(498,'85162',Monterrey,26),
-(499,'23500',Moñitos,10),
-(500,'19473',Morales,8),
-(501,'13473',Morales,4),
-(502,'18479',Morelia,7),
-(503,'70473',Morroa,22),
-(504,'25473',Mosquera,11),
-(505,'15476',Motavita,5),
-(506,'73461',Murillo,23),
-(507,'05480',Mutata,1),
-(508,'54480',Mutiscua,18),
-(509,'15480',Muzo,5),
-(510,'05483',Narino,1),
-(511,'25483',Nariño,11),
-(512,'52480',Nariño,17),
-(513,'41483',Nataga,13),
-(514,'73483',Natagaima,23),
-(515,'05495',Nechi,1),
-(516,'05490',Necocli,1),
-(517,'17486',Neira,6),
-(518,'41001',Neiva,13),
-(519,'25486',Nemocon,11),
-(520,'25488',Nilo,11),
-(521,'25489',Nimaima,11),
-(522,'15491',Nobsa,5),
-(523,'25491',Nocaima,11),
-(524,'17495',Norcasia,6),
-(525,'27491',Novita,12),
-(526,'47460',Nueva Granada,15),
-(527,'15494',Nuevo Colon,5),
-(528,'85225',Nunchia,26),
-(529,'76497',Obando,24),
-(530,'68498',Ocamonte,21),
-(531,'54498',Ocaña,18),
-(532,'68500',Oiba,21),
-(533,'15500',Oicata,5),
-(534,'05501',Olaya,1),
-(535,'41503',Oporapa,13),
-(536,'86320',Orito,27),
-(537,'85230',Orocue,26),
-(538,'73504',Ortega,23),
-(539,'52506',Ospina,17),
-(540,'70508',Ovejas,22),
-(541,'15511',Pachavita,5),
-(542,'25513',Pacho,11),
-(543,'17513',Pacora,6),
-(544,'19513',Padilla,8),
-(545,'15514',Paez,5),
-(546,'19517',Paez,8),
-(547,'41518',Paicol,13),
-(548,'20517',Pailitas,9),
-(549,'25518',Paime,11),
-(550,'15516',Paipa,5),
-(551,'15518',Pajarito,5),
-(552,'41524',Palermo,13),
-(553,'17524',Palestina,6),
-(554,'41530',Palestina,13),
-(555,'08520',Palmar Varela,2),
-(556,'68524',Palmas Del Socorro,21),
-(557,'76520',Palmira,24),
-(558,'70523',Palmito,22),
-(559,'73520',Palocabildo,23),
-(560,'54518',Pamplona,18),
-(561,'54520',Pamplonita,18),
-(562,'25524',Pandi,11),
-(563,'68533',Paramo,21),
-(564,'25530',Paratebueno,11),
-(565,'25535',Pasca,11),
-(566,'52001',Pasto,17),
-(567,'19532',Patia,8),
-(568,'15531',Pauna,5),
-(569,'85250',Paz De Ariporo,26),
-(570,'15537',Paz De Rio,5),
-(571,'20550',Pelaya,9),
-(572,'05541',Penol,1),
-(573,'17541',Pensilvania,6),
-(574,'05543',Peque,1),
-(575,'66001',Pereira,20),
-(576,'15542',Pesca,5),
-(577,'19533',Piamonte,8),
-(578,'68547',Piedecuesta,21),
-(579,'73547',Piedras,23),
-(580,'19548',Piendamo,8),
-(581,'63548',Pijao,19),
-(582,'47545',Pijiño Del Carmen,15),
-(583,'68549',Pinchote,21),
-(584,'08549',Piojo,2),
-(585,'41548',Pital,13),
-(586,'41551',Pitalito,13),
-(587,'47551',Pivijay,15),
-(588,'73555',Planadas,23),
-(589,'23555',Planeta Rica,10),
-(590,'47555',Plato,15),
-(591,'52540',Policarpa,17),
-(592,'08558',Polonuevo,2),
-(593,'08560',Ponedera,2),
-(594,'19001',Popayan,8),
-(595,'85263',Pore,26),
-(596,'52560',Potosi,17),
-(597,'76563',Pradera,24),
-(598,'73563',Prado,23),
-(599,'88564',Providencia,28),
-(600,'20570',Pueblo Bello,9),
-(601,'23570',Pueblo Nuevo,10),
-(602,'66572',Pueblo Rico,20),
-(603,'05576',Pueblorrico,1),
-(604,'47570',Puebloviejo,15),
-(605,'68572',Puente Nacional,21),
-(606,'52573',Puerres,17),
-(607,'86568',Puerto Asis,27),
-(608,'05579',Puerto Berrio,1),
-(609,'15572',Puerto Boyaca,5),
-(610,'86569',Puerto Caicedo,27),
-(611,'99001',Puerto Carreño,33),
-(612,'08573',Puerto Colombia,2),
-(613,'50450',Puerto Concordia,16),
-(614,'23574',Puerto Escondido,10),
-(615,'50568',Puerto Gaitan,16),
-(616,'86573',Puerto Leguizamo,27),
-(617,'23580',Puerto Libertador,10),
-(618,'50577',Puerto Lleras,16),
-(619,'50573',Puerto Lopez,16),
-(620,'68573',Puerto Parra,21),
-(621,'18592',Puerto Rico,7),
-(622,'50590',Puerto Rico,16),
-(623,'81591',Puerto Rondon,25),
-(624,'25572',Puerto Salgar,11),
-(625,'54553',Puerto Santander,18),
-(626,'19573',Puerto Tejada,8),
-(627,'05591',Puerto Triunfo,1),
-(628,'68575',Puerto Wilches,21),
-(629,'52585',Pupiales,17),
-(630,'19585',Purace,8),
-(631,'73585',Purificacion,23),
-(632,'23586',Purisima,10),
-(633,'25592',Quebradanegra,11),
-(634,'25594',Quetame,11),
-(635,'27001',Quibdo,12),
-(636,'63594',Quimbaya,19),
-(637,'66594',Quinchia,20),
-(638,'15580',Quipama,5),
-(639,'25596',Quipile,11),
-(640,'54599',Ragonvalia,18),
-(641,'15599',Ramiriqui,5),
-(642,'15600',Raquira,5),
-(643,'85279',Recetor,26),
-(644,'13580',Regidor,4),
-(645,'05604',Remedios,1),
-(646,'08606',Repelon,2),
-(647,'50606',Restrepo,16),
-(648,'76606',Restrepo,24),
-(649,'05607',Retiro,1),
-(650,'25612',Ricaurte,11),
-(651,'52612',Ricaurte,17),
-(652,'20614',Rio De Oro,9),
-(653,'13600',Rio Viejo,4),
-(654,'73616',Rioblanco,23),
-(655,'76616',Riofrio,24),
-(656,'44001',Riohacha,14),
-(657,'05615',Rionegro,1),
-(658,'68615',Rionegro,21),
-(659,'17614',Riosucio,6),
-(660,'27615',Riosucio,12),
-(661,'17616',Risaralda,6),
-(662,'41615',Rivera,13),
-(663,'76622',Roldanillo,24),
-(664,'73622',Roncesvalles,23),
-(665,'19622',Rosas,8),
-(666,'73624',Rovira,23),
-(667,'68655',Sabana De Torres,21),
-(668,'08634',Sabanagrande,2),
-(669,'08638',Sabanalarga,2),
-(670,'85300',Sabanalarga,26),
-(671,'05628',Sabanalarga,1),
-(672,'47660',Sabanas De San Angel,15),
-(673,'05631',Sabaneta,1),
-(674,'15632',Saboya,5),
-(675,'85315',Sacama,26),
-(676,'15638',Sachica,5),
-(677,'23660',Sahagun,10),
-(678,'41660',Saladoblanco,13),
-(679,'17653',Salamina,6),
-(680,'47675',Salamina,15),
-(681,'54660',Salazar,18),
-(682,'73671',Saldaña,23),
-(683,'63690',Salento,19),
-(684,'05642',Salgar,1),
-(685,'15646',Samaca,5),
-(686,'17662',Samana,6),
-(687,'52678',Samaniego,17),
-(688,'70670',Sampues,22),
-(689,'41668',San Agustin,13),
-(690,'20710',San Alberto,9),
-(691,'88001',San Andres,28),
-(692,'05647',San Andres,1),
-(693,'68669',San Andres,21),
-(694,'23670',San Andres De Sotavento,10),
-(695,'52835',San Andres De Tumaco,17),
-(696,'23672',San Antero,10),
-(697,'73675',San Antonio,23),
-(698,'25645',San Antonio Del Tequendama,11),
-(699,'70678',San Benito Abad,22),
-(700,'25649',San Bernardo,11),
-(701,'52685',San Bernardo,17),
-(702,'23675',San Bernardo Del Viento,10),
-(703,'05649',San Carlos,1),
-(704,'23678',San Carlos,10),
-(705,'50680',San Carlos De Guaroa,16),
-(706,'54673',San Cayetano,18),
-(707,'13620',San Cristobal,4),
-(708,'20750',San Diego,9),
-(709,'15660',San Eduardo,5),
-(710,'13647',San Estanislao,4),
-(711,'13650',San Fernando,4),
-(712,'86755',San Francisco,27),
-(713,'25658',San Francisco,11),
-(714,'68679',San Gil,21),
-(715,'13654',San Jacinto,4),
-(716,'05656',San Jeronimo,1),
-(717,'68682',San Joaquin,21),
-(718,'17665',San Jose,6),
-(719,'68684',San Jose De Miranda,21),
-(720,'15664',San Jose De Pare,5),
-(721,'18610',San Jose Del Fragua,7),
-(722,'95001',San Jose Del Guaviare,31),
-(723,'05658',San Jose La Montana,1),
-(724,'50683',San Juan De Arama,16),
-(725,'70702',San Juan De Betulia,22),
-(726,'25662',San Juan De Rio Seco,11),
-(727,'44650',San Juan Del Cesar,14),
-(728,'13657',San Juan Nepomuceno,4),
-(729,'05659',San Juan Uraba,1),
-(730,'50686',San Juanito,16),
-(731,'52687',San Lorenzo,17),
-(732,'05660',San Luis,1),
-(733,'73678',San Luis,23),
-(734,'50223',San Luis De Cubarral,16),
-(735,'15667',San Luis De Gaceno,5),
-(736,'85325',San Luis De Palenque,26),
-(737,'70742',San Luis De Since,22),
-(738,'70708',San Marcos,22),
-(739,'20770',San Martin,9),
-(740,'50689',San Martin,16),
-(741,'13667',San Martin De Loba,4),
-(742,'68686',San Miguel,21),
-(743,'86757',San Miguel,27),
-(744,'15676',San Miguel De Sema,5),
-(745,'70713',San Onofre,22),
-(746,'13670',San Pablo,4),
-(747,'52693',San Pablo,17),
-(748,'15681',San Pablo De Borbur,5),
-(749,'05664',San Pedro,1),
-(750,'70717',San Pedro,22),
-(751,'76670',San Pedro,24),
-(752,'05665',San Pedro Uraba,1),
-(753,'23686',San Pelayo,10),
-(754,'05667',San Rafael,1),
-(755,'05670',San Roque,1),
-(756,'19693',San Sebastian,8),
-(757,'47692',San Sebastian De Buenavista,15),
-(758,'73443',San Sebastian De Mariquita,23),
-(759,'05674',San Vicente,1),
-(760,'68689',San Vicente De Chucuri,21),
-(761,'18753',San Vicente Del Caguan,7),
-(762,'52683',Sandona,17),
-(763,'47707',Santa Ana,15),
-(764,'05679',Santa Barbara,1),
-(765,'68705',Santa Barbara,21),
-(766,'47720',Santa Barbara De Pinto,15),
-(767,'13673',Santa Catalina,4),
-(768,'68720',Santa Helena Del Opon,21),
-(769,'73686',Santa Isabel,23),
-(770,'08675',Santa Lucia,2),
-(771,'41676',Santa Maria,13),
-(772,'15690',Santa Maria,5),
-(773,'47001',Santa Marta,15),
-(774,'13683',Santa Rosa,4),
-(775,'19701',Santa Rosa,8),
-(776,'66682',Santa Rosa De Cabal,20),
-(777,'15693',Santa Rosa De Viterbo,5),
-(778,'13688',Santa Rosa Del Sur,4),
-(779,'05686',Santa Rosa Osos,1),
-(780,'15696',Santa Sofia,5),
-(781,'52699',Santacruz,17),
-(782,'05042',Santafe Antioquia,1),
-(783,'15686',Santana,5),
-(784,'19698',Santander De Quilichao,8),
-(785,'54680',Santiago,18),
-(786,'86760',Santiago,27),
-(787,'70820',Santiago De Tolu,22),
-(788,'05690',Santo Domingo,1),
-(789,'08685',Santo Tomas,2),
-(790,'66687',Santuario,20),
-(791,'52720',Sapuyes,17),
-(792,'81736',Saravena,25),
-(793,'54720',Sardinata,18),
-(794,'25718',Sasaima,11),
-(795,'15720',Sativanorte,5),
-(796,'05736',Segovia,1),
-(797,'25736',Sesquile,11),
-(798,'76736',Sevilla,24),
-(799,'15740',Siachoque,5),
-(800,'25740',Sibate,11),
-(801,'86749',Sibundoy,27),
-(802,'54743',Silos,18),
-(803,'25743',Silvania,11),
-(804,'19743',Silvia,8),
-(805,'68745',Simacota,21),
-(806,'25745',Simijaca,11),
-(807,'13744',Simiti,4),
-(808,'70001',Sincelejo,22),
-(809,'47745',Sitionuevo,15),
-(810,'25754',Soacha,11),
-(811,'15753',Soata,5),
-(812,'15757',Socha,5),
-(813,'68755',Socorro,21),
-(814,'15755',Socota,5),
-(815,'15759',Sogamoso,5),
-(816,'08758',Soledad,2),
-(817,'18785',Solita,7),
-(818,'15761',Somondoco,5),
-(819,'05756',Sonson,1),
-(820,'05761',Sopetran,1),
-(821,'13760',Soplaviento,4),
-(822,'25758',Sopo,11),
-(823,'15762',Sora,5),
-(824,'15764',Soraca,5),
-(825,'15763',Sotaquira,5),
-(826,'19760',Sotara,8),
-(827,'68770',Suaita,21),
-(828,'08770',Suan,2),
-(829,'19780',Suarez,8),
-(830,'73770',Suarez,23),
-(831,'41770',Suaza,13),
-(832,'25769',Subachoque,11),
-(833,'70771',Sucre,22),
-(834,'25772',Suesca,11),
-(835,'25777',Supata,11),
-(836,'17777',Supia,6),
-(837,'25779',Susa,11),
-(838,'15774',Susacon,5),
-(839,'15776',Sutamarchan,5),
-(840,'25781',Sutatausa,11),
-(841,'15778',Sutatenza,5),
-(842,'25785',Tabio,11),
-(843,'27787',Tado,12),
-(844,'13780',Talaigua Nuevo,4),
-(845,'81794',Tame,25),
-(846,'05789',Tamesis,1),
-(847,'52786',Taminango,17),
-(848,'52788',Tangua,17),
-(849,'05790',Taraza,1),
-(850,'41791',Tarqui,13),
-(851,'05792',Tarso,1),
-(852,'15790',Tasco,5),
-(853,'85410',Tauramena,26),
-(854,'25793',Tausa,11),
-(855,'41799',Tello,13),
-(856,'25797',Tena,11),
-(857,'47798',Tenerife,15),
-(858,'25799',Tenjo,11),
-(859,'15798',Tenza,5),
-(860,'54800',Teorama,18),
-(861,'41801',Teruel,13),
-(862,'41797',Tesalia,13),
-(863,'25805',Tibacuy,11),
-(864,'15804',Tibana,5),
-(865,'15806',Tibasosa,5),
-(866,'25807',Tibirita,11),
-(867,'54810',Tibu,18),
-(868,'23807',Tierralta,10),
-(869,'41807',Timana,13),
-(870,'19807',Timbio,8),
-(871,'19809',Timbiqui,8),
-(872,'15808',Tinjaca,5),
-(873,'15810',Tipacoque,5),
-(874,'05809',Titiribi,1),
-(875,'15814',Toca,5),
-(876,'25815',Tocaima,11),
-(877,'25817',Tocancipa,11),
-(878,'54820',Toledo,18),
-(879,'05819',Toledo,1),
-(880,'70823',Tolu Viejo,22),
-(881,'68820',Tona,21),
-(882,'15820',Topaga,5),
-(883,'25823',Topaipi,11),
-(884,'76823',Toro,24),
-(885,'15822',Tota,5),
-(886,'19824',Totoro,8),
-(887,'85430',Trinidad,26),
-(888,'76828',Trujillo,24),
-(889,'08832',Tubara,2),
-(890,'23815',Tuchin,10),
-(891,'76834',Tulua,24),
-(892,'15001',Tunja,5),
-(893,'52838',Tuquerres,17),
-(894,'13836',Turbaco,4),
-(895,'13838',Turbana,4),
-(896,'05837',Turbo,1),
-(897,'15835',Turmeque,5),
-(898,'15837',Tuta,5),
-(899,'15839',Tutaza,5),
-(900,'25839',Ubala,11),
-(901,'25841',Ubaque,11),
-(902,'76845',Ulloa,24),
-(903,'15842',Umbita,5),
-(904,'25845',Une,11),
-(905,'27810',Union Panamericana,12),
-(906,'05842',Uramita,1),
-(907,'50370',Uribe,16),
-(908,'44847',Uribia,14),
-(909,'05847',Urrao,1),
-(910,'44855',Urumita,14),
-(911,'08849',Usiacuri,2),
-(912,'25851',Utica,11),
-(913,'05854',Valdivia,1),
-(914,'23855',Valencia,10),
-(915,'68855',Valle De San Jose,21),
-(916,'73854',Valle De San Juan,23),
-(917,'86865',Valle Del Guamuez,27),
-(918,'20001',Valledupar,9),
-(919,'05856',Valparaiso,1),
-(920,'18860',Valparaiso,7),
-(921,'05858',Vegachi,1),
-(922,'68861',Velez,21),
-(923,'73861',Venadillo,23),
-(924,'25506',Venecia,11),
-(925,'05861',Venecia,1),
-(926,'15861',Ventaquemada,5),
-(927,'25862',Vergara,11),
-(928,'76863',Versalles,24),
-(929,'25867',Viani,11),
-(930,'17867',Victoria,6),
-(931,'76869',Vijes,24),
-(932,'54871',Villa Caro,18),
-(933,'15407',Villa De Leyva,5),
-(934,'25843',Villa De San Diego De Ubate,11),
-(935,'54874',Villa Del Rosario,18),
-(936,'19845',Villa Rica,8),
-(937,'86885',Villagarzon,27),
-(938,'25871',Villagomez,11),
-(939,'73870',Villahermosa,23),
-(940,'17873',Villamaria,6),
-(941,'85440',Villanueva,26),
-(942,'44874',Villanueva,14),
-(943,'68872',Villanueva,21),
-(944,'13873',Villanueva,4),
-(945,'25873',Villapinzon,11),
-(946,'50001',Villavicencio,16),
-(947,'41872',Villavieja,13),
-(948,'25875',Villeta,11),
-(949,'25878',Viota,11),
-(950,'15879',Viracacha,5),
-(951,'50711',Vistahermosa,16),
-(952,'17877',Viterbo,6),
-(953,'25885',Yacopi,11),
-(954,'52885',Yacuanquer,17),
-(955,'41885',Yaguara,13),
-(956,'05885',Yali,1),
-(957,'05887',Yarumal,1),
-(958,'05890',Yolombo,1),
-(959,'05893',Yondo,1),
-(960,'85001',Yopal,26),
-(961,'76890',Yotoco,24),
-(962,'76892',Yumbo,24),
-(963,'13894',Zambrano,4),
-(964,'68895',Zapatoca,21),
-(965,'05895',Zaragoza,1),
-(966,'76895',Zarzal,24),
-(967,'25898',Zipacon,11),
-(968,'25899',Zipaquira,11),
-(969,'47980',Zona Bananera,15);
+-- ----------------------------
+-- Records of municipio
+-- ----------------------------
+BEGIN;
+INSERT INTO `municipio` VALUES (1, '05002', 'Abejorral', 1);
+INSERT INTO `municipio` VALUES (2, '54003', 'Abrego', 18);
+INSERT INTO `municipio` VALUES (3, '50006', 'Acacias', 16);
+INSERT INTO `municipio` VALUES (4, '41006', 'Acevedo', 13);
+INSERT INTO `municipio` VALUES (5, '41013', 'Agrado', 13);
+INSERT INTO `municipio` VALUES (6, '25001', 'Agua De Dios', 11);
+INSERT INTO `municipio` VALUES (7, '20011', 'Aguachica', 9);
+INSERT INTO `municipio` VALUES (8, '68013', 'Aguada', 21);
+INSERT INTO `municipio` VALUES (9, '17013', 'Aguadas', 6);
+INSERT INTO `municipio` VALUES (10, '85010', 'Aguazul', 26);
+INSERT INTO `municipio` VALUES (11, '20013', 'Agustin Codazzi', 9);
+INSERT INTO `municipio` VALUES (12, '41016', 'Aipe', 13);
+INSERT INTO `municipio` VALUES (13, '52019', 'Alban', 17);
+INSERT INTO `municipio` VALUES (14, '25019', 'Alban', 11);
+INSERT INTO `municipio` VALUES (15, '18029', 'Albania', 7);
+INSERT INTO `municipio` VALUES (16, '44035', 'Albania', 14);
+INSERT INTO `municipio` VALUES (17, '76020', 'Alcala', 24);
+INSERT INTO `municipio` VALUES (18, '52022', 'Aldana', 17);
+INSERT INTO `municipio` VALUES (19, '05021', 'Alejandria', 1);
+INSERT INTO `municipio` VALUES (20, '47030', 'Algarrobo', 15);
+INSERT INTO `municipio` VALUES (21, '41020', 'Algeciras', 13);
+INSERT INTO `municipio` VALUES (22, '19022', 'Almaguer', 8);
+INSERT INTO `municipio` VALUES (23, '73024', 'Alpujarra', 23);
+INSERT INTO `municipio` VALUES (24, '41026', 'Altamira', 13);
+INSERT INTO `municipio` VALUES (25, '73026', 'Alvarado', 23);
+INSERT INTO `municipio` VALUES (26, '05030', 'Amaga', 1);
+INSERT INTO `municipio` VALUES (27, '05031', 'Amalfi', 1);
+INSERT INTO `municipio` VALUES (28, '73030', 'Ambalema', 23);
+INSERT INTO `municipio` VALUES (29, '25035', 'Anapoima', 11);
+INSERT INTO `municipio` VALUES (30, '52036', 'Ancuya', 17);
+INSERT INTO `municipio` VALUES (31, '76036', 'Andalucia', 24);
+INSERT INTO `municipio` VALUES (32, '05034', 'Andes', 1);
+INSERT INTO `municipio` VALUES (33, '05036', 'Angelopolis', 1);
+INSERT INTO `municipio` VALUES (34, '05038', 'Angostura', 1);
+INSERT INTO `municipio` VALUES (35, '25040', 'Anolaima', 11);
+INSERT INTO `municipio` VALUES (36, '05040', 'Anori', 1);
+INSERT INTO `municipio` VALUES (37, '17042', 'Anserma', 6);
+INSERT INTO `municipio` VALUES (38, '76041', 'Ansermanuevo', 24);
+INSERT INTO `municipio` VALUES (39, '73043', 'Anzoategui', 23);
+INSERT INTO `municipio` VALUES (40, '05045', 'Apartado', 1);
+INSERT INTO `municipio` VALUES (41, '66045', 'Apia', 20);
+INSERT INTO `municipio` VALUES (42, '25599', 'Apulo', 11);
+INSERT INTO `municipio` VALUES (43, '15047', 'Aquitania', 5);
+INSERT INTO `municipio` VALUES (44, '47053', 'Aracataca', 15);
+INSERT INTO `municipio` VALUES (45, '17050', 'Aranzazu', 6);
+INSERT INTO `municipio` VALUES (46, '68051', 'Aratoca', 21);
+INSERT INTO `municipio` VALUES (47, '81001', 'Arauca', 25);
+INSERT INTO `municipio` VALUES (48, '81065', 'Arauquita', 25);
+INSERT INTO `municipio` VALUES (49, '25053', 'Arbelaez', 11);
+INSERT INTO `municipio` VALUES (50, '54051', 'Arboledas', 18);
+INSERT INTO `municipio` VALUES (51, '05051', 'Arboletes', 1);
+INSERT INTO `municipio` VALUES (52, '15051', 'Arcabuco', 5);
+INSERT INTO `municipio` VALUES (53, '19050', 'Argelia', 8);
+INSERT INTO `municipio` VALUES (54, '76054', 'Argelia', 24);
+INSERT INTO `municipio` VALUES (55, '05055', 'Argelia', 1);
+INSERT INTO `municipio` VALUES (56, '47058', 'Ariguani', 15);
+INSERT INTO `municipio` VALUES (57, '13052', 'Arjona', 4);
+INSERT INTO `municipio` VALUES (58, '63001', 'Armenia', 19);
+INSERT INTO `municipio` VALUES (59, '05059', 'Armenia', 1);
+INSERT INTO `municipio` VALUES (60, '73055', 'Armero', 23);
+INSERT INTO `municipio` VALUES (61, '13062', 'Arroyohondo', 4);
+INSERT INTO `municipio` VALUES (62, '20032', 'Astrea', 9);
+INSERT INTO `municipio` VALUES (63, '73067', 'Ataco', 23);
+INSERT INTO `municipio` VALUES (64, '27050', 'Atrato', 12);
+INSERT INTO `municipio` VALUES (65, '23068', 'Ayapel', 10);
+INSERT INTO `municipio` VALUES (66, '19075', 'Balboa', 8);
+INSERT INTO `municipio` VALUES (67, '66075', 'Balboa', 20);
+INSERT INTO `municipio` VALUES (68, '08078', 'Baranoa', 2);
+INSERT INTO `municipio` VALUES (69, '41078', 'Baraya', 13);
+INSERT INTO `municipio` VALUES (70, '52079', 'Barbacoas', 17);
+INSERT INTO `municipio` VALUES (71, '68077', 'Barbosa', 21);
+INSERT INTO `municipio` VALUES (72, '05079', 'Barbosa', 1);
+INSERT INTO `municipio` VALUES (73, '68079', 'Barichara', 21);
+INSERT INTO `municipio` VALUES (74, '50110', 'Barranca De Upia', 16);
+INSERT INTO `municipio` VALUES (75, '68081', 'Barrancabermeja', 21);
+INSERT INTO `municipio` VALUES (76, '44078', 'Barrancas', 14);
+INSERT INTO `municipio` VALUES (77, '13074', 'Barranco De Loba', 4);
+INSERT INTO `municipio` VALUES (78, '08001', 'Barranquilla', 2);
+INSERT INTO `municipio` VALUES (79, '20045', 'Becerril', 9);
+INSERT INTO `municipio` VALUES (80, '17088', 'Belalcazar', 6);
+INSERT INTO `municipio` VALUES (81, '15087', 'Belen', 5);
+INSERT INTO `municipio` VALUES (82, '18094', 'Belen De Los Andaquies', 7);
+INSERT INTO `municipio` VALUES (83, '66088', 'Belen De Umbria', 20);
+INSERT INTO `municipio` VALUES (84, '05088', 'Bello', 1);
+INSERT INTO `municipio` VALUES (85, '05086', 'Belmira', 1);
+INSERT INTO `municipio` VALUES (86, '25086', 'Beltran', 11);
+INSERT INTO `municipio` VALUES (87, '15090', 'Berbeo', 5);
+INSERT INTO `municipio` VALUES (88, '05091', 'Betania', 1);
+INSERT INTO `municipio` VALUES (89, '15092', 'Beteitiva', 5);
+INSERT INTO `municipio` VALUES (90, '68092', 'Betulia', 21);
+INSERT INTO `municipio` VALUES (91, '05093', 'Betulia', 1);
+INSERT INTO `municipio` VALUES (92, '25095', 'Bituima', 11);
+INSERT INTO `municipio` VALUES (93, '15097', 'Boavita', 5);
+INSERT INTO `municipio` VALUES (94, '54099', 'Bochalema', 18);
+INSERT INTO `municipio` VALUES (95, '11001', 'Bogota, D.C.', 3);
+INSERT INTO `municipio` VALUES (96, '25099', 'Bojaca', 11);
+INSERT INTO `municipio` VALUES (97, '68101', 'Bolivar', 21);
+INSERT INTO `municipio` VALUES (98, '76100', 'Bolivar', 24);
+INSERT INTO `municipio` VALUES (99, '19100', 'Bolivar', 8);
+INSERT INTO `municipio` VALUES (100, '20060', 'Bosconia', 9);
+INSERT INTO `municipio` VALUES (101, '15104', 'Boyaca', 5);
+INSERT INTO `municipio` VALUES (102, '05107', 'Briceno', 1);
+INSERT INTO `municipio` VALUES (103, '68001', 'Bucaramanga', 21);
+INSERT INTO `municipio` VALUES (104, '54109', 'Bucarasica', 18);
+INSERT INTO `municipio` VALUES (105, '76109', 'Buenaventura', 24);
+INSERT INTO `municipio` VALUES (106, '15109', 'Buenavista', 5);
+INSERT INTO `municipio` VALUES (107, '23079', 'Buenavista', 10);
+INSERT INTO `municipio` VALUES (108, '63111', 'Buenavista', 19);
+INSERT INTO `municipio` VALUES (109, '70110', 'Buenavista', 22);
+INSERT INTO `municipio` VALUES (110, '19110', 'Buenos Aires', 8);
+INSERT INTO `municipio` VALUES (111, '52110', 'Buesaco', 17);
+INSERT INTO `municipio` VALUES (112, '76113', 'Bugalagrande', 24);
+INSERT INTO `municipio` VALUES (113, '05113', 'Buritica', 1);
+INSERT INTO `municipio` VALUES (114, '15114', 'Busbanza', 5);
+INSERT INTO `municipio` VALUES (115, '25120', 'Cabrera', 11);
+INSERT INTO `municipio` VALUES (116, '50124', 'Cabuyaro', 16);
+INSERT INTO `municipio` VALUES (117, '05120', 'Caceres', 1);
+INSERT INTO `municipio` VALUES (118, '25123', 'Cachipay', 11);
+INSERT INTO `municipio` VALUES (119, '54128', 'Cachira', 18);
+INSERT INTO `municipio` VALUES (120, '54125', 'Cacota', 18);
+INSERT INTO `municipio` VALUES (121, '05125', 'Caicedo', 1);
+INSERT INTO `municipio` VALUES (122, '76122', 'Caicedonia', 24);
+INSERT INTO `municipio` VALUES (123, '70124', 'Caimito', 22);
+INSERT INTO `municipio` VALUES (124, '73124', 'Cajamarca', 23);
+INSERT INTO `municipio` VALUES (125, '19130', 'Cajibio', 8);
+INSERT INTO `municipio` VALUES (126, '25126', 'Cajica', 11);
+INSERT INTO `municipio` VALUES (127, '13140', 'Calamar', 4);
+INSERT INTO `municipio` VALUES (128, '95015', 'Calamar', 31);
+INSERT INTO `municipio` VALUES (129, '63130', 'Calarca', 19);
+INSERT INTO `municipio` VALUES (130, '05129', 'Caldas', 1);
+INSERT INTO `municipio` VALUES (131, '19137', 'Caldono', 8);
+INSERT INTO `municipio` VALUES (132, '76001', 'Cali', 24);
+INSERT INTO `municipio` VALUES (133, '68132', 'California', 21);
+INSERT INTO `municipio` VALUES (134, '76126', 'Calima', 24);
+INSERT INTO `municipio` VALUES (135, '19142', 'Caloto', 8);
+INSERT INTO `municipio` VALUES (136, '05134', 'Campamento', 1);
+INSERT INTO `municipio` VALUES (137, '08137', 'Campo La Cruz', 2);
+INSERT INTO `municipio` VALUES (138, '41132', 'Campoalegre', 13);
+INSERT INTO `municipio` VALUES (139, '23090', 'Canalete', 10);
+INSERT INTO `municipio` VALUES (140, '05138', 'Canasgordas', 1);
+INSERT INTO `municipio` VALUES (141, '76130', 'Candelaria', 24);
+INSERT INTO `municipio` VALUES (142, '13160', 'Cantagallo', 4);
+INSERT INTO `municipio` VALUES (143, '25148', 'Caparrapi', 11);
+INSERT INTO `municipio` VALUES (144, '68147', 'Capitanejo', 21);
+INSERT INTO `municipio` VALUES (145, '25151', 'Caqueza', 11);
+INSERT INTO `municipio` VALUES (146, '68152', 'Carcasi', 21);
+INSERT INTO `municipio` VALUES (147, '05147', 'Carepa', 1);
+INSERT INTO `municipio` VALUES (148, '73148', 'Carmen De Apicala', 23);
+INSERT INTO `municipio` VALUES (149, '25154', 'Carmen De Carupa', 11);
+INSERT INTO `municipio` VALUES (150, '05150', 'Carolina', 1);
+INSERT INTO `municipio` VALUES (151, '13001', 'Cartagena', 4);
+INSERT INTO `municipio` VALUES (152, '18150', 'Cartagena Del Chaira', 7);
+INSERT INTO `municipio` VALUES (153, '76147', 'Cartago', 24);
+INSERT INTO `municipio` VALUES (154, '73152', 'Casabianca', 23);
+INSERT INTO `municipio` VALUES (155, '50150', 'Castilla La Nueva', 16);
+INSERT INTO `municipio` VALUES (156, '05154', 'Caucasia', 1);
+INSERT INTO `municipio` VALUES (157, '23162', 'Cerete', 10);
+INSERT INTO `municipio` VALUES (158, '15162', 'Cerinza', 5);
+INSERT INTO `municipio` VALUES (159, '68162', 'Cerrito', 21);
+INSERT INTO `municipio` VALUES (160, '27160', 'Certegui', 12);
+INSERT INTO `municipio` VALUES (161, '52240', 'Chachagüi', 17);
+INSERT INTO `municipio` VALUES (162, '25168', 'Chaguani', 11);
+INSERT INTO `municipio` VALUES (163, '85015', 'Chameza', 26);
+INSERT INTO `municipio` VALUES (164, '73168', 'Chaparral', 23);
+INSERT INTO `municipio` VALUES (165, '68167', 'Charala', 21);
+INSERT INTO `municipio` VALUES (166, '68169', 'Charta', 21);
+INSERT INTO `municipio` VALUES (167, '25175', 'Chia', 11);
+INSERT INTO `municipio` VALUES (168, '05172', 'Chigorodo', 1);
+INSERT INTO `municipio` VALUES (169, '23168', 'Chima', 10);
+INSERT INTO `municipio` VALUES (170, '68176', 'Chima', 21);
+INSERT INTO `municipio` VALUES (171, '20175', 'Chimichagua', 9);
+INSERT INTO `municipio` VALUES (172, '54172', 'Chinacota', 18);
+INSERT INTO `municipio` VALUES (173, '15172', 'Chinavita', 5);
+INSERT INTO `municipio` VALUES (174, '17174', 'Chinchina', 6);
+INSERT INTO `municipio` VALUES (175, '23182', 'Chinu', 10);
+INSERT INTO `municipio` VALUES (176, '25178', 'Chipaque', 11);
+INSERT INTO `municipio` VALUES (177, '68179', 'Chipata', 21);
+INSERT INTO `municipio` VALUES (178, '15176', 'Chiquinquira', 5);
+INSERT INTO `municipio` VALUES (179, '15232', 'Chiquiza', 5);
+INSERT INTO `municipio` VALUES (180, '20178', 'Chiriguana', 9);
+INSERT INTO `municipio` VALUES (181, '15180', 'Chiscas', 5);
+INSERT INTO `municipio` VALUES (182, '15183', 'Chita', 5);
+INSERT INTO `municipio` VALUES (183, '54174', 'Chitaga', 18);
+INSERT INTO `municipio` VALUES (184, '15185', 'Chitaraque', 5);
+INSERT INTO `municipio` VALUES (185, '15187', 'Chivata', 5);
+INSERT INTO `municipio` VALUES (186, '47170', 'Chivolo', 15);
+INSERT INTO `municipio` VALUES (187, '15236', 'Chivor', 5);
+INSERT INTO `municipio` VALUES (188, '25181', 'Choachi', 11);
+INSERT INTO `municipio` VALUES (189, '25183', 'Choconta', 11);
+INSERT INTO `municipio` VALUES (190, '13188', 'Cicuco', 4);
+INSERT INTO `municipio` VALUES (191, '47189', 'Cienaga', 15);
+INSERT INTO `municipio` VALUES (192, '23189', 'Cienaga De Oro', 10);
+INSERT INTO `municipio` VALUES (193, '15189', 'Cienega', 5);
+INSERT INTO `municipio` VALUES (194, '68190', 'Cimitarra', 21);
+INSERT INTO `municipio` VALUES (195, '63190', 'Circasia', 19);
+INSERT INTO `municipio` VALUES (196, '05190', 'Cisneros', 1);
+INSERT INTO `municipio` VALUES (197, '05101', 'Ciudad Bolivar', 1);
+INSERT INTO `municipio` VALUES (198, '13222', 'Clemencia', 4);
+INSERT INTO `municipio` VALUES (199, '05197', 'Cocorna', 1);
+INSERT INTO `municipio` VALUES (200, '73200', 'Coello', 23);
+INSERT INTO `municipio` VALUES (201, '25200', 'Cogua', 11);
+INSERT INTO `municipio` VALUES (202, '41206', 'Colombia', 13);
+INSERT INTO `municipio` VALUES (203, '52203', 'Colon', 17);
+INSERT INTO `municipio` VALUES (204, '86219', 'Colon', 27);
+INSERT INTO `municipio` VALUES (205, '70204', 'Coloso', 22);
+INSERT INTO `municipio` VALUES (206, '15204', 'Combita', 5);
+INSERT INTO `municipio` VALUES (207, '68207', 'Concepcion', 21);
+INSERT INTO `municipio` VALUES (208, '05209', 'Concordia', 1);
+INSERT INTO `municipio` VALUES (209, '27205', 'Condoto', 12);
+INSERT INTO `municipio` VALUES (210, '68209', 'Confines', 21);
+INSERT INTO `municipio` VALUES (211, '52207', 'Consaca', 17);
+INSERT INTO `municipio` VALUES (212, '52210', 'Contadero', 17);
+INSERT INTO `municipio` VALUES (213, '54206', 'Convencion', 18);
+INSERT INTO `municipio` VALUES (214, '05212', 'Copacabana', 1);
+INSERT INTO `municipio` VALUES (215, '63212', 'Cordoba', 19);
+INSERT INTO `municipio` VALUES (216, '52215', 'Cordoba', 17);
+INSERT INTO `municipio` VALUES (217, '13212', 'Cordoba', 4);
+INSERT INTO `municipio` VALUES (218, '19212', 'Corinto', 8);
+INSERT INTO `municipio` VALUES (219, '68217', 'Coromoro', 21);
+INSERT INTO `municipio` VALUES (220, '70215', 'Corozal', 22);
+INSERT INTO `municipio` VALUES (221, '15215', 'Corrales', 5);
+INSERT INTO `municipio` VALUES (222, '25214', 'Cota', 11);
+INSERT INTO `municipio` VALUES (223, '23300', 'Cotorra', 10);
+INSERT INTO `municipio` VALUES (224, '15218', 'Covarachia', 5);
+INSERT INTO `municipio` VALUES (225, '70221', 'Coveñas', 22);
+INSERT INTO `municipio` VALUES (226, '73217', 'Coyaima', 23);
+INSERT INTO `municipio` VALUES (227, '81220', 'Cravo Norte', 25);
+INSERT INTO `municipio` VALUES (228, '52224', 'Cuaspud', 17);
+INSERT INTO `municipio` VALUES (229, '15224', 'Cucaita', 5);
+INSERT INTO `municipio` VALUES (230, '25224', 'Cucunuba', 11);
+INSERT INTO `municipio` VALUES (231, '54001', 'Cucuta', 18);
+INSERT INTO `municipio` VALUES (232, '54223', 'Cucutilla', 18);
+INSERT INTO `municipio` VALUES (233, '15226', 'Cuitiva', 5);
+INSERT INTO `municipio` VALUES (234, '50226', 'Cumaral', 16);
+INSERT INTO `municipio` VALUES (235, '99773', 'Cumaribo', 33);
+INSERT INTO `municipio` VALUES (236, '52227', 'Cumbal', 17);
+INSERT INTO `municipio` VALUES (237, '52233', 'Cumbitara', 17);
+INSERT INTO `municipio` VALUES (238, '73226', 'Cunday', 23);
+INSERT INTO `municipio` VALUES (239, '18205', 'Curillo', 7);
+INSERT INTO `municipio` VALUES (240, '68229', 'Curiti', 21);
+INSERT INTO `municipio` VALUES (241, '20228', 'Curumani', 9);
+INSERT INTO `municipio` VALUES (242, '05234', 'Dabeiba', 1);
+INSERT INTO `municipio` VALUES (243, '76233', 'Dagua', 24);
+INSERT INTO `municipio` VALUES (244, '44090', 'Dibulla', 14);
+INSERT INTO `municipio` VALUES (245, '44098', 'Distraccion', 14);
+INSERT INTO `municipio` VALUES (246, '73236', 'Dolores', 23);
+INSERT INTO `municipio` VALUES (247, '05237', 'Don Matias', 1);
+INSERT INTO `municipio` VALUES (248, '66170', 'Dosquebradas', 20);
+INSERT INTO `municipio` VALUES (249, '15238', 'Duitama', 5);
+INSERT INTO `municipio` VALUES (250, '54239', 'Durania', 18);
+INSERT INTO `municipio` VALUES (251, '05240', 'Ebejico', 1);
+INSERT INTO `municipio` VALUES (252, '76243', 'El Aguila', 24);
+INSERT INTO `municipio` VALUES (253, '05250', 'El Bagre', 1);
+INSERT INTO `municipio` VALUES (254, '47245', 'El Banco', 15);
+INSERT INTO `municipio` VALUES (255, '76246', 'El Cairo', 24);
+INSERT INTO `municipio` VALUES (256, '50245', 'El Calvario', 16);
+INSERT INTO `municipio` VALUES (257, '54245', 'El Carmen', 18);
+INSERT INTO `municipio` VALUES (258, '27245', 'El Carmen De Atrato', 12);
+INSERT INTO `municipio` VALUES (259, '13244', 'El Carmen De Bolivar', 4);
+INSERT INTO `municipio` VALUES (260, '68235', 'El Carmen De Chucuri', 21);
+INSERT INTO `municipio` VALUES (261, '05148', 'El Carmen Viboral', 1);
+INSERT INTO `municipio` VALUES (262, '50251', 'El Castillo', 16);
+INSERT INTO `municipio` VALUES (263, '76248', 'El Cerrito', 24);
+INSERT INTO `municipio` VALUES (264, '25245', 'El Colegio', 11);
+INSERT INTO `municipio` VALUES (265, '20238', 'El Copey', 9);
+INSERT INTO `municipio` VALUES (266, '18247', 'El Doncello', 7);
+INSERT INTO `municipio` VALUES (267, '50270', 'El Dorado', 16);
+INSERT INTO `municipio` VALUES (268, '76250', 'El Dovio', 24);
+INSERT INTO `municipio` VALUES (269, '68245', 'El Guacamayo', 21);
+INSERT INTO `municipio` VALUES (270, '44110', 'El Molino', 14);
+INSERT INTO `municipio` VALUES (271, '20250', 'El Paso', 9);
+INSERT INTO `municipio` VALUES (272, '18256', 'El Paujil', 7);
+INSERT INTO `municipio` VALUES (273, '52254', 'El Peñol', 17);
+INSERT INTO `municipio` VALUES (274, '68250', 'El Peñon', 21);
+INSERT INTO `municipio` VALUES (275, '25258', 'El Peñon', 11);
+INSERT INTO `municipio` VALUES (276, '13268', 'El Peñon', 4);
+INSERT INTO `municipio` VALUES (277, '47258', 'El Piñon', 15);
+INSERT INTO `municipio` VALUES (278, '68255', 'El Playon', 21);
+INSERT INTO `municipio` VALUES (279, '47268', 'El Reten', 15);
+INSERT INTO `municipio` VALUES (280, '95025', 'El Retorno', 31);
+INSERT INTO `municipio` VALUES (281, '25260', 'El Rosal', 11);
+INSERT INTO `municipio` VALUES (282, '52256', 'El Rosario', 17);
+INSERT INTO `municipio` VALUES (283, '05697', 'El Santuario', 1);
+INSERT INTO `municipio` VALUES (284, '19256', 'El Tambo', 8);
+INSERT INTO `municipio` VALUES (285, '52260', 'El Tambo', 17);
+INSERT INTO `municipio` VALUES (286, '54250', 'El Tarra', 18);
+INSERT INTO `municipio` VALUES (287, '54261', 'El Zulia', 18);
+INSERT INTO `municipio` VALUES (288, '41244', 'Elias', 13);
+INSERT INTO `municipio` VALUES (289, '05264', 'Entrerrios', 1);
+INSERT INTO `municipio` VALUES (290, '05266', 'Envigado', 1);
+INSERT INTO `municipio` VALUES (291, '73268', 'Espinal', 23);
+INSERT INTO `municipio` VALUES (292, '25269', 'Facatativa', 11);
+INSERT INTO `municipio` VALUES (293, '73270', 'Falan', 23);
+INSERT INTO `municipio` VALUES (294, '17272', 'Filadelfia', 6);
+INSERT INTO `municipio` VALUES (295, '63272', 'Filandia', 19);
+INSERT INTO `municipio` VALUES (296, '15272', 'Firavitoba', 5);
+INSERT INTO `municipio` VALUES (297, '73275', 'Flandes', 23);
+INSERT INTO `municipio` VALUES (298, '18001', 'Florencia', 7);
+INSERT INTO `municipio` VALUES (299, '19290', 'Florencia', 8);
+INSERT INTO `municipio` VALUES (300, '15276', 'Floresta', 5);
+INSERT INTO `municipio` VALUES (301, '68271', 'Florian', 21);
+INSERT INTO `municipio` VALUES (302, '76275', 'Florida', 24);
+INSERT INTO `municipio` VALUES (303, '68276', 'Floridablanca', 21);
+INSERT INTO `municipio` VALUES (304, '25279', 'Fomeque', 11);
+INSERT INTO `municipio` VALUES (305, '44279', 'Fonseca', 14);
+INSERT INTO `municipio` VALUES (306, '81300', 'Fortul', 25);
+INSERT INTO `municipio` VALUES (307, '25281', 'Fosca', 11);
+INSERT INTO `municipio` VALUES (308, '05282', 'Fredonia', 1);
+INSERT INTO `municipio` VALUES (309, '73283', 'Fresno', 23);
+INSERT INTO `municipio` VALUES (310, '05284', 'Frontino', 1);
+INSERT INTO `municipio` VALUES (311, '50287', 'Fuente De Oro', 16);
+INSERT INTO `municipio` VALUES (312, '47288', 'Fundacion', 15);
+INSERT INTO `municipio` VALUES (313, '52287', 'Funes', 17);
+INSERT INTO `municipio` VALUES (314, '25286', 'Funza', 11);
+INSERT INTO `municipio` VALUES (315, '25288', 'Fuquene', 11);
+INSERT INTO `municipio` VALUES (316, '25290', 'Fusagasuga', 11);
+INSERT INTO `municipio` VALUES (317, '25293', 'Gachala', 11);
+INSERT INTO `municipio` VALUES (318, '25295', 'Gachancipa', 11);
+INSERT INTO `municipio` VALUES (319, '15293', 'Gachantiva', 5);
+INSERT INTO `municipio` VALUES (320, '25297', 'Gacheta', 11);
+INSERT INTO `municipio` VALUES (321, '68296', 'Galan', 21);
+INSERT INTO `municipio` VALUES (322, '08296', 'Galapa', 2);
+INSERT INTO `municipio` VALUES (323, '70235', 'Galeras', 22);
+INSERT INTO `municipio` VALUES (324, '20295', 'Gamarra', 9);
+INSERT INTO `municipio` VALUES (325, '68298', 'Gambita', 21);
+INSERT INTO `municipio` VALUES (326, '15296', 'Gameza', 5);
+INSERT INTO `municipio` VALUES (327, '15299', 'Garagoa', 5);
+INSERT INTO `municipio` VALUES (328, '41298', 'Garzon', 13);
+INSERT INTO `municipio` VALUES (329, '63302', 'Genova', 19);
+INSERT INTO `municipio` VALUES (330, '41306', 'Gigante', 13);
+INSERT INTO `municipio` VALUES (331, '76306', 'Ginebra', 24);
+INSERT INTO `municipio` VALUES (332, '05306', 'Giraldo', 1);
+INSERT INTO `municipio` VALUES (333, '25307', 'Girardot', 11);
+INSERT INTO `municipio` VALUES (334, '05308', 'Girardota', 1);
+INSERT INTO `municipio` VALUES (335, '68307', 'Giron', 21);
+INSERT INTO `municipio` VALUES (336, '05310', 'Gomez Plata', 1);
+INSERT INTO `municipio` VALUES (337, '20310', 'Gonzalez', 9);
+INSERT INTO `municipio` VALUES (338, '54313', 'Gramalote', 18);
+INSERT INTO `municipio` VALUES (339, '50313', 'Granada', 16);
+INSERT INTO `municipio` VALUES (340, '25312', 'Granada', 11);
+INSERT INTO `municipio` VALUES (341, '05313', 'Granada', 1);
+INSERT INTO `municipio` VALUES (342, '68318', 'Guaca', 21);
+INSERT INTO `municipio` VALUES (343, '76318', 'Guacari', 24);
+INSERT INTO `municipio` VALUES (344, '19300', 'Guachene', 8);
+INSERT INTO `municipio` VALUES (345, '25317', 'Guacheta', 11);
+INSERT INTO `municipio` VALUES (346, '52317', 'Guachucal', 17);
+INSERT INTO `municipio` VALUES (347, '76111', 'Guadalajara De Buga', 24);
+INSERT INTO `municipio` VALUES (348, '68320', 'Guadalupe', 21);
+INSERT INTO `municipio` VALUES (349, '05315', 'Guadalupe', 1);
+INSERT INTO `municipio` VALUES (350, '41319', 'Guadalupe', 13);
+INSERT INTO `municipio` VALUES (351, '25320', 'Guaduas', 11);
+INSERT INTO `municipio` VALUES (352, '52320', 'Guaitarilla', 17);
+INSERT INTO `municipio` VALUES (353, '52323', 'Gualmatan', 17);
+INSERT INTO `municipio` VALUES (354, '47318', 'Guamal', 15);
+INSERT INTO `municipio` VALUES (355, '50318', 'Guamal', 16);
+INSERT INTO `municipio` VALUES (356, '73319', 'Guamo', 23);
+INSERT INTO `municipio` VALUES (357, '68322', 'Guapota', 21);
+INSERT INTO `municipio` VALUES (358, '05318', 'Guarne', 1);
+INSERT INTO `municipio` VALUES (359, '25322', 'Guasca', 11);
+INSERT INTO `municipio` VALUES (360, '05321', 'Guatape', 1);
+INSERT INTO `municipio` VALUES (361, '25324', 'Guataqui', 11);
+INSERT INTO `municipio` VALUES (362, '25326', 'Guatavita', 11);
+INSERT INTO `municipio` VALUES (363, '15322', 'Guateque', 5);
+INSERT INTO `municipio` VALUES (364, '66318', 'Guatica', 20);
+INSERT INTO `municipio` VALUES (365, '68324', 'Guavata', 21);
+INSERT INTO `municipio` VALUES (366, '25328', 'Guayabal De Siquima', 11);
+INSERT INTO `municipio` VALUES (367, '25335', 'Guayabetal', 11);
+INSERT INTO `municipio` VALUES (368, '15325', 'Guayata', 5);
+INSERT INTO `municipio` VALUES (369, '68327', 'Güepsa', 21);
+INSERT INTO `municipio` VALUES (370, '25339', 'Gutierrez', 11);
+INSERT INTO `municipio` VALUES (371, '13300', 'Hatillo De Loba', 4);
+INSERT INTO `municipio` VALUES (372, '68344', 'Hato', 21);
+INSERT INTO `municipio` VALUES (373, '85125', 'Hato Corozal', 26);
+INSERT INTO `municipio` VALUES (374, '44378', 'Hatonuevo', 14);
+INSERT INTO `municipio` VALUES (375, '05347', 'Heliconia', 1);
+INSERT INTO `municipio` VALUES (376, '54347', 'Herran', 18);
+INSERT INTO `municipio` VALUES (377, '73347', 'Herveo', 23);
+INSERT INTO `municipio` VALUES (378, '05353', 'Hispania', 1);
+INSERT INTO `municipio` VALUES (379, '41349', 'Hobo', 13);
+INSERT INTO `municipio` VALUES (380, '73349', 'Honda', 23);
+INSERT INTO `municipio` VALUES (381, '73001', 'Ibague', 23);
+INSERT INTO `municipio` VALUES (382, '73352', 'Icononzo', 23);
+INSERT INTO `municipio` VALUES (383, '52352', 'Iles', 17);
+INSERT INTO `municipio` VALUES (384, '52354', 'Imues', 17);
+INSERT INTO `municipio` VALUES (385, '94001', 'Inirida', 30);
+INSERT INTO `municipio` VALUES (386, '19355', 'Inza', 8);
+INSERT INTO `municipio` VALUES (387, '52356', 'Ipiales', 17);
+INSERT INTO `municipio` VALUES (388, '41359', 'Isnos', 13);
+INSERT INTO `municipio` VALUES (389, '27361', 'Istmina', 12);
+INSERT INTO `municipio` VALUES (390, '05360', 'Itagui', 1);
+INSERT INTO `municipio` VALUES (391, '05361', 'Ituango', 1);
+INSERT INTO `municipio` VALUES (392, '15362', 'Iza', 5);
+INSERT INTO `municipio` VALUES (393, '76364', 'Jamundi', 24);
+INSERT INTO `municipio` VALUES (394, '05364', 'Jardin', 1);
+INSERT INTO `municipio` VALUES (395, '15367', 'Jenesano', 5);
+INSERT INTO `municipio` VALUES (396, '05368', 'Jerico', 1);
+INSERT INTO `municipio` VALUES (397, '25368', 'Jerusalen', 11);
+INSERT INTO `municipio` VALUES (398, '68368', 'Jesus Maria', 21);
+INSERT INTO `municipio` VALUES (399, '08372', 'Juan Acosta', 2);
+INSERT INTO `municipio` VALUES (400, '25372', 'Junin', 11);
+INSERT INTO `municipio` VALUES (401, '23350', 'La Apartada', 10);
+INSERT INTO `municipio` VALUES (402, '41378', 'La Argentina', 13);
+INSERT INTO `municipio` VALUES (403, '25377', 'La Calera', 11);
+INSERT INTO `municipio` VALUES (404, '15380', 'La Capilla', 5);
+INSERT INTO `municipio` VALUES (405, '05376', 'La Ceja', 1);
+INSERT INTO `municipio` VALUES (406, '66383', 'La Celia', 20);
+INSERT INTO `municipio` VALUES (407, '52378', 'La Cruz', 17);
+INSERT INTO `municipio` VALUES (408, '76377', 'La Cumbre', 24);
+INSERT INTO `municipio` VALUES (409, '17380', 'La Dorada', 6);
+INSERT INTO `municipio` VALUES (410, '54385', 'La Esperanza', 18);
+INSERT INTO `municipio` VALUES (411, '05380', 'La Estrella', 1);
+INSERT INTO `municipio` VALUES (412, '52381', 'La Florida', 17);
+INSERT INTO `municipio` VALUES (413, '20383', 'La Gloria', 9);
+INSERT INTO `municipio` VALUES (414, '20400', 'La Jagua De Ibirico', 9);
+INSERT INTO `municipio` VALUES (415, '44420', 'La Jagua Del Pilar', 14);
+INSERT INTO `municipio` VALUES (416, '52385', 'La Llanada', 17);
+INSERT INTO `municipio` VALUES (417, '50350', 'La Macarena', 16);
+INSERT INTO `municipio` VALUES (418, '17388', 'La Merced', 6);
+INSERT INTO `municipio` VALUES (419, '25386', 'La Mesa', 11);
+INSERT INTO `municipio` VALUES (420, '18410', 'La Montañita', 7);
+INSERT INTO `municipio` VALUES (421, '68397', 'La Paz', 21);
+INSERT INTO `municipio` VALUES (422, '20621', 'La Paz', 9);
+INSERT INTO `municipio` VALUES (423, '25398', 'La Peña', 11);
+INSERT INTO `municipio` VALUES (424, '05390', 'La Pintada', 1);
+INSERT INTO `municipio` VALUES (425, '41396', 'La Plata', 13);
+INSERT INTO `municipio` VALUES (426, '54398', 'La Playa', 18);
+INSERT INTO `municipio` VALUES (427, '85136', 'La Salina', 26);
+INSERT INTO `municipio` VALUES (428, '19392', 'La Sierra', 8);
+INSERT INTO `municipio` VALUES (429, '63401', 'La Tebaida', 19);
+INSERT INTO `municipio` VALUES (430, '76400', 'La Union', 24);
+INSERT INTO `municipio` VALUES (431, '05400', 'La Union', 1);
+INSERT INTO `municipio` VALUES (432, '52399', 'La Union', 17);
+INSERT INTO `municipio` VALUES (433, '25402', 'La Vega', 11);
+INSERT INTO `municipio` VALUES (434, '19397', 'La Vega', 8);
+INSERT INTO `municipio` VALUES (435, '76403', 'La Victoria', 24);
+INSERT INTO `municipio` VALUES (436, '66400', 'La Virginia', 20);
+INSERT INTO `municipio` VALUES (437, '54377', 'Labateca', 18);
+INSERT INTO `municipio` VALUES (438, '68385', 'Landazuri', 21);
+INSERT INTO `municipio` VALUES (439, '68406', 'Lebrija', 21);
+INSERT INTO `municipio` VALUES (440, '52405', 'Leiva', 17);
+INSERT INTO `municipio` VALUES (441, '50400', 'Lejanias', 16);
+INSERT INTO `municipio` VALUES (442, '25407', 'Lenguazaque', 11);
+INSERT INTO `municipio` VALUES (443, '73408', 'Lerida', 23);
+INSERT INTO `municipio` VALUES (444, '91001', 'Leticia', 29);
+INSERT INTO `municipio` VALUES (445, '73411', 'Libano', 23);
+INSERT INTO `municipio` VALUES (446, '23417', 'Lorica', 10);
+INSERT INTO `municipio` VALUES (447, '52418', 'Los Andes', 17);
+INSERT INTO `municipio` VALUES (448, '23419', 'Los Cordobas', 10);
+INSERT INTO `municipio` VALUES (449, '70418', 'Los Palmitos', 22);
+INSERT INTO `municipio` VALUES (450, '54405', 'Los Patios', 18);
+INSERT INTO `municipio` VALUES (451, '68418', 'Los Santos', 21);
+INSERT INTO `municipio` VALUES (452, '54418', 'Lourdes', 18);
+INSERT INTO `municipio` VALUES (453, '08421', 'Luruaco', 2);
+INSERT INTO `municipio` VALUES (454, '05425', 'Maceo', 1);
+INSERT INTO `municipio` VALUES (455, '25426', 'Macheta', 11);
+INSERT INTO `municipio` VALUES (456, '25430', 'Madrid', 11);
+INSERT INTO `municipio` VALUES (457, '13430', 'Magangue', 4);
+INSERT INTO `municipio` VALUES (458, '13433', 'Mahates', 4);
+INSERT INTO `municipio` VALUES (459, '44430', 'Maicao', 14);
+INSERT INTO `municipio` VALUES (460, '70429', 'Majagual', 22);
+INSERT INTO `municipio` VALUES (461, '68432', 'Malaga', 21);
+INSERT INTO `municipio` VALUES (462, '08433', 'Malambo', 2);
+INSERT INTO `municipio` VALUES (463, '52435', 'Mallama', 17);
+INSERT INTO `municipio` VALUES (464, '08436', 'Manati', 2);
+INSERT INTO `municipio` VALUES (465, '44560', 'Manaure', 14);
+INSERT INTO `municipio` VALUES (466, '20443', 'Manaure', 9);
+INSERT INTO `municipio` VALUES (467, '85139', 'Mani', 26);
+INSERT INTO `municipio` VALUES (468, '17001', 'Manizales', 6);
+INSERT INTO `municipio` VALUES (469, '25436', 'Manta', 11);
+INSERT INTO `municipio` VALUES (470, '17433', 'Manzanares', 6);
+INSERT INTO `municipio` VALUES (471, '50325', 'Mapiripan', 16);
+INSERT INTO `municipio` VALUES (472, '13442', 'Maria La Baja', 4);
+INSERT INTO `municipio` VALUES (473, '05440', 'Marinilla', 1);
+INSERT INTO `municipio` VALUES (474, '15442', 'Maripi', 5);
+INSERT INTO `municipio` VALUES (475, '17442', 'Marmato', 6);
+INSERT INTO `municipio` VALUES (476, '66440', 'Marsella', 20);
+INSERT INTO `municipio` VALUES (477, '68444', 'Matanza', 21);
+INSERT INTO `municipio` VALUES (478, '05001', 'Medellin', 1);
+INSERT INTO `municipio` VALUES (479, '25438', 'Medina', 11);
+INSERT INTO `municipio` VALUES (480, '27450', 'Medio San Juan', 12);
+INSERT INTO `municipio` VALUES (481, '73449', 'Melgar', 23);
+INSERT INTO `municipio` VALUES (482, '19450', 'Mercaderes', 8);
+INSERT INTO `municipio` VALUES (483, '50330', 'Mesetas', 16);
+INSERT INTO `municipio` VALUES (484, '19455', 'Miranda', 8);
+INSERT INTO `municipio` VALUES (485, '66456', 'Mistrato', 20);
+INSERT INTO `municipio` VALUES (486, '86001', 'Mocoa', 27);
+INSERT INTO `municipio` VALUES (487, '68464', 'Mogotes', 21);
+INSERT INTO `municipio` VALUES (488, '68468', 'Molagavita', 21);
+INSERT INTO `municipio` VALUES (489, '23464', 'Momil', 10);
+INSERT INTO `municipio` VALUES (490, '13468', 'Mompos', 4);
+INSERT INTO `municipio` VALUES (491, '15464', 'Mongua', 5);
+INSERT INTO `municipio` VALUES (492, '15466', 'Mongui', 5);
+INSERT INTO `municipio` VALUES (493, '15469', 'Moniquira', 5);
+INSERT INTO `municipio` VALUES (494, '05467', 'Montebello', 1);
+INSERT INTO `municipio` VALUES (495, '23466', 'Montelibano', 10);
+INSERT INTO `municipio` VALUES (496, '63470', 'Montenegro', 19);
+INSERT INTO `municipio` VALUES (497, '23001', 'Monteria', 10);
+INSERT INTO `municipio` VALUES (498, '85162', 'Monterrey', 26);
+INSERT INTO `municipio` VALUES (499, '23500', 'Moñitos', 10);
+INSERT INTO `municipio` VALUES (500, '19473', 'Morales', 8);
+INSERT INTO `municipio` VALUES (501, '13473', 'Morales', 4);
+INSERT INTO `municipio` VALUES (502, '18479', 'Morelia', 7);
+INSERT INTO `municipio` VALUES (503, '70473', 'Morroa', 22);
+INSERT INTO `municipio` VALUES (504, '25473', 'Mosquera', 11);
+INSERT INTO `municipio` VALUES (505, '15476', 'Motavita', 5);
+INSERT INTO `municipio` VALUES (506, '73461', 'Murillo', 23);
+INSERT INTO `municipio` VALUES (507, '05480', 'Mutata', 1);
+INSERT INTO `municipio` VALUES (508, '54480', 'Mutiscua', 18);
+INSERT INTO `municipio` VALUES (509, '15480', 'Muzo', 5);
+INSERT INTO `municipio` VALUES (510, '05483', 'Narino', 1);
+INSERT INTO `municipio` VALUES (511, '25483', 'Nariño', 11);
+INSERT INTO `municipio` VALUES (512, '52480', 'Nariño', 17);
+INSERT INTO `municipio` VALUES (513, '41483', 'Nataga', 13);
+INSERT INTO `municipio` VALUES (514, '73483', 'Natagaima', 23);
+INSERT INTO `municipio` VALUES (515, '05495', 'Nechi', 1);
+INSERT INTO `municipio` VALUES (516, '05490', 'Necocli', 1);
+INSERT INTO `municipio` VALUES (517, '17486', 'Neira', 6);
+INSERT INTO `municipio` VALUES (518, '41001', 'Neiva', 13);
+INSERT INTO `municipio` VALUES (519, '25486', 'Nemocon', 11);
+INSERT INTO `municipio` VALUES (520, '25488', 'Nilo', 11);
+INSERT INTO `municipio` VALUES (521, '25489', 'Nimaima', 11);
+INSERT INTO `municipio` VALUES (522, '15491', 'Nobsa', 5);
+INSERT INTO `municipio` VALUES (523, '25491', 'Nocaima', 11);
+INSERT INTO `municipio` VALUES (524, '17495', 'Norcasia', 6);
+INSERT INTO `municipio` VALUES (525, '27491', 'Novita', 12);
+INSERT INTO `municipio` VALUES (526, '47460', 'Nueva Granada', 15);
+INSERT INTO `municipio` VALUES (527, '15494', 'Nuevo Colon', 5);
+INSERT INTO `municipio` VALUES (528, '85225', 'Nunchia', 26);
+INSERT INTO `municipio` VALUES (529, '76497', 'Obando', 24);
+INSERT INTO `municipio` VALUES (530, '68498', 'Ocamonte', 21);
+INSERT INTO `municipio` VALUES (531, '54498', 'Ocaña', 18);
+INSERT INTO `municipio` VALUES (532, '68500', 'Oiba', 21);
+INSERT INTO `municipio` VALUES (533, '15500', 'Oicata', 5);
+INSERT INTO `municipio` VALUES (534, '05501', 'Olaya', 1);
+INSERT INTO `municipio` VALUES (535, '41503', 'Oporapa', 13);
+INSERT INTO `municipio` VALUES (536, '86320', 'Orito', 27);
+INSERT INTO `municipio` VALUES (537, '85230', 'Orocue', 26);
+INSERT INTO `municipio` VALUES (538, '73504', 'Ortega', 23);
+INSERT INTO `municipio` VALUES (539, '52506', 'Ospina', 17);
+INSERT INTO `municipio` VALUES (540, '70508', 'Ovejas', 22);
+INSERT INTO `municipio` VALUES (541, '15511', 'Pachavita', 5);
+INSERT INTO `municipio` VALUES (542, '25513', 'Pacho', 11);
+INSERT INTO `municipio` VALUES (543, '17513', 'Pacora', 6);
+INSERT INTO `municipio` VALUES (544, '19513', 'Padilla', 8);
+INSERT INTO `municipio` VALUES (545, '15514', 'Paez', 5);
+INSERT INTO `municipio` VALUES (546, '19517', 'Paez', 8);
+INSERT INTO `municipio` VALUES (547, '41518', 'Paicol', 13);
+INSERT INTO `municipio` VALUES (548, '20517', 'Pailitas', 9);
+INSERT INTO `municipio` VALUES (549, '25518', 'Paime', 11);
+INSERT INTO `municipio` VALUES (550, '15516', 'Paipa', 5);
+INSERT INTO `municipio` VALUES (551, '15518', 'Pajarito', 5);
+INSERT INTO `municipio` VALUES (552, '41524', 'Palermo', 13);
+INSERT INTO `municipio` VALUES (553, '17524', 'Palestina', 6);
+INSERT INTO `municipio` VALUES (554, '41530', 'Palestina', 13);
+INSERT INTO `municipio` VALUES (555, '08520', 'Palmar Varela', 2);
+INSERT INTO `municipio` VALUES (556, '68524', 'Palmas Del Socorro', 21);
+INSERT INTO `municipio` VALUES (557, '76520', 'Palmira', 24);
+INSERT INTO `municipio` VALUES (558, '70523', 'Palmito', 22);
+INSERT INTO `municipio` VALUES (559, '73520', 'Palocabildo', 23);
+INSERT INTO `municipio` VALUES (560, '54518', 'Pamplona', 18);
+INSERT INTO `municipio` VALUES (561, '54520', 'Pamplonita', 18);
+INSERT INTO `municipio` VALUES (562, '25524', 'Pandi', 11);
+INSERT INTO `municipio` VALUES (563, '68533', 'Paramo', 21);
+INSERT INTO `municipio` VALUES (564, '25530', 'Paratebueno', 11);
+INSERT INTO `municipio` VALUES (565, '25535', 'Pasca', 11);
+INSERT INTO `municipio` VALUES (566, '52001', 'Pasto', 17);
+INSERT INTO `municipio` VALUES (567, '19532', 'Patia', 8);
+INSERT INTO `municipio` VALUES (568, '15531', 'Pauna', 5);
+INSERT INTO `municipio` VALUES (569, '85250', 'Paz De Ariporo', 26);
+INSERT INTO `municipio` VALUES (570, '15537', 'Paz De Rio', 5);
+INSERT INTO `municipio` VALUES (571, '20550', 'Pelaya', 9);
+INSERT INTO `municipio` VALUES (572, '05541', 'Penol', 1);
+INSERT INTO `municipio` VALUES (573, '17541', 'Pensilvania', 6);
+INSERT INTO `municipio` VALUES (574, '05543', 'Peque', 1);
+INSERT INTO `municipio` VALUES (575, '66001', 'Pereira', 20);
+INSERT INTO `municipio` VALUES (576, '15542', 'Pesca', 5);
+INSERT INTO `municipio` VALUES (577, '19533', 'Piamonte', 8);
+INSERT INTO `municipio` VALUES (578, '68547', 'Piedecuesta', 21);
+INSERT INTO `municipio` VALUES (579, '73547', 'Piedras', 23);
+INSERT INTO `municipio` VALUES (580, '19548', 'Piendamo', 8);
+INSERT INTO `municipio` VALUES (581, '63548', 'Pijao', 19);
+INSERT INTO `municipio` VALUES (582, '47545', 'Pijiño Del Carmen', 15);
+INSERT INTO `municipio` VALUES (583, '68549', 'Pinchote', 21);
+INSERT INTO `municipio` VALUES (584, '08549', 'Piojo', 2);
+INSERT INTO `municipio` VALUES (585, '41548', 'Pital', 13);
+INSERT INTO `municipio` VALUES (586, '41551', 'Pitalito', 13);
+INSERT INTO `municipio` VALUES (587, '47551', 'Pivijay', 15);
+INSERT INTO `municipio` VALUES (588, '73555', 'Planadas', 23);
+INSERT INTO `municipio` VALUES (589, '23555', 'Planeta Rica', 10);
+INSERT INTO `municipio` VALUES (590, '47555', 'Plato', 15);
+INSERT INTO `municipio` VALUES (591, '52540', 'Policarpa', 17);
+INSERT INTO `municipio` VALUES (592, '08558', 'Polonuevo', 2);
+INSERT INTO `municipio` VALUES (593, '08560', 'Ponedera', 2);
+INSERT INTO `municipio` VALUES (594, '19001', 'Popayan', 8);
+INSERT INTO `municipio` VALUES (595, '85263', 'Pore', 26);
+INSERT INTO `municipio` VALUES (596, '52560', 'Potosi', 17);
+INSERT INTO `municipio` VALUES (597, '76563', 'Pradera', 24);
+INSERT INTO `municipio` VALUES (598, '73563', 'Prado', 23);
+INSERT INTO `municipio` VALUES (599, '88564', 'Providencia', 28);
+INSERT INTO `municipio` VALUES (600, '20570', 'Pueblo Bello', 9);
+INSERT INTO `municipio` VALUES (601, '23570', 'Pueblo Nuevo', 10);
+INSERT INTO `municipio` VALUES (602, '66572', 'Pueblo Rico', 20);
+INSERT INTO `municipio` VALUES (603, '05576', 'Pueblorrico', 1);
+INSERT INTO `municipio` VALUES (604, '47570', 'Puebloviejo', 15);
+INSERT INTO `municipio` VALUES (605, '68572', 'Puente Nacional', 21);
+INSERT INTO `municipio` VALUES (606, '52573', 'Puerres', 17);
+INSERT INTO `municipio` VALUES (607, '86568', 'Puerto Asis', 27);
+INSERT INTO `municipio` VALUES (608, '05579', 'Puerto Berrio', 1);
+INSERT INTO `municipio` VALUES (609, '15572', 'Puerto Boyaca', 5);
+INSERT INTO `municipio` VALUES (610, '86569', 'Puerto Caicedo', 27);
+INSERT INTO `municipio` VALUES (611, '99001', 'Puerto Carreño', 33);
+INSERT INTO `municipio` VALUES (612, '08573', 'Puerto Colombia', 2);
+INSERT INTO `municipio` VALUES (613, '50450', 'Puerto Concordia', 16);
+INSERT INTO `municipio` VALUES (614, '23574', 'Puerto Escondido', 10);
+INSERT INTO `municipio` VALUES (615, '50568', 'Puerto Gaitan', 16);
+INSERT INTO `municipio` VALUES (616, '86573', 'Puerto Leguizamo', 27);
+INSERT INTO `municipio` VALUES (617, '23580', 'Puerto Libertador', 10);
+INSERT INTO `municipio` VALUES (618, '50577', 'Puerto Lleras', 16);
+INSERT INTO `municipio` VALUES (619, '50573', 'Puerto Lopez', 16);
+INSERT INTO `municipio` VALUES (620, '68573', 'Puerto Parra', 21);
+INSERT INTO `municipio` VALUES (621, '18592', 'Puerto Rico', 7);
+INSERT INTO `municipio` VALUES (622, '50590', 'Puerto Rico', 16);
+INSERT INTO `municipio` VALUES (623, '81591', 'Puerto Rondon', 25);
+INSERT INTO `municipio` VALUES (624, '25572', 'Puerto Salgar', 11);
+INSERT INTO `municipio` VALUES (625, '54553', 'Puerto Santander', 18);
+INSERT INTO `municipio` VALUES (626, '19573', 'Puerto Tejada', 8);
+INSERT INTO `municipio` VALUES (627, '05591', 'Puerto Triunfo', 1);
+INSERT INTO `municipio` VALUES (628, '68575', 'Puerto Wilches', 21);
+INSERT INTO `municipio` VALUES (629, '52585', 'Pupiales', 17);
+INSERT INTO `municipio` VALUES (630, '19585', 'Purace', 8);
+INSERT INTO `municipio` VALUES (631, '73585', 'Purificacion', 23);
+INSERT INTO `municipio` VALUES (632, '23586', 'Purisima', 10);
+INSERT INTO `municipio` VALUES (633, '25592', 'Quebradanegra', 11);
+INSERT INTO `municipio` VALUES (634, '25594', 'Quetame', 11);
+INSERT INTO `municipio` VALUES (635, '27001', 'Quibdo', 12);
+INSERT INTO `municipio` VALUES (636, '63594', 'Quimbaya', 19);
+INSERT INTO `municipio` VALUES (637, '66594', 'Quinchia', 20);
+INSERT INTO `municipio` VALUES (638, '15580', 'Quipama', 5);
+INSERT INTO `municipio` VALUES (639, '25596', 'Quipile', 11);
+INSERT INTO `municipio` VALUES (640, '54599', 'Ragonvalia', 18);
+INSERT INTO `municipio` VALUES (641, '15599', 'Ramiriqui', 5);
+INSERT INTO `municipio` VALUES (642, '15600', 'Raquira', 5);
+INSERT INTO `municipio` VALUES (643, '85279', 'Recetor', 26);
+INSERT INTO `municipio` VALUES (644, '13580', 'Regidor', 4);
+INSERT INTO `municipio` VALUES (645, '05604', 'Remedios', 1);
+INSERT INTO `municipio` VALUES (646, '08606', 'Repelon', 2);
+INSERT INTO `municipio` VALUES (647, '50606', 'Restrepo', 16);
+INSERT INTO `municipio` VALUES (648, '76606', 'Restrepo', 24);
+INSERT INTO `municipio` VALUES (649, '05607', 'Retiro', 1);
+INSERT INTO `municipio` VALUES (650, '25612', 'Ricaurte', 11);
+INSERT INTO `municipio` VALUES (651, '52612', 'Ricaurte', 17);
+INSERT INTO `municipio` VALUES (652, '20614', 'Rio De Oro', 9);
+INSERT INTO `municipio` VALUES (653, '13600', 'Rio Viejo', 4);
+INSERT INTO `municipio` VALUES (654, '73616', 'Rioblanco', 23);
+INSERT INTO `municipio` VALUES (655, '76616', 'Riofrio', 24);
+INSERT INTO `municipio` VALUES (656, '44001', 'Riohacha', 14);
+INSERT INTO `municipio` VALUES (657, '05615', 'Rionegro', 1);
+INSERT INTO `municipio` VALUES (658, '68615', 'Rionegro', 21);
+INSERT INTO `municipio` VALUES (659, '17614', 'Riosucio', 6);
+INSERT INTO `municipio` VALUES (660, '27615', 'Riosucio', 12);
+INSERT INTO `municipio` VALUES (661, '17616', 'Risaralda', 6);
+INSERT INTO `municipio` VALUES (662, '41615', 'Rivera', 13);
+INSERT INTO `municipio` VALUES (663, '76622', 'Roldanillo', 24);
+INSERT INTO `municipio` VALUES (664, '73622', 'Roncesvalles', 23);
+INSERT INTO `municipio` VALUES (665, '19622', 'Rosas', 8);
+INSERT INTO `municipio` VALUES (666, '73624', 'Rovira', 23);
+INSERT INTO `municipio` VALUES (667, '68655', 'Sabana De Torres', 21);
+INSERT INTO `municipio` VALUES (668, '08634', 'Sabanagrande', 2);
+INSERT INTO `municipio` VALUES (669, '08638', 'Sabanalarga', 2);
+INSERT INTO `municipio` VALUES (670, '85300', 'Sabanalarga', 26);
+INSERT INTO `municipio` VALUES (671, '05628', 'Sabanalarga', 1);
+INSERT INTO `municipio` VALUES (672, '47660', 'Sabanas De San Angel', 15);
+INSERT INTO `municipio` VALUES (673, '05631', 'Sabaneta', 1);
+INSERT INTO `municipio` VALUES (674, '15632', 'Saboya', 5);
+INSERT INTO `municipio` VALUES (675, '85315', 'Sacama', 26);
+INSERT INTO `municipio` VALUES (676, '15638', 'Sachica', 5);
+INSERT INTO `municipio` VALUES (677, '23660', 'Sahagun', 10);
+INSERT INTO `municipio` VALUES (678, '41660', 'Saladoblanco', 13);
+INSERT INTO `municipio` VALUES (679, '17653', 'Salamina', 6);
+INSERT INTO `municipio` VALUES (680, '47675', 'Salamina', 15);
+INSERT INTO `municipio` VALUES (681, '54660', 'Salazar', 18);
+INSERT INTO `municipio` VALUES (682, '73671', 'Saldaña', 23);
+INSERT INTO `municipio` VALUES (683, '63690', 'Salento', 19);
+INSERT INTO `municipio` VALUES (684, '05642', 'Salgar', 1);
+INSERT INTO `municipio` VALUES (685, '15646', 'Samaca', 5);
+INSERT INTO `municipio` VALUES (686, '17662', 'Samana', 6);
+INSERT INTO `municipio` VALUES (687, '52678', 'Samaniego', 17);
+INSERT INTO `municipio` VALUES (688, '70670', 'Sampues', 22);
+INSERT INTO `municipio` VALUES (689, '41668', 'San Agustin', 13);
+INSERT INTO `municipio` VALUES (690, '20710', 'San Alberto', 9);
+INSERT INTO `municipio` VALUES (691, '88001', 'San Andres', 28);
+INSERT INTO `municipio` VALUES (692, '05647', 'San Andres', 1);
+INSERT INTO `municipio` VALUES (693, '68669', 'San Andres', 21);
+INSERT INTO `municipio` VALUES (694, '23670', 'San Andres De Sotavento', 10);
+INSERT INTO `municipio` VALUES (695, '52835', 'San Andres De Tumaco', 17);
+INSERT INTO `municipio` VALUES (696, '23672', 'San Antero', 10);
+INSERT INTO `municipio` VALUES (697, '73675', 'San Antonio', 23);
+INSERT INTO `municipio` VALUES (698, '25645', 'San Antonio Del Tequendama', 11);
+INSERT INTO `municipio` VALUES (699, '70678', 'San Benito Abad', 22);
+INSERT INTO `municipio` VALUES (700, '25649', 'San Bernardo', 11);
+INSERT INTO `municipio` VALUES (701, '52685', 'San Bernardo', 17);
+INSERT INTO `municipio` VALUES (702, '23675', 'San Bernardo Del Viento', 10);
+INSERT INTO `municipio` VALUES (703, '05649', 'San Carlos', 1);
+INSERT INTO `municipio` VALUES (704, '23678', 'San Carlos', 10);
+INSERT INTO `municipio` VALUES (705, '50680', 'San Carlos De Guaroa', 16);
+INSERT INTO `municipio` VALUES (706, '54673', 'San Cayetano', 18);
+INSERT INTO `municipio` VALUES (707, '13620', 'San Cristobal', 4);
+INSERT INTO `municipio` VALUES (708, '20750', 'San Diego', 9);
+INSERT INTO `municipio` VALUES (709, '15660', 'San Eduardo', 5);
+INSERT INTO `municipio` VALUES (710, '13647', 'San Estanislao', 4);
+INSERT INTO `municipio` VALUES (711, '13650', 'San Fernando', 4);
+INSERT INTO `municipio` VALUES (712, '86755', 'San Francisco', 27);
+INSERT INTO `municipio` VALUES (713, '25658', 'San Francisco', 11);
+INSERT INTO `municipio` VALUES (714, '68679', 'San Gil', 21);
+INSERT INTO `municipio` VALUES (715, '13654', 'San Jacinto', 4);
+INSERT INTO `municipio` VALUES (716, '05656', 'San Jeronimo', 1);
+INSERT INTO `municipio` VALUES (717, '68682', 'San Joaquin', 21);
+INSERT INTO `municipio` VALUES (718, '17665', 'San Jose', 6);
+INSERT INTO `municipio` VALUES (719, '68684', 'San Jose De Miranda', 21);
+INSERT INTO `municipio` VALUES (720, '15664', 'San Jose De Pare', 5);
+INSERT INTO `municipio` VALUES (721, '18610', 'San Jose Del Fragua', 7);
+INSERT INTO `municipio` VALUES (722, '95001', 'San Jose Del Guaviare', 31);
+INSERT INTO `municipio` VALUES (723, '05658', 'San Jose La Montana', 1);
+INSERT INTO `municipio` VALUES (724, '50683', 'San Juan De Arama', 16);
+INSERT INTO `municipio` VALUES (725, '70702', 'San Juan De Betulia', 22);
+INSERT INTO `municipio` VALUES (726, '25662', 'San Juan De Rio Seco', 11);
+INSERT INTO `municipio` VALUES (727, '44650', 'San Juan Del Cesar', 14);
+INSERT INTO `municipio` VALUES (728, '13657', 'San Juan Nepomuceno', 4);
+INSERT INTO `municipio` VALUES (729, '05659', 'San Juan Uraba', 1);
+INSERT INTO `municipio` VALUES (730, '50686', 'San Juanito', 16);
+INSERT INTO `municipio` VALUES (731, '52687', 'San Lorenzo', 17);
+INSERT INTO `municipio` VALUES (732, '05660', 'San Luis', 1);
+INSERT INTO `municipio` VALUES (733, '73678', 'San Luis', 23);
+INSERT INTO `municipio` VALUES (734, '50223', 'San Luis De Cubarral', 16);
+INSERT INTO `municipio` VALUES (735, '15667', 'San Luis De Gaceno', 5);
+INSERT INTO `municipio` VALUES (736, '85325', 'San Luis De Palenque', 26);
+INSERT INTO `municipio` VALUES (737, '70742', 'San Luis De Since', 22);
+INSERT INTO `municipio` VALUES (738, '70708', 'San Marcos', 22);
+INSERT INTO `municipio` VALUES (739, '20770', 'San Martin', 9);
+INSERT INTO `municipio` VALUES (740, '50689', 'San Martin', 16);
+INSERT INTO `municipio` VALUES (741, '13667', 'San Martin De Loba', 4);
+INSERT INTO `municipio` VALUES (742, '68686', 'San Miguel', 21);
+INSERT INTO `municipio` VALUES (743, '86757', 'San Miguel', 27);
+INSERT INTO `municipio` VALUES (744, '15676', 'San Miguel De Sema', 5);
+INSERT INTO `municipio` VALUES (745, '70713', 'San Onofre', 22);
+INSERT INTO `municipio` VALUES (746, '13670', 'San Pablo', 4);
+INSERT INTO `municipio` VALUES (747, '52693', 'San Pablo', 17);
+INSERT INTO `municipio` VALUES (748, '15681', 'San Pablo De Borbur', 5);
+INSERT INTO `municipio` VALUES (749, '05664', 'San Pedro', 1);
+INSERT INTO `municipio` VALUES (750, '70717', 'San Pedro', 22);
+INSERT INTO `municipio` VALUES (751, '76670', 'San Pedro', 24);
+INSERT INTO `municipio` VALUES (752, '05665', 'San Pedro Uraba', 1);
+INSERT INTO `municipio` VALUES (753, '23686', 'San Pelayo', 10);
+INSERT INTO `municipio` VALUES (754, '05667', 'San Rafael', 1);
+INSERT INTO `municipio` VALUES (755, '05670', 'San Roque', 1);
+INSERT INTO `municipio` VALUES (756, '19693', 'San Sebastian', 8);
+INSERT INTO `municipio` VALUES (757, '47692', 'San Sebastian De Buenavista', 15);
+INSERT INTO `municipio` VALUES (758, '73443', 'San Sebastian De Mariquita', 23);
+INSERT INTO `municipio` VALUES (759, '05674', 'San Vicente', 1);
+INSERT INTO `municipio` VALUES (760, '68689', 'San Vicente De Chucuri', 21);
+INSERT INTO `municipio` VALUES (761, '18753', 'San Vicente Del Caguan', 7);
+INSERT INTO `municipio` VALUES (762, '52683', 'Sandona', 17);
+INSERT INTO `municipio` VALUES (763, '47707', 'Santa Ana', 15);
+INSERT INTO `municipio` VALUES (764, '05679', 'Santa Barbara', 1);
+INSERT INTO `municipio` VALUES (765, '68705', 'Santa Barbara', 21);
+INSERT INTO `municipio` VALUES (766, '47720', 'Santa Barbara De Pinto', 15);
+INSERT INTO `municipio` VALUES (767, '13673', 'Santa Catalina', 4);
+INSERT INTO `municipio` VALUES (768, '68720', 'Santa Helena Del Opon', 21);
+INSERT INTO `municipio` VALUES (769, '73686', 'Santa Isabel', 23);
+INSERT INTO `municipio` VALUES (770, '08675', 'Santa Lucia', 2);
+INSERT INTO `municipio` VALUES (771, '41676', 'Santa Maria', 13);
+INSERT INTO `municipio` VALUES (772, '15690', 'Santa Maria', 5);
+INSERT INTO `municipio` VALUES (773, '47001', 'Santa Marta', 15);
+INSERT INTO `municipio` VALUES (774, '13683', 'Santa Rosa', 4);
+INSERT INTO `municipio` VALUES (775, '19701', 'Santa Rosa', 8);
+INSERT INTO `municipio` VALUES (776, '66682', 'Santa Rosa De Cabal', 20);
+INSERT INTO `municipio` VALUES (777, '15693', 'Santa Rosa De Viterbo', 5);
+INSERT INTO `municipio` VALUES (778, '13688', 'Santa Rosa Del Sur', 4);
+INSERT INTO `municipio` VALUES (779, '05686', 'Santa Rosa Osos', 1);
+INSERT INTO `municipio` VALUES (780, '15696', 'Santa Sofia', 5);
+INSERT INTO `municipio` VALUES (781, '52699', 'Santacruz', 17);
+INSERT INTO `municipio` VALUES (782, '05042', 'Santafe Antioquia', 1);
+INSERT INTO `municipio` VALUES (783, '15686', 'Santana', 5);
+INSERT INTO `municipio` VALUES (784, '19698', 'Santander De Quilichao', 8);
+INSERT INTO `municipio` VALUES (785, '54680', 'Santiago', 18);
+INSERT INTO `municipio` VALUES (786, '86760', 'Santiago', 27);
+INSERT INTO `municipio` VALUES (787, '70820', 'Santiago De Tolu', 22);
+INSERT INTO `municipio` VALUES (788, '05690', 'Santo Domingo', 1);
+INSERT INTO `municipio` VALUES (789, '08685', 'Santo Tomas', 2);
+INSERT INTO `municipio` VALUES (790, '66687', 'Santuario', 20);
+INSERT INTO `municipio` VALUES (791, '52720', 'Sapuyes', 17);
+INSERT INTO `municipio` VALUES (792, '81736', 'Saravena', 25);
+INSERT INTO `municipio` VALUES (793, '54720', 'Sardinata', 18);
+INSERT INTO `municipio` VALUES (794, '25718', 'Sasaima', 11);
+INSERT INTO `municipio` VALUES (795, '15720', 'Sativanorte', 5);
+INSERT INTO `municipio` VALUES (796, '05736', 'Segovia', 1);
+INSERT INTO `municipio` VALUES (797, '25736', 'Sesquile', 11);
+INSERT INTO `municipio` VALUES (798, '76736', 'Sevilla', 24);
+INSERT INTO `municipio` VALUES (799, '15740', 'Siachoque', 5);
+INSERT INTO `municipio` VALUES (800, '25740', 'Sibate', 11);
+INSERT INTO `municipio` VALUES (801, '86749', 'Sibundoy', 27);
+INSERT INTO `municipio` VALUES (802, '54743', 'Silos', 18);
+INSERT INTO `municipio` VALUES (803, '25743', 'Silvania', 11);
+INSERT INTO `municipio` VALUES (804, '19743', 'Silvia', 8);
+INSERT INTO `municipio` VALUES (805, '68745', 'Simacota', 21);
+INSERT INTO `municipio` VALUES (806, '25745', 'Simijaca', 11);
+INSERT INTO `municipio` VALUES (807, '13744', 'Simiti', 4);
+INSERT INTO `municipio` VALUES (808, '70001', 'Sincelejo', 22);
+INSERT INTO `municipio` VALUES (809, '47745', 'Sitionuevo', 15);
+INSERT INTO `municipio` VALUES (810, '25754', 'Soacha', 11);
+INSERT INTO `municipio` VALUES (811, '15753', 'Soata', 5);
+INSERT INTO `municipio` VALUES (812, '15757', 'Socha', 5);
+INSERT INTO `municipio` VALUES (813, '68755', 'Socorro', 21);
+INSERT INTO `municipio` VALUES (814, '15755', 'Socota', 5);
+INSERT INTO `municipio` VALUES (815, '15759', 'Sogamoso', 5);
+INSERT INTO `municipio` VALUES (816, '08758', 'Soledad', 2);
+INSERT INTO `municipio` VALUES (817, '18785', 'Solita', 7);
+INSERT INTO `municipio` VALUES (818, '15761', 'Somondoco', 5);
+INSERT INTO `municipio` VALUES (819, '05756', 'Sonson', 1);
+INSERT INTO `municipio` VALUES (820, '05761', 'Sopetran', 1);
+INSERT INTO `municipio` VALUES (821, '13760', 'Soplaviento', 4);
+INSERT INTO `municipio` VALUES (822, '25758', 'Sopo', 11);
+INSERT INTO `municipio` VALUES (823, '15762', 'Sora', 5);
+INSERT INTO `municipio` VALUES (824, '15764', 'Soraca', 5);
+INSERT INTO `municipio` VALUES (825, '15763', 'Sotaquira', 5);
+INSERT INTO `municipio` VALUES (826, '19760', 'Sotara', 8);
+INSERT INTO `municipio` VALUES (827, '68770', 'Suaita', 21);
+INSERT INTO `municipio` VALUES (828, '08770', 'Suan', 2);
+INSERT INTO `municipio` VALUES (829, '19780', 'Suarez', 8);
+INSERT INTO `municipio` VALUES (830, '73770', 'Suarez', 23);
+INSERT INTO `municipio` VALUES (831, '41770', 'Suaza', 13);
+INSERT INTO `municipio` VALUES (832, '25769', 'Subachoque', 11);
+INSERT INTO `municipio` VALUES (833, '70771', 'Sucre', 22);
+INSERT INTO `municipio` VALUES (834, '25772', 'Suesca', 11);
+INSERT INTO `municipio` VALUES (835, '25777', 'Supata', 11);
+INSERT INTO `municipio` VALUES (836, '17777', 'Supia', 6);
+INSERT INTO `municipio` VALUES (837, '25779', 'Susa', 11);
+INSERT INTO `municipio` VALUES (838, '15774', 'Susacon', 5);
+INSERT INTO `municipio` VALUES (839, '15776', 'Sutamarchan', 5);
+INSERT INTO `municipio` VALUES (840, '25781', 'Sutatausa', 11);
+INSERT INTO `municipio` VALUES (841, '15778', 'Sutatenza', 5);
+INSERT INTO `municipio` VALUES (842, '25785', 'Tabio', 11);
+INSERT INTO `municipio` VALUES (843, '27787', 'Tado', 12);
+INSERT INTO `municipio` VALUES (844, '13780', 'Talaigua Nuevo', 4);
+INSERT INTO `municipio` VALUES (845, '81794', 'Tame', 25);
+INSERT INTO `municipio` VALUES (846, '05789', 'Tamesis', 1);
+INSERT INTO `municipio` VALUES (847, '52786', 'Taminango', 17);
+INSERT INTO `municipio` VALUES (848, '52788', 'Tangua', 17);
+INSERT INTO `municipio` VALUES (849, '05790', 'Taraza', 1);
+INSERT INTO `municipio` VALUES (850, '41791', 'Tarqui', 13);
+INSERT INTO `municipio` VALUES (851, '05792', 'Tarso', 1);
+INSERT INTO `municipio` VALUES (852, '15790', 'Tasco', 5);
+INSERT INTO `municipio` VALUES (853, '85410', 'Tauramena', 26);
+INSERT INTO `municipio` VALUES (854, '25793', 'Tausa', 11);
+INSERT INTO `municipio` VALUES (855, '41799', 'Tello', 13);
+INSERT INTO `municipio` VALUES (856, '25797', 'Tena', 11);
+INSERT INTO `municipio` VALUES (857, '47798', 'Tenerife', 15);
+INSERT INTO `municipio` VALUES (858, '25799', 'Tenjo', 11);
+INSERT INTO `municipio` VALUES (859, '15798', 'Tenza', 5);
+INSERT INTO `municipio` VALUES (860, '54800', 'Teorama', 18);
+INSERT INTO `municipio` VALUES (861, '41801', 'Teruel', 13);
+INSERT INTO `municipio` VALUES (862, '41797', 'Tesalia', 13);
+INSERT INTO `municipio` VALUES (863, '25805', 'Tibacuy', 11);
+INSERT INTO `municipio` VALUES (864, '15804', 'Tibana', 5);
+INSERT INTO `municipio` VALUES (865, '15806', 'Tibasosa', 5);
+INSERT INTO `municipio` VALUES (866, '25807', 'Tibirita', 11);
+INSERT INTO `municipio` VALUES (867, '54810', 'Tibu', 18);
+INSERT INTO `municipio` VALUES (868, '23807', 'Tierralta', 10);
+INSERT INTO `municipio` VALUES (869, '41807', 'Timana', 13);
+INSERT INTO `municipio` VALUES (870, '19807', 'Timbio', 8);
+INSERT INTO `municipio` VALUES (871, '19809', 'Timbiqui', 8);
+INSERT INTO `municipio` VALUES (872, '15808', 'Tinjaca', 5);
+INSERT INTO `municipio` VALUES (873, '15810', 'Tipacoque', 5);
+INSERT INTO `municipio` VALUES (874, '05809', 'Titiribi', 1);
+INSERT INTO `municipio` VALUES (875, '15814', 'Toca', 5);
+INSERT INTO `municipio` VALUES (876, '25815', 'Tocaima', 11);
+INSERT INTO `municipio` VALUES (877, '25817', 'Tocancipa', 11);
+INSERT INTO `municipio` VALUES (878, '54820', 'Toledo', 18);
+INSERT INTO `municipio` VALUES (879, '05819', 'Toledo', 1);
+INSERT INTO `municipio` VALUES (880, '70823', 'Tolu Viejo', 22);
+INSERT INTO `municipio` VALUES (881, '68820', 'Tona', 21);
+INSERT INTO `municipio` VALUES (882, '15820', 'Topaga', 5);
+INSERT INTO `municipio` VALUES (883, '25823', 'Topaipi', 11);
+INSERT INTO `municipio` VALUES (884, '76823', 'Toro', 24);
+INSERT INTO `municipio` VALUES (885, '15822', 'Tota', 5);
+INSERT INTO `municipio` VALUES (886, '19824', 'Totoro', 8);
+INSERT INTO `municipio` VALUES (887, '85430', 'Trinidad', 26);
+INSERT INTO `municipio` VALUES (888, '76828', 'Trujillo', 24);
+INSERT INTO `municipio` VALUES (889, '08832', 'Tubara', 2);
+INSERT INTO `municipio` VALUES (890, '23815', 'Tuchin', 10);
+INSERT INTO `municipio` VALUES (891, '76834', 'Tulua', 24);
+INSERT INTO `municipio` VALUES (892, '15001', 'Tunja', 5);
+INSERT INTO `municipio` VALUES (893, '52838', 'Tuquerres', 17);
+INSERT INTO `municipio` VALUES (894, '13836', 'Turbaco', 4);
+INSERT INTO `municipio` VALUES (895, '13838', 'Turbana', 4);
+INSERT INTO `municipio` VALUES (896, '05837', 'Turbo', 1);
+INSERT INTO `municipio` VALUES (897, '15835', 'Turmeque', 5);
+INSERT INTO `municipio` VALUES (898, '15837', 'Tuta', 5);
+INSERT INTO `municipio` VALUES (899, '15839', 'Tutaza', 5);
+INSERT INTO `municipio` VALUES (900, '25839', 'Ubala', 11);
+INSERT INTO `municipio` VALUES (901, '25841', 'Ubaque', 11);
+INSERT INTO `municipio` VALUES (902, '76845', 'Ulloa', 24);
+INSERT INTO `municipio` VALUES (903, '15842', 'Umbita', 5);
+INSERT INTO `municipio` VALUES (904, '25845', 'Une', 11);
+INSERT INTO `municipio` VALUES (905, '27810', 'Union Panamericana', 12);
+INSERT INTO `municipio` VALUES (906, '05842', 'Uramita', 1);
+INSERT INTO `municipio` VALUES (907, '50370', 'Uribe', 16);
+INSERT INTO `municipio` VALUES (908, '44847', 'Uribia', 14);
+INSERT INTO `municipio` VALUES (909, '05847', 'Urrao', 1);
+INSERT INTO `municipio` VALUES (910, '44855', 'Urumita', 14);
+INSERT INTO `municipio` VALUES (911, '08849', 'Usiacuri', 2);
+INSERT INTO `municipio` VALUES (912, '25851', 'Utica', 11);
+INSERT INTO `municipio` VALUES (913, '05854', 'Valdivia', 1);
+INSERT INTO `municipio` VALUES (914, '23855', 'Valencia', 10);
+INSERT INTO `municipio` VALUES (915, '68855', 'Valle De San Jose', 21);
+INSERT INTO `municipio` VALUES (916, '73854', 'Valle De San Juan', 23);
+INSERT INTO `municipio` VALUES (917, '86865', 'Valle Del Guamuez', 27);
+INSERT INTO `municipio` VALUES (918, '20001', 'Valledupar', 9);
+INSERT INTO `municipio` VALUES (919, '05856', 'Valparaiso', 1);
+INSERT INTO `municipio` VALUES (920, '18860', 'Valparaiso', 7);
+INSERT INTO `municipio` VALUES (921, '05858', 'Vegachi', 1);
+INSERT INTO `municipio` VALUES (922, '68861', 'Velez', 21);
+INSERT INTO `municipio` VALUES (923, '73861', 'Venadillo', 23);
+INSERT INTO `municipio` VALUES (924, '25506', 'Venecia', 11);
+INSERT INTO `municipio` VALUES (925, '05861', 'Venecia', 1);
+INSERT INTO `municipio` VALUES (926, '15861', 'Ventaquemada', 5);
+INSERT INTO `municipio` VALUES (927, '25862', 'Vergara', 11);
+INSERT INTO `municipio` VALUES (928, '76863', 'Versalles', 24);
+INSERT INTO `municipio` VALUES (929, '25867', 'Viani', 11);
+INSERT INTO `municipio` VALUES (930, '17867', 'Victoria', 6);
+INSERT INTO `municipio` VALUES (931, '76869', 'Vijes', 24);
+INSERT INTO `municipio` VALUES (932, '54871', 'Villa Caro', 18);
+INSERT INTO `municipio` VALUES (933, '15407', 'Villa De Leyva', 5);
+INSERT INTO `municipio` VALUES (934, '25843', 'Villa De San Diego De Ubate', 11);
+INSERT INTO `municipio` VALUES (935, '54874', 'Villa Del Rosario', 18);
+INSERT INTO `municipio` VALUES (936, '19845', 'Villa Rica', 8);
+INSERT INTO `municipio` VALUES (937, '86885', 'Villagarzon', 27);
+INSERT INTO `municipio` VALUES (938, '25871', 'Villagomez', 11);
+INSERT INTO `municipio` VALUES (939, '73870', 'Villahermosa', 23);
+INSERT INTO `municipio` VALUES (940, '17873', 'Villamaria', 6);
+INSERT INTO `municipio` VALUES (941, '85440', 'Villanueva', 26);
+INSERT INTO `municipio` VALUES (942, '44874', 'Villanueva', 14);
+INSERT INTO `municipio` VALUES (943, '68872', 'Villanueva', 21);
+INSERT INTO `municipio` VALUES (944, '13873', 'Villanueva', 4);
+INSERT INTO `municipio` VALUES (945, '25873', 'Villapinzon', 11);
+INSERT INTO `municipio` VALUES (946, '50001', 'Villavicencio', 16);
+INSERT INTO `municipio` VALUES (947, '41872', 'Villavieja', 13);
+INSERT INTO `municipio` VALUES (948, '25875', 'Villeta', 11);
+INSERT INTO `municipio` VALUES (949, '25878', 'Viota', 11);
+INSERT INTO `municipio` VALUES (950, '15879', 'Viracacha', 5);
+INSERT INTO `municipio` VALUES (951, '50711', 'Vistahermosa', 16);
+INSERT INTO `municipio` VALUES (952, '17877', 'Viterbo', 6);
+INSERT INTO `municipio` VALUES (953, '25885', 'Yacopi', 11);
+INSERT INTO `municipio` VALUES (954, '52885', 'Yacuanquer', 17);
+INSERT INTO `municipio` VALUES (955, '41885', 'Yaguara', 13);
+INSERT INTO `municipio` VALUES (956, '05885', 'Yali', 1);
+INSERT INTO `municipio` VALUES (957, '05887', 'Yarumal', 1);
+INSERT INTO `municipio` VALUES (958, '05890', 'Yolombo', 1);
+INSERT INTO `municipio` VALUES (959, '05893', 'Yondo', 1);
+INSERT INTO `municipio` VALUES (960, '85001', 'Yopal', 26);
+INSERT INTO `municipio` VALUES (961, '76890', 'Yotoco', 24);
+INSERT INTO `municipio` VALUES (962, '76892', 'Yumbo', 24);
+INSERT INTO `municipio` VALUES (963, '13894', 'Zambrano', 4);
+INSERT INTO `municipio` VALUES (964, '68895', 'Zapatoca', 21);
+INSERT INTO `municipio` VALUES (965, '05895', 'Zaragoza', 1);
+INSERT INTO `municipio` VALUES (966, '76895', 'Zarzal', 24);
+INSERT INTO `municipio` VALUES (967, '25898', 'Zipacon', 11);
+INSERT INTO `municipio` VALUES (968, '25899', 'Zipaquira', 11);
+INSERT INTO `municipio` VALUES (969, '47980', 'Zona Bananera', 15);
+COMMIT;
 
 
 -- ----------------------------
@@ -1061,63 +1071,1108 @@ INSERT INTO `tipo_vehiculo` VALUES (25, 'Tractocamión');
 INSERT INTO `tipo_vehiculo` VALUES (26, 'Volqueta');
 COMMIT;
 
-INSERT INTO `objeto_colision` (`id`, `nombre`) VALUES
-(1, 'Motocicleta'),
-(2, 'Automovil'),
-(3, 'Sin Informacion'),
-(4, 'Objeto Fijo'),
-(5, 'Camioneta'),
-(6, 'Tractocamion'),
-(7, 'Traccion Humana'),
-(8, 'Animal En Via'),
-(9, 'Buseta'),
-(10, 'Camion'),
-(11, 'Volqueta'),
-(12, 'Bus'),
-(13, 'Motocarro'),
-(14, 'Campero'),
-(15, 'Microbus'),
-(16, 'Bicicleta'),
-(17, 'Maquinaria Industrial'),
-(18, 'Mototriciclo'),
-(19, 'Vehiculos Acuaticos Con Motor'),
-(20, 'Maquinaria Agricola'),
-(21, 'Camion - Furgon'),
-(22, 'Aeronaves Sin Motor'),
-(23, 'Avion, Avioneta'),
-(24, 'Traccion Animal'),
-(25, 'Tren'),
-(26, 'Tracto - Camion'),
-(27, 'Articulado'),
-(28, 'Vehiculos Acuaticos Sin Motor'),
-(29, 'Otro'),
-(30, 'No Aplica'),
-(31, 'Vehiculo Acuatico Con Motor');
+-- ----------------------------
+-- Records of objeto_colision
+-- ----------------------------
+BEGIN;
+INSERT INTO `objeto_colision` VALUES (1, 'Motocicleta');
+INSERT INTO `objeto_colision` VALUES (2, 'Automovil');
+INSERT INTO `objeto_colision` VALUES (3, 'Sin Informacion');
+INSERT INTO `objeto_colision` VALUES (4, 'Objeto Fijo');
+INSERT INTO `objeto_colision` VALUES (5, 'Camioneta');
+INSERT INTO `objeto_colision` VALUES (6, 'Tractocamion');
+INSERT INTO `objeto_colision` VALUES (7, 'Traccion Humana');
+INSERT INTO `objeto_colision` VALUES (8, 'Animal En Via');
+INSERT INTO `objeto_colision` VALUES (9, 'Buseta');
+INSERT INTO `objeto_colision` VALUES (10, 'Camion');
+INSERT INTO `objeto_colision` VALUES (11, 'Volqueta');
+INSERT INTO `objeto_colision` VALUES (12, 'Bus');
+INSERT INTO `objeto_colision` VALUES (13, 'Motocarro');
+INSERT INTO `objeto_colision` VALUES (14, 'Campero');
+INSERT INTO `objeto_colision` VALUES (15, 'Microbus');
+INSERT INTO `objeto_colision` VALUES (16, 'Bicicleta');
+INSERT INTO `objeto_colision` VALUES (17, 'Maquinaria Industrial');
+INSERT INTO `objeto_colision` VALUES (18, 'Mototriciclo');
+INSERT INTO `objeto_colision` VALUES (19, 'Vehiculos Acuaticos Con Motor');
+INSERT INTO `objeto_colision` VALUES (20, 'Maquinaria Agricola');
+INSERT INTO `objeto_colision` VALUES (21, 'Camion - Furgon');
+INSERT INTO `objeto_colision` VALUES (22, 'Aeronaves Sin Motor');
+INSERT INTO `objeto_colision` VALUES (23, 'Avion, Avioneta');
+INSERT INTO `objeto_colision` VALUES (24, 'Traccion Animal');
+INSERT INTO `objeto_colision` VALUES (25, 'Tren');
+INSERT INTO `objeto_colision` VALUES (26, 'Tracto - Camion');
+INSERT INTO `objeto_colision` VALUES (27, 'Articulado');
+INSERT INTO `objeto_colision` VALUES (28, 'Vehiculos Acuaticos Sin Motor');
+INSERT INTO `objeto_colision` VALUES (29, 'Otro');
+INSERT INTO `objeto_colision` VALUES (30, 'No Aplica');
+INSERT INTO `objeto_colision` VALUES (31, 'Vehiculo Acuatico Con Motor');
+COMMIT;
 
-INSERT INTO `vehiculo` (`id`, `name`, `id_tipo_de_vehiculo`) VALUES
-(1, 'Motocicleta', 1),
-(2, 'Bicicleta', 2),
-(3, 'Automovil', 3),
-(4, 'Peaton', 4),
-(5, 'Motocarro', 5),
-(6, 'Camioneta', 3),
-(7, 'Buseta', 6),
-(8, 'Bus', 6),
-(9, 'Microbus', 6),
-(10, 'Sin Informacion', 7),
-(11, 'Cuatrimoto', 5),
-(12, 'Tractocamion', 8),
-(13, 'Traccion Humana', 9),
-(14, 'Campero', 3),
-(15, 'Volqueta', 8),
-(16, 'Camion', 8),
-(17, 'Traccion Animal', 9),
-(18, 'Motociclo', 5),
-(19, 'Mototriciclo', 5),
-(20, 'Semi Remolque', 8),
-(21, 'Maquinaria Industrial', 10),
-(22, 'Segway', 9),
-(23, 'Remolque', 8),
-(24, 'Maquinaria Agricola', 11),
-(25, 'No Aplica', 7),
-(26, 'Carro De Golf', 9);
+-- ----------------------------
+-- Records of tipo_vehiculo
+-- ----------------------------
+BEGIN;
+INSERT INTO `tipo_vehiculo` VALUES (1, 'Automovil');
+INSERT INTO `tipo_vehiculo` VALUES (2, 'Bicicleta');
+INSERT INTO `tipo_vehiculo` VALUES (3, 'Bus');
+INSERT INTO `tipo_vehiculo` VALUES (4, 'Buseta');
+INSERT INTO `tipo_vehiculo` VALUES (5, 'Camión');
+INSERT INTO `tipo_vehiculo` VALUES (6, 'Camioneta');
+INSERT INTO `tipo_vehiculo` VALUES (7, 'Campero');
+INSERT INTO `tipo_vehiculo` VALUES (8, 'Carro De Golf');
+INSERT INTO `tipo_vehiculo` VALUES (9, 'Cuatrimoto');
+INSERT INTO `tipo_vehiculo` VALUES (10, 'Maquinaria Agrícola');
+INSERT INTO `tipo_vehiculo` VALUES (11, 'Maquinaria Industrial');
+INSERT INTO `tipo_vehiculo` VALUES (12, 'Microbus');
+INSERT INTO `tipo_vehiculo` VALUES (13, 'Motocarro');
+INSERT INTO `tipo_vehiculo` VALUES (14, 'Motocicleta');
+INSERT INTO `tipo_vehiculo` VALUES (15, 'Motociclo');
+INSERT INTO `tipo_vehiculo` VALUES (16, 'Mototriciclo');
+INSERT INTO `tipo_vehiculo` VALUES (17, 'No Aplica');
+INSERT INTO `tipo_vehiculo` VALUES (18, 'Peatón');
+INSERT INTO `tipo_vehiculo` VALUES (19, 'Remolque');
+INSERT INTO `tipo_vehiculo` VALUES (20, 'Segway');
+INSERT INTO `tipo_vehiculo` VALUES (21, 'Semi Remolque');
+INSERT INTO `tipo_vehiculo` VALUES (22, 'Sin Información');
+INSERT INTO `tipo_vehiculo` VALUES (23, 'Tracción Animal');
+INSERT INTO `tipo_vehiculo` VALUES (24, 'Tracción Humana');
+INSERT INTO `tipo_vehiculo` VALUES (25, 'Tractocamión');
+INSERT INTO `tipo_vehiculo` VALUES (26, 'Volqueta');
+COMMIT;
+
+-- ----------------------------
+-- Records of vehiculo
+-- ----------------------------
+BEGIN;
+INSERT INTO `vehiculo` VALUES (1, 'Motocicleta', 1);
+INSERT INTO `vehiculo` VALUES (2, 'Bicicleta', 2);
+INSERT INTO `vehiculo` VALUES (3, 'Automovil', 3);
+INSERT INTO `vehiculo` VALUES (4, 'Peaton', 4);
+INSERT INTO `vehiculo` VALUES (5, 'Motocarro', 5);
+INSERT INTO `vehiculo` VALUES (6, 'Camioneta', 3);
+INSERT INTO `vehiculo` VALUES (7, 'Buseta', 6);
+INSERT INTO `vehiculo` VALUES (8, 'Bus', 6);
+INSERT INTO `vehiculo` VALUES (9, 'Microbus', 6);
+INSERT INTO `vehiculo` VALUES (10, 'Sin Informacion', 7);
+INSERT INTO `vehiculo` VALUES (11, 'Cuatrimoto', 5);
+INSERT INTO `vehiculo` VALUES (12, 'Tractocamion', 8);
+INSERT INTO `vehiculo` VALUES (13, 'Traccion Humana', 9);
+INSERT INTO `vehiculo` VALUES (14, 'Campero', 3);
+INSERT INTO `vehiculo` VALUES (15, 'Volqueta', 8);
+INSERT INTO `vehiculo` VALUES (16, 'Camion', 8);
+INSERT INTO `vehiculo` VALUES (17, 'Traccion Animal', 9);
+INSERT INTO `vehiculo` VALUES (18, 'Motociclo', 5);
+INSERT INTO `vehiculo` VALUES (19, 'Mototriciclo', 5);
+INSERT INTO `vehiculo` VALUES (20, 'Semi Remolque', 8);
+INSERT INTO `vehiculo` VALUES (21, 'Maquinaria Industrial', 10);
+INSERT INTO `vehiculo` VALUES (22, 'Segway', 9);
+INSERT INTO `vehiculo` VALUES (23, 'Remolque', 8);
+INSERT INTO `vehiculo` VALUES (24, 'Maquinaria Agricola', 11);
+INSERT INTO `vehiculo` VALUES (25, 'No Aplica', 7);
+INSERT INTO `vehiculo` VALUES (26, 'Carro De Golf', 9);
+COMMIT;
+
+-- ----------------------------
+-- Records of accidente
+-- ----------------------------
+BEGIN;
+INSERT INTO `accidente` VALUES (1, '2016-01-01', 2016, 10, 497, 1, 1, 1);
+INSERT INTO `accidente` VALUES (2, '2016-01-01', 2016, 19, 129, 2, 2, 2);
+INSERT INTO `accidente` VALUES (3, '2016-01-01', 2016, 26, 960, 1, 3, 1);
+INSERT INTO `accidente` VALUES (4, '2016-01-01', 2016, 23, 291, 3, 2, 1);
+INSERT INTO `accidente` VALUES (5, '2016-01-01', 2016, 3, 95, 4, 4, 1);
+INSERT INTO `accidente` VALUES (6, '2016-01-01', 2016, 23, 381, 4, 5, 3);
+INSERT INTO `accidente` VALUES (7, '2016-01-01', 2016, 6, 174, 1, 5, 1);
+INSERT INTO `accidente` VALUES (8, '2016-01-01', 2016, 24, 132, 2, 2, 1);
+INSERT INTO `accidente` VALUES (9, '2016-01-01', 2016, 3, 95, 3, 3, 4);
+INSERT INTO `accidente` VALUES (10, '2016-01-01', 2016, 24, 132, 1, 4, 3);
+INSERT INTO `accidente` VALUES (11, '2016-01-01', 2016, 23, 481, 1, 2, 3);
+INSERT INTO `accidente` VALUES (12, '2016-01-01', 2016, 22, 225, 1, 2, 5);
+INSERT INTO `accidente` VALUES (13, '2016-01-01', 2016, 21, 75, 3, 2, 2);
+INSERT INTO `accidente` VALUES (14, '2016-01-01', 2016, 8, 804, 4, 4, 5);
+INSERT INTO `accidente` VALUES (15, '2016-01-01', 2016, 14, 305, 1, 5, 2);
+INSERT INTO `accidente` VALUES (16, '2016-01-01', 2016, 4, 151, 4, 2, 1);
+INSERT INTO `accidente` VALUES (17, '2016-01-01', 2016, 17, 566, 1, 5, 1);
+INSERT INTO `accidente` VALUES (18, '2016-01-01', 2016, 24, 105, 4, 2, 2);
+INSERT INTO `accidente` VALUES (19, '2016-01-01', 2016, 21, 75, 3, 5, 2);
+INSERT INTO `accidente` VALUES (20, '2016-01-01', 2016, 4, 472, 1, 4, 6);
+INSERT INTO `accidente` VALUES (21, '2016-01-01', 2016, 23, 164, 1, 2, 1);
+INSERT INTO `accidente` VALUES (22, '2016-01-01', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (23, '2016-01-01', 2016, 24, 153, 1, 2, 5);
+INSERT INTO `accidente` VALUES (24, '2016-01-01', 2016, 1, 478, 4, 2, 1);
+INSERT INTO `accidente` VALUES (25, '2016-01-01', 2016, 23, 381, 4, 5, 2);
+INSERT INTO `accidente` VALUES (26, '2016-01-01', 2016, 1, 84, 1, 5, 2);
+INSERT INTO `accidente` VALUES (27, '2016-01-01', 2016, 23, 481, 1, 2, 3);
+INSERT INTO `accidente` VALUES (28, '2016-01-01', 2016, 3, 95, 4, 2, 3);
+INSERT INTO `accidente` VALUES (29, '2016-01-01', 2016, 8, 784, 4, 5, 1);
+INSERT INTO `accidente` VALUES (30, '2016-01-01', 2016, 21, 103, 1, 5, 1);
+INSERT INTO `accidente` VALUES (31, '2016-01-01', 2016, 22, 220, 4, 2, 1);
+INSERT INTO `accidente` VALUES (32, '2016-01-01', 2016, 23, 381, 3, 5, 4);
+INSERT INTO `accidente` VALUES (33, '2016-01-01', 2016, 24, 557, 1, 4, 1);
+INSERT INTO `accidente` VALUES (34, '2016-01-01', 2016, 13, 518, 4, 2, 1);
+INSERT INTO `accidente` VALUES (35, '2016-01-01', 2016, 18, 287, 1, 5, 2);
+INSERT INTO `accidente` VALUES (36, '2016-01-01', 2016, 24, 347, 1, 2, 1);
+INSERT INTO `accidente` VALUES (37, '2016-01-01', 2016, 19, 58, 1, 2, 2);
+INSERT INTO `accidente` VALUES (38, '2016-01-01', 2016, 17, 566, 4, 2, 1);
+INSERT INTO `accidente` VALUES (39, '2016-01-01', 2016, 1, 140, 1, 5, 1);
+INSERT INTO `accidente` VALUES (40, '2016-01-01', 2016, 1, 478, 4, 2, 1);
+INSERT INTO `accidente` VALUES (41, '2016-01-01', 2016, 24, 153, 1, 5, 5);
+INSERT INTO `accidente` VALUES (42, '2016-01-01', 2016, 1, 478, 1, 2, 1);
+INSERT INTO `accidente` VALUES (43, '2016-01-01', 2016, 21, 75, 1, 2, 1);
+INSERT INTO `accidente` VALUES (44, '2016-01-01', 2016, 24, 132, 1, 2, 2);
+INSERT INTO `accidente` VALUES (45, '2016-01-01', 2016, 15, 191, 1, 2, 3);
+INSERT INTO `accidente` VALUES (46, '2016-01-01', 2016, 11, 333, 4, 2, 1);
+INSERT INTO `accidente` VALUES (47, '2016-01-01', 2016, 21, 578, 4, 5, 2);
+INSERT INTO `accidente` VALUES (48, '2016-01-01', 2016, 24, 557, 4, 5, 5);
+INSERT INTO `accidente` VALUES (49, '2016-01-01', 2016, 24, 597, 1, 5, 2);
+INSERT INTO `accidente` VALUES (50, '2016-01-01', 2016, 21, 964, 1, 2, 1);
+INSERT INTO `accidente` VALUES (51, '2016-01-01', 2016, 2, 816, 4, 2, 2);
+INSERT INTO `accidente` VALUES (52, '2016-01-01', 2016, 16, 946, 1, 5, 1);
+INSERT INTO `accidente` VALUES (53, '2016-01-01', 2016, 30, 385, 4, 2, 1);
+INSERT INTO `accidente` VALUES (54, '2016-01-01', 2016, 2, 669, 4, 5, 2);
+INSERT INTO `accidente` VALUES (55, '2016-01-01', 2016, 13, 518, 1, 5, 1);
+INSERT INTO `accidente` VALUES (56, '2016-01-01', 2016, 21, 75, 3, 2, 2);
+INSERT INTO `accidente` VALUES (57, '2016-01-01', 2016, 21, 75, 1, 4, 5);
+INSERT INTO `accidente` VALUES (58, '2016-01-01', 2016, 26, 960, 1, 2, 2);
+INSERT INTO `accidente` VALUES (59, '2016-01-01', 2016, 17, 566, 4, 2, 1);
+INSERT INTO `accidente` VALUES (60, '2016-01-01', 2016, 2, 78, 1, 5, 2);
+INSERT INTO `accidente` VALUES (61, '2016-01-01', 2016, 8, 784, 4, 2, 1);
+INSERT INTO `accidente` VALUES (62, '2016-01-01', 2016, 23, 291, 1, 5, 2);
+INSERT INTO `accidente` VALUES (63, '2016-01-01', 2016, 3, 95, 4, 2, 2);
+INSERT INTO `accidente` VALUES (64, '2016-01-01', 2016, 11, 803, 4, 5, 1);
+INSERT INTO `accidente` VALUES (65, '2016-01-01', 2016, 24, 132, 3, 5, 2);
+INSERT INTO `accidente` VALUES (66, '2016-01-01', 2016, 26, 569, 4, 4, 3);
+INSERT INTO `accidente` VALUES (67, '2016-01-01', 2016, 4, 151, 1, 5, 2);
+INSERT INTO `accidente` VALUES (68, '2016-01-01', 2016, 19, 58, 1, 2, 3);
+INSERT INTO `accidente` VALUES (69, '2016-01-01', 2016, 1, 84, 4, 2, 1);
+INSERT INTO `accidente` VALUES (70, '2016-01-01', 2016, 24, 557, 5, 5, 2);
+INSERT INTO `accidente` VALUES (71, '2016-01-01', 2016, 11, 837, 1, 2, 1);
+INSERT INTO `accidente` VALUES (72, '2016-01-01', 2016, 23, 381, 1, 2, 1);
+INSERT INTO `accidente` VALUES (73, '2016-01-01', 2016, 16, 3, 1, 2, 1);
+INSERT INTO `accidente` VALUES (74, '2016-01-01', 2016, 9, 571, 3, 2, 5);
+INSERT INTO `accidente` VALUES (75, '2016-01-01', 2016, 2, 669, 4, 4, 2);
+INSERT INTO `accidente` VALUES (76, '2016-01-01', 2016, 23, 758, 1, 5, 2);
+INSERT INTO `accidente` VALUES (77, '2016-01-01', 2016, 18, 450, 1, 2, 1);
+INSERT INTO `accidente` VALUES (78, '2016-01-01', 2016, 1, 390, 6, 2, 5);
+INSERT INTO `accidente` VALUES (79, '2016-01-01', 2016, 1, 478, 2, 4, 1);
+INSERT INTO `accidente` VALUES (80, '2016-01-01', 2016, 2, 78, 1, 3, 2);
+INSERT INTO `accidente` VALUES (81, '2016-01-01', 2016, 21, 578, 4, 2, 1);
+INSERT INTO `accidente` VALUES (82, '2016-01-01', 2016, 2, 669, 4, 5, 2);
+INSERT INTO `accidente` VALUES (83, '2016-01-01', 2016, 11, 650, 3, 5, 2);
+INSERT INTO `accidente` VALUES (84, '2016-01-01', 2016, 5, 474, 7, 4, 4);
+INSERT INTO `accidente` VALUES (85, '2016-01-01', 2016, 26, 960, 1, 4, 2);
+INSERT INTO `accidente` VALUES (86, '2016-01-01', 2016, 15, 773, 4, 2, 1);
+INSERT INTO `accidente` VALUES (87, '2016-01-01', 2016, 1, 657, 1, 5, 2);
+INSERT INTO `accidente` VALUES (88, '2016-01-01', 2016, 24, 557, 1, 2, 2);
+INSERT INTO `accidente` VALUES (89, '2016-01-01', 2016, 11, 968, 1, 2, 1);
+INSERT INTO `accidente` VALUES (90, '2016-01-01', 2016, 21, 335, 1, 2, 1);
+INSERT INTO `accidente` VALUES (91, '2016-01-01', 2016, 11, 292, 2, 2, 2);
+INSERT INTO `accidente` VALUES (92, '2016-01-01', 2016, 19, 129, 1, 3, 2);
+INSERT INTO `accidente` VALUES (93, '2016-01-01', 2016, 6, 174, 1, 2, 1);
+INSERT INTO `accidente` VALUES (94, '2016-01-01', 2016, 18, 287, 1, 2, 2);
+INSERT INTO `accidente` VALUES (95, '2016-01-01', 2016, 17, 566, 4, 2, 1);
+INSERT INTO `accidente` VALUES (96, '2016-01-01', 2016, 8, 594, 1, 5, 2);
+INSERT INTO `accidente` VALUES (97, '2016-01-01', 2016, 11, 858, 1, 2, 3);
+INSERT INTO `accidente` VALUES (98, '2016-01-01', 2016, 4, 198, 4, 2, 6);
+INSERT INTO `accidente` VALUES (99, '2016-01-01', 2016, 19, 129, 1, 5, 2);
+INSERT INTO `accidente` VALUES (100, '2016-01-01', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (101, '2016-01-01', 2016, 8, 594, 4, 2, 1);
+INSERT INTO `accidente` VALUES (102, '2016-01-01', 2016, 2, 78, 4, 5, 2);
+INSERT INTO `accidente` VALUES (103, '2016-01-01', 2016, 23, 381, 3, 5, 3);
+INSERT INTO `accidente` VALUES (104, '2016-01-01', 2016, 10, 868, 3, 4, 2);
+INSERT INTO `accidente` VALUES (105, '2016-01-01', 2016, 11, 858, 1, 4, 3);
+INSERT INTO `accidente` VALUES (106, '2016-01-01', 2016, 23, 291, 1, 2, 3);
+INSERT INTO `accidente` VALUES (107, '2016-01-01', 2016, 4, 151, 4, 2, 1);
+INSERT INTO `accidente` VALUES (108, '2016-01-01', 2016, 23, 381, 1, 5, 1);
+INSERT INTO `accidente` VALUES (109, '2016-01-01', 2016, 10, 497, 4, 2, 1);
+INSERT INTO `accidente` VALUES (110, '2016-01-01', 2016, 19, 429, 1, 5, 2);
+INSERT INTO `accidente` VALUES (111, '2016-01-01', 2016, 1, 478, 4, 2, 7);
+INSERT INTO `accidente` VALUES (112, '2016-01-01', 2016, 23, 381, 1, 5, 1);
+INSERT INTO `accidente` VALUES (113, '2016-01-01', 2016, 10, 497, 4, 2, 1);
+INSERT INTO `accidente` VALUES (114, '2016-01-01', 2016, 24, 557, 1, 5, 5);
+INSERT INTO `accidente` VALUES (115, '2016-01-01', 2016, 23, 538, 4, 2, 1);
+INSERT INTO `accidente` VALUES (116, '2016-01-01', 2016, 13, 518, 4, 5, 1);
+INSERT INTO `accidente` VALUES (117, '2016-01-01', 2016, 10, 497, 1, 5, 1);
+INSERT INTO `accidente` VALUES (118, '2016-01-01', 2016, 6, 409, 1, 2, 1);
+INSERT INTO `accidente` VALUES (119, '2016-01-01', 2016, 18, 450, 1, 2, 5);
+INSERT INTO `accidente` VALUES (120, '2016-01-01', 2016, 24, 435, 4, 2, 8);
+INSERT INTO `accidente` VALUES (121, '2016-01-01', 2016, 8, 594, 1, 5, 2);
+INSERT INTO `accidente` VALUES (122, '2016-01-01', 2016, 5, 898, 3, 2, 2);
+INSERT INTO `accidente` VALUES (123, '2016-01-01', 2016, 15, 191, 1, 4, 4);
+INSERT INTO `accidente` VALUES (124, '2016-01-01', 2016, 24, 132, 1, 2, 2);
+INSERT INTO `accidente` VALUES (125, '2016-01-01', 2016, 3, 95, 7, 2, 3);
+INSERT INTO `accidente` VALUES (126, '2016-01-01', 2016, 23, 481, 1, 4, 1);
+INSERT INTO `accidente` VALUES (127, '2016-01-01', 2016, 1, 749, 1, 2, 2);
+INSERT INTO `accidente` VALUES (128, '2016-01-01', 2016, 3, 95, 1, 2, 1);
+INSERT INTO `accidente` VALUES (129, '2016-01-01', 2016, 17, 383, 4, 2, 1);
+INSERT INTO `accidente` VALUES (130, '2016-01-01', 2016, 18, 231, 4, 5, 2);
+INSERT INTO `accidente` VALUES (131, '2016-01-01', 2016, 21, 103, 1, 5, 1);
+INSERT INTO `accidente` VALUES (132, '2016-01-01', 2016, 9, 739, 4, 2, 1);
+INSERT INTO `accidente` VALUES (133, '2016-01-01', 2016, 20, 575, 1, 5, 2);
+INSERT INTO `accidente` VALUES (134, '2016-01-01', 2016, 1, 478, 4, 2, 1);
+INSERT INTO `accidente` VALUES (135, '2016-01-01', 2016, 13, 518, 4, 5, 2);
+INSERT INTO `accidente` VALUES (136, '2016-01-01', 2016, 21, 71, 4, 5, 3);
+INSERT INTO `accidente` VALUES (137, '2016-01-01', 2016, 3, 95, 3, 5, 2);
+INSERT INTO `accidente` VALUES (138, '2016-01-01', 2016, 19, 129, 1, 4, 2);
+INSERT INTO `accidente` VALUES (139, '2016-01-01', 2016, 15, 590, 1, 2, 1);
+INSERT INTO `accidente` VALUES (140, '2016-01-01', 2016, 15, 773, 4, 2, 1);
+INSERT INTO `accidente` VALUES (141, '2016-01-01', 2016, 3, 95, 4, 5, 1);
+INSERT INTO `accidente` VALUES (142, '2016-01-01', 2016, 2, 669, 4, 5, 2);
+INSERT INTO `accidente` VALUES (143, '2016-01-01', 2016, 8, 594, 3, 5, 2);
+INSERT INTO `accidente` VALUES (144, '2016-01-01', 2016, 18, 287, 1, 4, 2);
+INSERT INTO `accidente` VALUES (145, '2016-01-01', 2016, 8, 784, 1, 2, 1);
+INSERT INTO `accidente` VALUES (146, '2016-01-01', 2016, 24, 132, 1, 2, 1);
+INSERT INTO `accidente` VALUES (147, '2016-01-01', 2016, 24, 132, 4, 2, 1);
+INSERT INTO `accidente` VALUES (148, '2016-01-01', 2016, 4, 259, 1, 5, 1);
+INSERT INTO `accidente` VALUES (149, '2016-01-01', 2016, 24, 132, 4, 2, 1);
+INSERT INTO `accidente` VALUES (150, '2016-01-02', 2016, 10, 192, 1, 5, 2);
+INSERT INTO `accidente` VALUES (151, '2016-01-02', 2016, 26, 960, 1, 2, 1);
+INSERT INTO `accidente` VALUES (152, '2016-01-02', 2016, 24, 347, 1, 2, 1);
+INSERT INTO `accidente` VALUES (153, '2016-01-02', 2016, 1, 84, 1, 2, 3);
+INSERT INTO `accidente` VALUES (154, '2016-01-02', 2016, 23, 381, 1, 2, 9);
+INSERT INTO `accidente` VALUES (155, '2016-01-02', 2016, 1, 478, 3, 2, 2);
+INSERT INTO `accidente` VALUES (156, '2016-01-02', 2016, 26, 960, 4, 4, 1);
+INSERT INTO `accidente` VALUES (157, '2016-01-02', 2016, 23, 381, 1, 5, 2);
+INSERT INTO `accidente` VALUES (158, '2016-01-02', 2016, 17, 566, 1, 2, 2);
+INSERT INTO `accidente` VALUES (159, '2016-01-02', 2016, 11, 810, 1, 2, 2);
+INSERT INTO `accidente` VALUES (160, '2016-01-02', 2016, 11, 650, 4, 2, 1);
+INSERT INTO `accidente` VALUES (161, '2016-01-02', 2016, 5, 685, 3, 5, 2);
+INSERT INTO `accidente` VALUES (162, '2016-01-02', 2016, 27, 712, 6, 4, 3);
+INSERT INTO `accidente` VALUES (163, '2016-01-02', 2016, 23, 481, 1, 4, 2);
+INSERT INTO `accidente` VALUES (164, '2016-01-02', 2016, 11, 810, 1, 2, 2);
+INSERT INTO `accidente` VALUES (165, '2016-01-02', 2016, 21, 75, 1, 2, 2);
+INSERT INTO `accidente` VALUES (166, '2016-01-02', 2016, 10, 497, 1, 2, 2);
+INSERT INTO `accidente` VALUES (167, '2016-01-02', 2016, 3, 95, 4, 2, 3);
+INSERT INTO `accidente` VALUES (168, '2016-01-02', 2016, 23, 481, 1, 5, 2);
+INSERT INTO `accidente` VALUES (169, '2016-01-02', 2016, 19, 58, 1, 2, 2);
+INSERT INTO `accidente` VALUES (170, '2016-01-02', 2016, 3, 95, 8, 2, 10);
+INSERT INTO `accidente` VALUES (171, '2016-01-02', 2016, 16, 946, 1, 4, 2);
+INSERT INTO `accidente` VALUES (172, '2016-01-02', 2016, 11, 876, 3, 2, 2);
+INSERT INTO `accidente` VALUES (173, '2016-01-02', 2016, 9, 918, 3, 4, 2);
+INSERT INTO `accidente` VALUES (174, '2016-01-02', 2016, 11, 876, 3, 4, 2);
+INSERT INTO `accidente` VALUES (175, '2016-01-02', 2016, 1, 405, 1, 4, 2);
+INSERT INTO `accidente` VALUES (176, '2016-01-02', 2016, 3, 95, 8, 2, 10);
+INSERT INTO `accidente` VALUES (177, '2016-01-02', 2016, 3, 95, 4, 4, 1);
+INSERT INTO `accidente` VALUES (178, '2016-01-02', 2016, 15, 773, 3, 5, 5);
+INSERT INTO `accidente` VALUES (179, '2016-01-02', 2016, 1, 478, 6, 4, 5);
+INSERT INTO `accidente` VALUES (180, '2016-01-02', 2016, 24, 347, 1, 4, 1);
+INSERT INTO `accidente` VALUES (181, '2016-01-02', 2016, 11, 876, 3, 2, 2);
+INSERT INTO `accidente` VALUES (182, '2016-01-02', 2016, 21, 335, 1, 4, 11);
+INSERT INTO `accidente` VALUES (183, '2016-01-02', 2016, 11, 810, 1, 2, 7);
+INSERT INTO `accidente` VALUES (184, '2016-01-02', 2016, 11, 876, 3, 2, 2);
+INSERT INTO `accidente` VALUES (185, '2016-01-02', 2016, 3, 95, 8, 4, 12);
+INSERT INTO `accidente` VALUES (186, '2016-01-02', 2016, 11, 292, 4, 4, 2);
+INSERT INTO `accidente` VALUES (187, '2016-01-02', 2016, 11, 929, 6, 5, 4);
+INSERT INTO `accidente` VALUES (188, '2016-01-02', 2016, 24, 132, 1, 4, 2);
+INSERT INTO `accidente` VALUES (189, '2016-01-02', 2016, 11, 333, 1, 2, 2);
+INSERT INTO `accidente` VALUES (190, '2016-01-02', 2016, 5, 685, 3, 2, 2);
+INSERT INTO `accidente` VALUES (191, '2016-01-02', 2016, 20, 575, 1, 4, 1);
+INSERT INTO `accidente` VALUES (192, '2016-01-02', 2016, 19, 58, 4, 2, 1);
+INSERT INTO `accidente` VALUES (193, '2016-01-02', 2016, 20, 248, 1, 5, 2);
+INSERT INTO `accidente` VALUES (194, '2016-01-02', 2016, 16, 946, 1, 2, 5);
+INSERT INTO `accidente` VALUES (195, '2016-01-02', 2016, 19, 58, 3, 2, 4);
+INSERT INTO `accidente` VALUES (196, '2016-01-02', 2016, 24, 132, 3, 4, 2);
+INSERT INTO `accidente` VALUES (197, '2016-01-02', 2016, 11, 810, 3, 4, 2);
+INSERT INTO `accidente` VALUES (198, '2016-01-02', 2016, 10, 495, 1, 4, 5);
+INSERT INTO `accidente` VALUES (199, '2016-01-02', 2016, 8, 594, 1, 2, 10);
+INSERT INTO `accidente` VALUES (200, '2016-01-02', 2016, 3, 95, 4, 2, 12);
+INSERT INTO `accidente` VALUES (201, '2016-01-02', 2016, 24, 557, 1, 5, 2);
+INSERT INTO `accidente` VALUES (202, '2016-01-02', 2016, 11, 876, 3, 2, 2);
+INSERT INTO `accidente` VALUES (203, '2016-01-02', 2016, 23, 381, 4, 4, 13);
+INSERT INTO `accidente` VALUES (204, '2016-01-02', 2016, 22, 808, 1, 5, 2);
+INSERT INTO `accidente` VALUES (205, '2016-01-02', 2016, 4, 77, 1, 2, 1);
+INSERT INTO `accidente` VALUES (206, '2016-01-02', 2016, 26, 960, 1, 2, 1);
+INSERT INTO `accidente` VALUES (207, '2016-01-02', 2016, 21, 103, 1, 2, 2);
+INSERT INTO `accidente` VALUES (208, '2016-01-02', 2016, 23, 381, 1, 2, 9);
+INSERT INTO `accidente` VALUES (209, '2016-01-02', 2016, 8, 594, 4, 2, 1);
+INSERT INTO `accidente` VALUES (210, '2016-01-02', 2016, 24, 393, 1, 5, 1);
+INSERT INTO `accidente` VALUES (211, '2016-01-02', 2016, 21, 303, 1, 2, 5);
+INSERT INTO `accidente` VALUES (212, '2016-01-02', 2016, 24, 132, 3, 2, 2);
+INSERT INTO `accidente` VALUES (213, '2016-01-02', 2016, 3, 95, 3, 4, 5);
+INSERT INTO `accidente` VALUES (214, '2016-01-02', 2016, 1, 405, 1, 4, 14);
+INSERT INTO `accidente` VALUES (215, '2016-01-02', 2016, 22, 808, 1, 2, 3);
+INSERT INTO `accidente` VALUES (216, '2016-01-02', 2016, 25, 47, 4, 2, 1);
+INSERT INTO `accidente` VALUES (217, '2016-01-02', 2016, 24, 557, 1, 5, 2);
+INSERT INTO `accidente` VALUES (218, '2016-01-02', 2016, 3, 95, 8, 2, 10);
+INSERT INTO `accidente` VALUES (219, '2016-01-02', 2016, 20, 575, 1, 4, 1);
+INSERT INTO `accidente` VALUES (220, '2016-01-02', 2016, 21, 335, 1, 2, 3);
+INSERT INTO `accidente` VALUES (221, '2016-01-02', 2016, 2, 78, 3, 2, 2);
+INSERT INTO `accidente` VALUES (222, '2016-01-02', 2016, 24, 132, 1, 4, 1);
+INSERT INTO `accidente` VALUES (223, '2016-01-02', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (224, '2016-01-02', 2016, 3, 95, 1, 2, 12);
+INSERT INTO `accidente` VALUES (225, '2016-01-02', 2016, 15, 773, 1, 2, 1);
+INSERT INTO `accidente` VALUES (226, '2016-01-02', 2016, 8, 936, 2, 2, 1);
+INSERT INTO `accidente` VALUES (227, '2016-01-02', 2016, 19, 58, 1, 3, 2);
+INSERT INTO `accidente` VALUES (228, '2016-01-02', 2016, 16, 946, 1, 2, 2);
+INSERT INTO `accidente` VALUES (229, '2016-01-02', 2016, 8, 936, 1, 2, 2);
+INSERT INTO `accidente` VALUES (230, '2016-01-02', 2016, 11, 806, 3, 2, 2);
+INSERT INTO `accidente` VALUES (231, '2016-01-02', 2016, 24, 153, 1, 4, 1);
+INSERT INTO `accidente` VALUES (232, '2016-01-02', 2016, 8, 626, 4, 2, 2);
+INSERT INTO `accidente` VALUES (233, '2016-01-02', 2016, 28, 691, 4, 5, 1);
+INSERT INTO `accidente` VALUES (234, '2016-01-02', 2016, 11, 876, 3, 5, 2);
+INSERT INTO `accidente` VALUES (235, '2016-01-02', 2016, 15, 773, 1, 4, 1);
+INSERT INTO `accidente` VALUES (236, '2016-01-02', 2016, 18, 231, 1, 2, 5);
+INSERT INTO `accidente` VALUES (237, '2016-01-02', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (238, '2016-01-02', 2016, 21, 303, 1, 2, 5);
+INSERT INTO `accidente` VALUES (239, '2016-01-02', 2016, 11, 929, 6, 2, 4);
+INSERT INTO `accidente` VALUES (240, '2016-01-02', 2016, 28, 691, 1, 4, 7);
+INSERT INTO `accidente` VALUES (241, '2016-01-02', 2016, 15, 773, 1, 2, 1);
+INSERT INTO `accidente` VALUES (242, '2016-01-02', 2016, 3, 95, 4, 2, 1);
+INSERT INTO `accidente` VALUES (243, '2016-01-02', 2016, 1, 390, 9, 5, 4);
+INSERT INTO `accidente` VALUES (244, '2016-01-02', 2016, 23, 291, 1, 4, 2);
+INSERT INTO `accidente` VALUES (245, '2016-01-02', 2016, 14, 656, 1, 2, 2);
+INSERT INTO `accidente` VALUES (246, '2016-01-02', 2016, 20, 575, 1, 2, 12);
+INSERT INTO `accidente` VALUES (247, '2016-01-02', 2016, 23, 381, 1, 2, 9);
+INSERT INTO `accidente` VALUES (248, '2016-01-02', 2016, 24, 132, 4, 2, 12);
+INSERT INTO `accidente` VALUES (249, '2016-01-02', 2016, 10, 677, 4, 5, 1);
+INSERT INTO `accidente` VALUES (250, '2016-01-02', 2016, 17, 566, 4, 5, 1);
+INSERT INTO `accidente` VALUES (251, '2016-01-02', 2016, 22, 808, 4, 5, 1);
+INSERT INTO `accidente` VALUES (252, '2016-01-02', 2016, 11, 877, 2, 5, 5);
+INSERT INTO `accidente` VALUES (253, '2016-01-02', 2016, 16, 946, 1, 3, 2);
+INSERT INTO `accidente` VALUES (254, '2016-01-03', 2016, 17, 566, 4, 2, 2);
+INSERT INTO `accidente` VALUES (255, '2016-01-03', 2016, 8, 594, 1, 5, 1);
+INSERT INTO `accidente` VALUES (256, '2016-01-03', 2016, 21, 532, 3, 2, 5);
+INSERT INTO `accidente` VALUES (257, '2016-01-03', 2016, 13, 518, 1, 4, 2);
+INSERT INTO `accidente` VALUES (258, '2016-01-03', 2016, 21, 71, 4, 2, 5);
+INSERT INTO `accidente` VALUES (259, '2016-01-03', 2016, 11, 333, 1, 5, 1);
+INSERT INTO `accidente` VALUES (260, '2016-01-03', 2016, 2, 78, 1, 2, 12);
+INSERT INTO `accidente` VALUES (261, '2016-01-03', 2016, 20, 575, 1, 2, 2);
+INSERT INTO `accidente` VALUES (262, '2016-01-03', 2016, 3, 95, 4, 2, 1);
+INSERT INTO `accidente` VALUES (263, '2016-01-03', 2016, 3, 95, 2, 5, 12);
+INSERT INTO `accidente` VALUES (264, '2016-01-03', 2016, 11, 167, 1, 3, 3);
+INSERT INTO `accidente` VALUES (265, '2016-01-03', 2016, 1, 358, 1, 2, 12);
+INSERT INTO `accidente` VALUES (266, '2016-01-03', 2016, 24, 132, 7, 2, 3);
+INSERT INTO `accidente` VALUES (267, '2016-01-03', 2016, 14, 656, 3, 4, 2);
+INSERT INTO `accidente` VALUES (268, '2016-01-03', 2016, 24, 263, 1, 4, 2);
+INSERT INTO `accidente` VALUES (269, '2016-01-03', 2016, 11, 945, 3, 2, 2);
+INSERT INTO `accidente` VALUES (270, '2016-01-03', 2016, 3, 95, 4, 4, 2);
+INSERT INTO `accidente` VALUES (271, '2016-01-03', 2016, 24, 132, 1, 5, 2);
+INSERT INTO `accidente` VALUES (272, '2016-01-03', 2016, 13, 518, 1, 2, 2);
+INSERT INTO `accidente` VALUES (273, '2016-01-03', 2016, 24, 105, 1, 2, 7);
+INSERT INTO `accidente` VALUES (274, '2016-01-03', 2016, 19, 129, 4, 2, 2);
+INSERT INTO `accidente` VALUES (275, '2016-01-03', 2016, 3, 95, 4, 5, 1);
+INSERT INTO `accidente` VALUES (276, '2016-01-03', 2016, 27, 610, 1, 5, 9);
+INSERT INTO `accidente` VALUES (277, '2016-01-03', 2016, 11, 797, 3, 2, 10);
+INSERT INTO `accidente` VALUES (278, '2016-01-03', 2016, 17, 566, 1, 4, 2);
+INSERT INTO `accidente` VALUES (279, '2016-01-03', 2016, 17, 566, 1, 2, 2);
+INSERT INTO `accidente` VALUES (280, '2016-01-03', 2016, 2, 78, 2, 2, 1);
+INSERT INTO `accidente` VALUES (281, '2016-01-03', 2016, 25, 792, 1, 3, 10);
+INSERT INTO `accidente` VALUES (282, '2016-01-03', 2016, 24, 132, 7, 2, 3);
+INSERT INTO `accidente` VALUES (283, '2016-01-03', 2016, 11, 264, 4, 4, 1);
+INSERT INTO `accidente` VALUES (284, '2016-01-03', 2016, 24, 557, 1, 5, 2);
+INSERT INTO `accidente` VALUES (285, '2016-01-03', 2016, 15, 773, 1, 2, 2);
+INSERT INTO `accidente` VALUES (286, '2016-01-03', 2016, 11, 945, 4, 2, 2);
+INSERT INTO `accidente` VALUES (287, '2016-01-03', 2016, 11, 624, 1, 5, 1);
+INSERT INTO `accidente` VALUES (288, '2016-01-03', 2016, 24, 557, 4, 2, 1);
+INSERT INTO `accidente` VALUES (289, '2016-01-03', 2016, 9, 918, 3, 5, 5);
+INSERT INTO `accidente` VALUES (290, '2016-01-03', 2016, 3, 95, 4, 4, 1);
+INSERT INTO `accidente` VALUES (291, '2016-01-03', 2016, 17, 566, 3, 5, 12);
+INSERT INTO `accidente` VALUES (292, '2016-01-03', 2016, 1, 478, 1, 4, 12);
+INSERT INTO `accidente` VALUES (293, '2016-01-03', 2016, 11, 624, 1, 2, 1);
+INSERT INTO `accidente` VALUES (294, '2016-01-03', 2016, 11, 639, 4, 2, 1);
+INSERT INTO `accidente` VALUES (295, '2016-01-03', 2016, 23, 381, 1, 5, 1);
+INSERT INTO `accidente` VALUES (296, '2016-01-03', 2016, 1, 290, 4, 2, 1);
+INSERT INTO `accidente` VALUES (297, '2016-01-03', 2016, 8, 594, 1, 5, 1);
+INSERT INTO `accidente` VALUES (298, '2016-01-03', 2016, 11, 264, 4, 2, 1);
+INSERT INTO `accidente` VALUES (299, '2016-01-03', 2016, 3, 95, 3, 5, 5);
+INSERT INTO `accidente` VALUES (300, '2016-01-03', 2016, 17, 566, 1, 4, 7);
+INSERT INTO `accidente` VALUES (301, '2016-01-03', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (302, '2016-01-03', 2016, 3, 95, 4, 2, 2);
+INSERT INTO `accidente` VALUES (303, '2016-01-03', 2016, 24, 132, 7, 5, 3);
+INSERT INTO `accidente` VALUES (304, '2016-01-03', 2016, 24, 347, 1, 4, 2);
+INSERT INTO `accidente` VALUES (305, '2016-01-03', 2016, 2, 816, 4, 2, 1);
+INSERT INTO `accidente` VALUES (306, '2016-01-03', 2016, 20, 575, 1, 5, 5);
+INSERT INTO `accidente` VALUES (307, '2016-01-03', 2016, 1, 896, 4, 2, 9);
+INSERT INTO `accidente` VALUES (308, '2016-01-03', 2016, 17, 566, 4, 5, 1);
+INSERT INTO `accidente` VALUES (309, '2016-01-03', 2016, 3, 95, 1, 5, 2);
+INSERT INTO `accidente` VALUES (310, '2016-01-03', 2016, 11, 624, 1, 2, 1);
+INSERT INTO `accidente` VALUES (311, '2016-01-03', 2016, 22, 808, 1, 2, 2);
+INSERT INTO `accidente` VALUES (312, '2016-01-03', 2016, 10, 694, 1, 2, 2);
+INSERT INTO `accidente` VALUES (313, '2016-01-03', 2016, 14, 656, 10, 2, 8);
+INSERT INTO `accidente` VALUES (314, '2016-01-03', 2016, 3, 95, 3, 6, 5);
+INSERT INTO `accidente` VALUES (315, '2016-01-03', 2016, 19, 58, 1, 4, 2);
+INSERT INTO `accidente` VALUES (316, '2016-01-03', 2016, 25, 792, 1, 2, 10);
+INSERT INTO `accidente` VALUES (317, '2016-01-03', 2016, 8, 594, 1, 2, 1);
+INSERT INTO `accidente` VALUES (318, '2016-01-03', 2016, 1, 896, 4, 2, 9);
+INSERT INTO `accidente` VALUES (319, '2016-01-03', 2016, 1, 358, 1, 5, 3);
+INSERT INTO `accidente` VALUES (320, '2016-01-03', 2016, 24, 243, 4, 2, 1);
+INSERT INTO `accidente` VALUES (321, '2016-01-03', 2016, 5, 892, 4, 5, 2);
+INSERT INTO `accidente` VALUES (322, '2016-01-03', 2016, 24, 132, 7, 5, 3);
+INSERT INTO `accidente` VALUES (323, '2016-01-03', 2016, 4, 715, 1, 4, 2);
+INSERT INTO `accidente` VALUES (324, '2016-01-03', 2016, 9, 918, 3, 2, 5);
+INSERT INTO `accidente` VALUES (325, '2016-01-03', 2016, 1, 405, 1, 4, 10);
+INSERT INTO `accidente` VALUES (326, '2016-01-03', 2016, 3, 95, 2, 2, 2);
+INSERT INTO `accidente` VALUES (327, '2016-01-03', 2016, 9, 918, 4, 3, 2);
+INSERT INTO `accidente` VALUES (328, '2016-01-03', 2016, 15, 969, 4, 5, 2);
+INSERT INTO `accidente` VALUES (329, '2016-01-03', 2016, 24, 132, 8, 5, 3);
+INSERT INTO `accidente` VALUES (330, '2016-01-03', 2016, 20, 575, 1, 4, 1);
+INSERT INTO `accidente` VALUES (331, '2016-01-03', 2016, 9, 918, 1, 2, 2);
+INSERT INTO `accidente` VALUES (332, '2016-01-03', 2016, 28, 691, 1, 2, 5);
+INSERT INTO `accidente` VALUES (333, '2016-01-03', 2016, 15, 773, 1, 2, 2);
+INSERT INTO `accidente` VALUES (334, '2016-01-03', 2016, 9, 918, 3, 2, 5);
+INSERT INTO `accidente` VALUES (335, '2016-01-03', 2016, 14, 656, 1, 4, 2);
+INSERT INTO `accidente` VALUES (336, '2016-01-03', 2016, 21, 532, 3, 2, 5);
+INSERT INTO `accidente` VALUES (337, '2016-01-03', 2016, 17, 566, 1, 4, 2);
+INSERT INTO `accidente` VALUES (338, '2016-01-03', 2016, 1, 478, 1, 2, 12);
+INSERT INTO `accidente` VALUES (339, '2016-01-03', 2016, 6, 468, 4, 2, 2);
+INSERT INTO `accidente` VALUES (340, '2016-01-03', 2016, 5, 898, 3, 5, 2);
+INSERT INTO `accidente` VALUES (341, '2016-01-03', 2016, 3, 95, 1, 4, 1);
+INSERT INTO `accidente` VALUES (342, '2016-01-03', 2016, 20, 248, 7, 2, 3);
+INSERT INTO `accidente` VALUES (343, '2016-01-03', 2016, 16, 946, 1, 4, 5);
+INSERT INTO `accidente` VALUES (344, '2016-01-03', 2016, 11, 639, 1, 2, 8);
+INSERT INTO `accidente` VALUES (345, '2016-01-03', 2016, 20, 575, 1, 2, 2);
+INSERT INTO `accidente` VALUES (346, '2016-01-03', 2016, 24, 557, 1, 2, 2);
+INSERT INTO `accidente` VALUES (347, '2016-01-03', 2016, 1, 608, 1, 2, 1);
+INSERT INTO `accidente` VALUES (348, '2016-01-03', 2016, 3, 95, 3, 2, 1);
+INSERT INTO `accidente` VALUES (349, '2016-01-03', 2016, 17, 566, 3, 4, 1);
+INSERT INTO `accidente` VALUES (350, '2016-01-03', 2016, 11, 945, 4, 4, 2);
+INSERT INTO `accidente` VALUES (351, '2016-01-03', 2016, 21, 532, 3, 5, 14);
+INSERT INTO `accidente` VALUES (352, '2016-01-03', 2016, 9, 918, 3, 4, 5);
+INSERT INTO `accidente` VALUES (353, '2016-01-03', 2016, 16, 946, 1, 4, 5);
+INSERT INTO `accidente` VALUES (354, '2016-01-03', 2016, 11, 624, 1, 2, 1);
+INSERT INTO `accidente` VALUES (355, '2016-01-03', 2016, 15, 773, 11, 2, 2);
+INSERT INTO `accidente` VALUES (356, '2016-01-03', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (357, '2016-01-03', 2016, 25, 792, 1, 2, 10);
+INSERT INTO `accidente` VALUES (358, '2016-01-03', 2016, 13, 425, 1, 2, 1);
+INSERT INTO `accidente` VALUES (359, '2016-01-03', 2016, 23, 381, 1, 2, 1);
+INSERT INTO `accidente` VALUES (360, '2016-01-04', 2016, 21, 103, 4, 2, 1);
+INSERT INTO `accidente` VALUES (361, '2016-01-04', 2016, 22, 449, 1, 5, 3);
+INSERT INTO `accidente` VALUES (362, '2016-01-04', 2016, 11, 316, 4, 2, 2);
+INSERT INTO `accidente` VALUES (363, '2016-01-04', 2016, 22, 220, 1, 5, 10);
+INSERT INTO `accidente` VALUES (364, '2016-01-04', 2016, 11, 316, 4, 2, 2);
+INSERT INTO `accidente` VALUES (365, '2016-01-04', 2016, 11, 810, 3, 5, 2);
+INSERT INTO `accidente` VALUES (366, '2016-01-04', 2016, 16, 619, 12, 4, 3);
+INSERT INTO `accidente` VALUES (367, '2016-01-04', 2016, 19, 58, 4, 4, 1);
+INSERT INTO `accidente` VALUES (368, '2016-01-04', 2016, 23, 164, 3, 5, 2);
+INSERT INTO `accidente` VALUES (369, '2016-01-04', 2016, 19, 129, 3, 4, 2);
+INSERT INTO `accidente` VALUES (370, '2016-01-04', 2016, 16, 262, 1, 4, 2);
+INSERT INTO `accidente` VALUES (371, '2016-01-04', 2016, 33, 611, 1, 2, 1);
+INSERT INTO `accidente` VALUES (372, '2016-01-04', 2016, 24, 961, 1, 2, 2);
+INSERT INTO `accidente` VALUES (373, '2016-01-04', 2016, 10, 192, 6, 2, 3);
+INSERT INTO `accidente` VALUES (374, '2016-01-04', 2016, 10, 497, 1, 4, 14);
+INSERT INTO `accidente` VALUES (375, '2016-01-04', 2016, 3, 95, 3, 2, 10);
+INSERT INTO `accidente` VALUES (376, '2016-01-04', 2016, 3, 95, 4, 4, 2);
+INSERT INTO `accidente` VALUES (377, '2016-01-04', 2016, 1, 478, 8, 5, 2);
+INSERT INTO `accidente` VALUES (378, '2016-01-04', 2016, 19, 129, 1, 4, 3);
+INSERT INTO `accidente` VALUES (379, '2016-01-04', 2016, 3, 95, 1, 2, 15);
+INSERT INTO `accidente` VALUES (380, '2016-01-04', 2016, 4, 151, 1, 2, 1);
+INSERT INTO `accidente` VALUES (381, '2016-01-04', 2016, 17, 387, 2, 2, 1);
+INSERT INTO `accidente` VALUES (382, '2016-01-04', 2016, 3, 95, 1, 3, 2);
+INSERT INTO `accidente` VALUES (383, '2016-01-04', 2016, 23, 381, 4, 2, 1);
+INSERT INTO `accidente` VALUES (384, '2016-01-04', 2016, 5, 892, 4, 5, 5);
+INSERT INTO `accidente` VALUES (385, '2016-01-04', 2016, 19, 129, 3, 5, 2);
+INSERT INTO `accidente` VALUES (386, '2016-01-04', 2016, 20, 575, 1, 4, 1);
+INSERT INTO `accidente` VALUES (387, '2016-01-04', 2016, 11, 810, 3, 2, 2);
+INSERT INTO `accidente` VALUES (388, '2016-01-04', 2016, 10, 192, 7, 4, 3);
+INSERT INTO `accidente` VALUES (389, '2016-01-04', 2016, 11, 810, 3, 4, 2);
+INSERT INTO `accidente` VALUES (390, '2016-01-04', 2016, 24, 132, 4, 4, 14);
+INSERT INTO `accidente` VALUES (391, '2016-01-04', 2016, 23, 291, 1, 5, 2);
+INSERT INTO `accidente` VALUES (392, '2016-01-04', 2016, 3, 95, 1, 2, 12);
+INSERT INTO `accidente` VALUES (393, '2016-01-04', 2016, 10, 497, 1, 2, 1);
+INSERT INTO `accidente` VALUES (394, '2016-01-04', 2016, 4, 151, 1, 2, 1);
+INSERT INTO `accidente` VALUES (395, '2016-01-04', 2016, 11, 333, 1, 2, 7);
+INSERT INTO `accidente` VALUES (396, '2016-01-04', 2016, 5, 674, 6, 2, 4);
+INSERT INTO `accidente` VALUES (397, '2016-01-04', 2016, 23, 758, 3, 4, 14);
+INSERT INTO `accidente` VALUES (398, '2016-01-04', 2016, 23, 164, 3, 4, 2);
+INSERT INTO `accidente` VALUES (399, '2016-01-04', 2016, 3, 95, 4, 4, 1);
+INSERT INTO `accidente` VALUES (400, '2016-01-04', 2016, 16, 262, 1, 5, 2);
+INSERT INTO `accidente` VALUES (401, '2016-01-04', 2016, 16, 262, 3, 2, 1);
+INSERT INTO `accidente` VALUES (402, '2016-01-04', 2016, 20, 575, 4, 4, 1);
+INSERT INTO `accidente` VALUES (403, '2016-01-04', 2016, 10, 192, 6, 5, 3);
+INSERT INTO `accidente` VALUES (404, '2016-01-04', 2016, 5, 52, 6, 4, 2);
+INSERT INTO `accidente` VALUES (405, '2016-01-04', 2016, 21, 578, 1, 4, 1);
+INSERT INTO `accidente` VALUES (406, '2016-01-04', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (407, '2016-01-04', 2016, 11, 333, 1, 2, 2);
+INSERT INTO `accidente` VALUES (408, '2016-01-04', 2016, 15, 773, 3, 2, 5);
+INSERT INTO `accidente` VALUES (409, '2016-01-04', 2016, 2, 78, 1, 4, 2);
+INSERT INTO `accidente` VALUES (410, '2016-01-04', 2016, 15, 773, 3, 2, 5);
+INSERT INTO `accidente` VALUES (411, '2016-01-04', 2016, 3, 95, 1, 4, 2);
+INSERT INTO `accidente` VALUES (412, '2016-01-04', 2016, 2, 78, 1, 2, 5);
+INSERT INTO `accidente` VALUES (413, '2016-01-04', 2016, 3, 95, 2, 2, 2);
+INSERT INTO `accidente` VALUES (414, '2016-01-04', 2016, 11, 624, 3, 3, 3);
+INSERT INTO `accidente` VALUES (415, '2016-01-04', 2016, 13, 518, 1, 4, 1);
+INSERT INTO `accidente` VALUES (416, '2016-01-04', 2016, 21, 303, 4, 2, 3);
+INSERT INTO `accidente` VALUES (417, '2016-01-04', 2016, 10, 497, 1, 5, 1);
+INSERT INTO `accidente` VALUES (418, '2016-01-04', 2016, 21, 103, 1, 2, 1);
+INSERT INTO `accidente` VALUES (419, '2016-01-04', 2016, 13, 518, 1, 2, 2);
+INSERT INTO `accidente` VALUES (420, '2016-01-04', 2016, 21, 103, 1, 2, 10);
+INSERT INTO `accidente` VALUES (421, '2016-01-04', 2016, 11, 456, 2, 2, 5);
+INSERT INTO `accidente` VALUES (422, '2016-01-04', 2016, 17, 566, 1, 3, 2);
+INSERT INTO `accidente` VALUES (423, '2016-01-04', 2016, 3, 95, 2, 2, 2);
+INSERT INTO `accidente` VALUES (424, '2016-01-04', 2016, 33, 611, 1, 3, 1);
+INSERT INTO `accidente` VALUES (425, '2016-01-04', 2016, 3, 95, 2, 2, 2);
+INSERT INTO `accidente` VALUES (426, '2016-01-04', 2016, 1, 84, 1, 3, 12);
+INSERT INTO `accidente` VALUES (427, '2016-01-04', 2016, 23, 381, 1, 2, 2);
+INSERT INTO `accidente` VALUES (428, '2016-01-04', 2016, 11, 624, 3, 2, 3);
+INSERT INTO `accidente` VALUES (429, '2016-01-04', 2016, 5, 674, 6, 4, 4);
+INSERT INTO `accidente` VALUES (430, '2016-01-04', 2016, 3, 95, 1, 4, 8);
+INSERT INTO `accidente` VALUES (431, '2016-01-04', 2016, 10, 497, 1, 2, 5);
+INSERT INTO `accidente` VALUES (432, '2016-01-04', 2016, 2, 78, 1, 2, 5);
+INSERT INTO `accidente` VALUES (433, '2016-01-04', 2016, 24, 132, 4, 2, 1);
+INSERT INTO `accidente` VALUES (434, '2016-01-04', 2016, 11, 316, 3, 5, 2);
+INSERT INTO `accidente` VALUES (435, '2016-01-04', 2016, 17, 566, 4, 4, 2);
+INSERT INTO `accidente` VALUES (436, '2016-01-04', 2016, 21, 103, 1, 5, 10);
+INSERT INTO `accidente` VALUES (437, '2016-01-04', 2016, 13, 518, 1, 2, 1);
+INSERT INTO `accidente` VALUES (438, '2016-01-04', 2016, 23, 443, 8, 2, 3);
+INSERT INTO `accidente` VALUES (439, '2016-01-04', 2016, 13, 518, 1, 4, 1);
+INSERT INTO `accidente` VALUES (440, '2016-01-04', 2016, 21, 303, 8, 2, 3);
+INSERT INTO `accidente` VALUES (441, '2016-01-04', 2016, 20, 575, 1, 4, 10);
+INSERT INTO `accidente` VALUES (442, '2016-01-04', 2016, 8, 626, 2, 2, 1);
+INSERT INTO `accidente` VALUES (443, '2016-01-04', 2016, 1, 478, 1, 3, 2);
+INSERT INTO `accidente` VALUES (444, '2016-01-04', 2016, 17, 566, 1, 2, 2);
+INSERT INTO `accidente` VALUES (445, '2016-01-04', 2016, 1, 478, 4, 2, 5);
+INSERT INTO `accidente` VALUES (446, '2016-01-04', 2016, 11, 624, 3, 5, 3);
+INSERT INTO `accidente` VALUES (447, '2016-01-04', 2016, 1, 478, 4, 4, 2);
+INSERT INTO `accidente` VALUES (448, '2016-01-04', 2016, 22, 808, 4, 5, 2);
+INSERT INTO `accidente` VALUES (449, '2016-01-04', 2016, 6, 409, 3, 5, 3);
+INSERT INTO `accidente` VALUES (450, '2016-01-04', 2016, 3, 95, 4, 4, 2);
+INSERT INTO `accidente` VALUES (451, '2016-01-04', 2016, 19, 129, 1, 5, 2);
+INSERT INTO `accidente` VALUES (452, '2016-01-04', 2016, 16, 3, 1, 2, 10);
+INSERT INTO `accidente` VALUES (453, '2016-01-04', 2016, 11, 624, 3, 2, 3);
+INSERT INTO `accidente` VALUES (454, '2016-01-04', 2016, 3, 95, 4, 4, 1);
+INSERT INTO `accidente` VALUES (455, '2016-01-04', 2016, 33, 611, 1, 5, 1);
+INSERT INTO `accidente` VALUES (456, '2016-01-04', 2016, 1, 411, 1, 2, 10);
+INSERT INTO `accidente` VALUES (457, '2016-01-04', 2016, 24, 966, 6, 2, 5);
+INSERT INTO `accidente` VALUES (458, '2016-01-04', 2016, 11, 316, 6, 4, 2);
+INSERT INTO `accidente` VALUES (459, '2016-01-04', 2016, 11, 949, 10, 4, 3);
+INSERT INTO `accidente` VALUES (460, '2016-01-04', 2016, 17, 387, 4, 6, 2);
+INSERT INTO `accidente` VALUES (461, '2016-01-04', 2016, 23, 381, 7, 5, 3);
+INSERT INTO `accidente` VALUES (462, '2016-01-04', 2016, 22, 220, 1, 4, 10);
+INSERT INTO `accidente` VALUES (463, '2016-01-04', 2016, 3, 95, 13, 2, 3);
+INSERT INTO `accidente` VALUES (464, '2016-01-04', 2016, 22, 808, 1, 7, 2);
+INSERT INTO `accidente` VALUES (465, '2016-01-04', 2016, 11, 810, 3, 2, 2);
+INSERT INTO `accidente` VALUES (466, '2016-01-04', 2016, 15, 773, 3, 4, 5);
+INSERT INTO `accidente` VALUES (467, '2016-01-04', 2016, 15, 773, 3, 4, 5);
+INSERT INTO `accidente` VALUES (468, '2016-01-04', 2016, 20, 248, 1, 4, 2);
+INSERT INTO `accidente` VALUES (469, '2016-01-04', 2016, 27, 616, 4, 2, 13);
+INSERT INTO `accidente` VALUES (470, '2016-01-04', 2016, 3, 95, 4, 5, 2);
+INSERT INTO `accidente` VALUES (471, '2016-01-04', 2016, 24, 132, 1, 5, 2);
+INSERT INTO `accidente` VALUES (472, '2016-01-04', 2016, 21, 578, 1, 2, 1);
+INSERT INTO `accidente` VALUES (473, '2016-01-04', 2016, 21, 103, 1, 2, 2);
+INSERT INTO `accidente` VALUES (474, '2016-01-04', 2016, 23, 291, 1, 2, 2);
+INSERT INTO `accidente` VALUES (475, '2016-01-04', 2016, 24, 132, 1, 2, 1);
+INSERT INTO `accidente` VALUES (476, '2016-01-04', 2016, 24, 132, 3, 2, 2);
+INSERT INTO `accidente` VALUES (477, '2016-01-04', 2016, 5, 474, 14, 4, 4);
+INSERT INTO `accidente` VALUES (478, '2016-01-04', 2016, 1, 290, 1, 4, 2);
+INSERT INTO `accidente` VALUES (479, '2016-01-04', 2016, 3, 95, 1, 2, 1);
+INSERT INTO `accidente` VALUES (480, '2016-01-04', 2016, 23, 445, 1, 2, 1);
+INSERT INTO `accidente` VALUES (481, '2016-01-04', 2016, 24, 961, 1, 2, 5);
+INSERT INTO `accidente` VALUES (482, '2016-01-04', 2016, 1, 657, 8, 2, 3);
+INSERT INTO `accidente` VALUES (483, '2016-01-04', 2016, 3, 95, 8, 4, 3);
+INSERT INTO `accidente` VALUES (484, '2016-01-04', 2016, 11, 810, 3, 4, 2);
+INSERT INTO `accidente` VALUES (485, '2016-01-04', 2016, 19, 129, 3, 4, 2);
+INSERT INTO `accidente` VALUES (486, '2016-01-04', 2016, 2, 78, 1, 4, 2);
+INSERT INTO `accidente` VALUES (487, '2016-01-05', 2016, 3, 95, 4, 2, 1);
+INSERT INTO `accidente` VALUES (488, '2016-01-05', 2016, 16, 724, 4, 5, 1);
+INSERT INTO `accidente` VALUES (489, '2016-01-05', 2016, 2, 78, 1, 5, 2);
+INSERT INTO `accidente` VALUES (490, '2016-01-05', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (491, '2016-01-05', 2016, 20, 436, 1, 2, 1);
+INSERT INTO `accidente` VALUES (492, '2016-01-05', 2016, 21, 103, 1, 2, 1);
+INSERT INTO `accidente` VALUES (493, '2016-01-05', 2016, 23, 381, 7, 2, 3);
+INSERT INTO `accidente` VALUES (494, '2016-01-05', 2016, 17, 566, 4, 4, 1);
+INSERT INTO `accidente` VALUES (495, '2016-01-05', 2016, 6, 468, 2, 5, 12);
+INSERT INTO `accidente` VALUES (496, '2016-01-05', 2016, 27, 607, 1, 3, 1);
+INSERT INTO `accidente` VALUES (497, '2016-01-05', 2016, 21, 103, 1, 2, 1);
+INSERT INTO `accidente` VALUES (498, '2016-01-05', 2016, 23, 381, 2, 2, 1);
+INSERT INTO `accidente` VALUES (499, '2016-01-05', 2016, 18, 560, 4, 3, 2);
+INSERT INTO `accidente` VALUES (500, '2016-01-05', 2016, 5, 550, 3, 5, 9);
+INSERT INTO `accidente` VALUES (501, '2016-01-05', 2016, 21, 103, 1, 4, 1);
+INSERT INTO `accidente` VALUES (502, '2016-01-05', 2016, 3, 95, 8, 2, 3);
+INSERT INTO `accidente` VALUES (503, '2016-01-05', 2016, 3, 95, 1, 4, 8);
+INSERT INTO `accidente` VALUES (504, '2016-01-05', 2016, 8, 594, 1, 2, 1);
+INSERT INTO `accidente` VALUES (505, '2016-01-05', 2016, 3, 95, 4, 2, 12);
+INSERT INTO `accidente` VALUES (506, '2016-01-05', 2016, 5, 474, 14, 5, 4);
+INSERT INTO `accidente` VALUES (507, '2016-01-05', 2016, 23, 291, 4, 4, 1);
+INSERT INTO `accidente` VALUES (508, '2016-01-05', 2016, 1, 478, 1, 5, 1);
+INSERT INTO `accidente` VALUES (509, '2016-01-05', 2016, 8, 594, 1, 2, 1);
+INSERT INTO `accidente` VALUES (510, '2016-01-05', 2016, 1, 478, 4, 2, 2);
+INSERT INTO `accidente` VALUES (511, '2016-01-05', 2016, 5, 474, 14, 5, 3);
+INSERT INTO `accidente` VALUES (512, '2016-01-05', 2016, 17, 566, 2, 4, 5);
+INSERT INTO `accidente` VALUES (513, '2016-01-05', 2016, 23, 758, 7, 3, 10);
+INSERT INTO `accidente` VALUES (514, '2016-01-05', 2016, 1, 290, 1, 4, 3);
+INSERT INTO `accidente` VALUES (515, '2016-01-05', 2016, 1, 478, 4, 2, 1);
+INSERT INTO `accidente` VALUES (516, '2016-01-05', 2016, 1, 478, 4, 5, 1);
+INSERT INTO `accidente` VALUES (517, '2016-01-05', 2016, 6, 174, 1, 5, 2);
+INSERT INTO `accidente` VALUES (518, '2016-01-05', 2016, 6, 468, 1, 2, 1);
+INSERT INTO `accidente` VALUES (519, '2016-01-05', 2016, 2, 78, 3, 2, 2);
+INSERT INTO `accidente` VALUES (520, '2016-01-05', 2016, 19, 58, 8, 4, 2);
+INSERT INTO `accidente` VALUES (521, '2016-01-05', 2016, 2, 78, 4, 4, 2);
+INSERT INTO `accidente` VALUES (522, '2016-01-05', 2016, 24, 597, 1, 5, 16);
+INSERT INTO `accidente` VALUES (523, '2016-01-05', 2016, 23, 381, 1, 2, 2);
+INSERT INTO `accidente` VALUES (524, '2016-01-05', 2016, 3, 95, 3, 2, 3);
+INSERT INTO `accidente` VALUES (525, '2016-01-05', 2016, 11, 367, 15, 4, 10);
+INSERT INTO `accidente` VALUES (526, '2016-01-05', 2016, 1, 290, 1, 4, 2);
+INSERT INTO `accidente` VALUES (527, '2016-01-05', 2016, 11, 810, 9, 2, 3);
+INSERT INTO `accidente` VALUES (528, '2016-01-05', 2016, 1, 290, 1, 4, 2);
+INSERT INTO `accidente` VALUES (529, '2016-01-05', 2016, 3, 95, 1, 2, 5);
+INSERT INTO `accidente` VALUES (530, '2016-01-05', 2016, 5, 178, 8, 2, 3);
+INSERT INTO `accidente` VALUES (531, '2016-01-05', 2016, 11, 367, 4, 4, 10);
+INSERT INTO `accidente` VALUES (532, '2016-01-05', 2016, 3, 95, 8, 5, 3);
+INSERT INTO `accidente` VALUES (533, '2016-01-05', 2016, 16, 946, 4, 4, 1);
+INSERT INTO `accidente` VALUES (534, '2016-01-05', 2016, 9, 918, 1, 5, 14);
+INSERT INTO `accidente` VALUES (535, '2016-01-05', 2016, 24, 132, 2, 2, 2);
+INSERT INTO `accidente` VALUES (536, '2016-01-05', 2016, 20, 575, 1, 3, 5);
+INSERT INTO `accidente` VALUES (537, '2016-01-05', 2016, 5, 550, 3, 2, 9);
+INSERT INTO `accidente` VALUES (538, '2016-01-05', 2016, 23, 381, 1, 4, 9);
+INSERT INTO `accidente` VALUES (539, '2016-01-05', 2016, 2, 462, 1, 2, 12);
+INSERT INTO `accidente` VALUES (540, '2016-01-05', 2016, 24, 132, 1, 2, 2);
+INSERT INTO `accidente` VALUES (541, '2016-01-05', 2016, 2, 462, 4, 2, 12);
+INSERT INTO `accidente` VALUES (542, '2016-01-05', 2016, 9, 7, 1, 5, 2);
+INSERT INTO `accidente` VALUES (543, '2016-01-05', 2016, 1, 390, 1, 2, 2);
+INSERT INTO `accidente` VALUES (544, '2016-01-05', 2016, 5, 474, 7, 2, 4);
+INSERT INTO `accidente` VALUES (545, '2016-01-05', 2016, 10, 497, 1, 4, 2);
+INSERT INTO `accidente` VALUES (546, '2016-01-05', 2016, 11, 876, 4, 2, 2);
+INSERT INTO `accidente` VALUES (547, '2016-01-05', 2016, 5, 550, 3, 5, 9);
+INSERT INTO `accidente` VALUES (548, '2016-01-05', 2016, 19, 58, 8, 4, 2);
+INSERT INTO `accidente` VALUES (549, '2016-01-05', 2016, 21, 103, 1, 4, 1);
+INSERT INTO `accidente` VALUES (550, '2016-01-05', 2016, 23, 381, 1, 2, 2);
+INSERT INTO `accidente` VALUES (551, '2016-01-05', 2016, 17, 566, 1, 2, 2);
+INSERT INTO `accidente` VALUES (552, '2016-01-05', 2016, 23, 381, 6, 2, 2);
+INSERT INTO `accidente` VALUES (553, '2016-01-05', 2016, 6, 174, 1, 4, 2);
+INSERT INTO `accidente` VALUES (554, '2016-01-05', 2016, 5, 474, 14, 2, 4);
+INSERT INTO `accidente` VALUES (555, '2016-01-05', 2016, 9, 918, 1, 4, 14);
+INSERT INTO `accidente` VALUES (556, '2016-01-05', 2016, 20, 575, 1, 2, 9);
+INSERT INTO `accidente` VALUES (557, '2016-01-05', 2016, 6, 468, 1, 2, 2);
+INSERT INTO `accidente` VALUES (558, '2016-01-05', 2016, 5, 550, 3, 2, 9);
+INSERT INTO `accidente` VALUES (559, '2016-01-05', 2016, 11, 806, 8, 4, 6);
+INSERT INTO `accidente` VALUES (560, '2016-01-05', 2016, 1, 478, 4, 4, 3);
+INSERT INTO `accidente` VALUES (561, '2016-01-05', 2016, 8, 784, 4, 5, 12);
+INSERT INTO `accidente` VALUES (562, '2016-01-05', 2016, 1, 657, 1, 5, 2);
+INSERT INTO `accidente` VALUES (563, '2016-01-05', 2016, 24, 132, 1, 2, 1);
+INSERT INTO `accidente` VALUES (564, '2016-01-05', 2016, 11, 333, 1, 2, 1);
+INSERT INTO `accidente` VALUES (565, '2016-01-05', 2016, 3, 95, 4, 2, 2);
+INSERT INTO `accidente` VALUES (566, '2016-01-05', 2016, 11, 837, 8, 5, 6);
+INSERT INTO `accidente` VALUES (567, '2016-01-05', 2016, 20, 575, 1, 4, 1);
+INSERT INTO `accidente` VALUES (568, '2016-01-05', 2016, 16, 946, 12, 2, 3);
+INSERT INTO `accidente` VALUES (569, '2016-01-05', 2016, 27, 607, 1, 4, 1);
+INSERT INTO `accidente` VALUES (570, '2016-01-05', 2016, 5, 550, 3, 2, 9);
+INSERT INTO `accidente` VALUES (571, '2016-01-05', 2016, 2, 78, 1, 4, 2);
+INSERT INTO `accidente` VALUES (572, '2016-01-05', 2016, 24, 132, 1, 2, 1);
+INSERT INTO `accidente` VALUES (573, '2016-01-05', 2016, 5, 474, 7, 2, 4);
+INSERT INTO `accidente` VALUES (574, '2016-01-05', 2016, 10, 497, 1, 4, 5);
+INSERT INTO `accidente` VALUES (575, '2016-01-05', 2016, 10, 497, 1, 2, 1);
+INSERT INTO `accidente` VALUES (576, '2016-01-05', 2016, 21, 103, 1, 2, 2);
+INSERT INTO `accidente` VALUES (577, '2016-01-05', 2016, 3, 95, 3, 2, 2);
+INSERT INTO `accidente` VALUES (578, '2016-01-05', 2016, 15, 191, 1, 4, 12);
+INSERT INTO `accidente` VALUES (579, '2016-01-05', 2016, 5, 474, 14, 2, 3);
+INSERT INTO `accidente` VALUES (580, '2016-01-05', 2016, 21, 103, 1, 4, 1);
+INSERT INTO `accidente` VALUES (581, '2016-01-05', 2016, 6, 294, 1, 2, 2);
+INSERT INTO `accidente` VALUES (582, '2016-01-05', 2016, 20, 575, 1, 2, 2);
+INSERT INTO `accidente` VALUES (583, '2016-01-05', 2016, 11, 333, 1, 2, 1);
+INSERT INTO `accidente` VALUES (584, '2016-01-05', 2016, 5, 474, 7, 2, 3);
+INSERT INTO `accidente` VALUES (585, '2016-01-05', 2016, 22, 808, 1, 4, 5);
+INSERT INTO `accidente` VALUES (586, '2016-01-05', 2016, 11, 318, 1, 2, 7);
+INSERT INTO `accidente` VALUES (587, '2016-01-05', 2016, 21, 103, 1, 2, 2);
+INSERT INTO `accidente` VALUES (588, '2016-01-05', 2016, 23, 381, 1, 2, 2);
+INSERT INTO `accidente` VALUES (589, '2016-01-05', 2016, 5, 474, 14, 2, 3);
+INSERT INTO `accidente` VALUES (590, '2016-01-05', 2016, 1, 478, 4, 4, 1);
+INSERT INTO `accidente` VALUES (591, '2016-01-05', 2016, 6, 468, 1, 5, 1);
+INSERT INTO `accidente` VALUES (592, '2016-01-05', 2016, 3, 95, 4, 2, 2);
+INSERT INTO `accidente` VALUES (593, '2016-01-05', 2016, 10, 497, 1, 5, 1);
+INSERT INTO `accidente` VALUES (594, '2016-01-05', 2016, 3, 95, 2, 2, 1);
+INSERT INTO `accidente` VALUES (595, '2016-01-05', 2016, 19, 58, 3, 3, 12);
+INSERT INTO `accidente` VALUES (596, '2016-01-05', 2016, 3, 95, 7, 4, 9);
+INSERT INTO `accidente` VALUES (597, '2016-01-05', 2016, 5, 474, 14, 4, 3);
+INSERT INTO `accidente` VALUES (598, '2016-01-05', 2016, 19, 58, 7, 4, 2);
+INSERT INTO `accidente` VALUES (599, '2016-01-06', 2016, 24, 132, 1, 4, 10);
+INSERT INTO `accidente` VALUES (600, '2016-01-06', 2016, 3, 95, 8, 2, 3);
+INSERT INTO `accidente` VALUES (601, '2016-01-06', 2016, 3, 95, 8, 4, 3);
+INSERT INTO `accidente` VALUES (602, '2016-01-06', 2016, 18, 450, 1, 4, 2);
+INSERT INTO `accidente` VALUES (603, '2016-01-06', 2016, 3, 95, 4, 2, 2);
+INSERT INTO `accidente` VALUES (604, '2016-01-06', 2016, 9, 739, 4, 5, 11);
+INSERT INTO `accidente` VALUES (605, '2016-01-06', 2016, 3, 95, 1, 5, 2);
+INSERT INTO `accidente` VALUES (606, '2016-01-06', 2016, 1, 378, 1, 2, 1);
+INSERT INTO `accidente` VALUES (607, '2016-01-06', 2016, 24, 132, 1, 2, 12);
+INSERT INTO `accidente` VALUES (608, '2016-01-06', 2016, 3, 95, 4, 2, 9);
+INSERT INTO `accidente` VALUES (609, '2016-01-06', 2016, 9, 918, 1, 5, 2);
+INSERT INTO `accidente` VALUES (610, '2016-01-06', 2016, 1, 657, 1, 2, 2);
+INSERT INTO `accidente` VALUES (611, '2016-01-06', 2016, 6, 468, 1, 2, 5);
+INSERT INTO `accidente` VALUES (612, '2016-01-06', 2016, 2, 78, 1, 2, 2);
+INSERT INTO `accidente` VALUES (613, '2016-01-06', 2016, 13, 518, 1, 2, 2);
+INSERT INTO `accidente` VALUES (614, '2016-01-06', 2016, 16, 946, 4, 2, 1);
+INSERT INTO `accidente` VALUES (615, '2016-01-06', 2016, 1, 290, 1, 5, 2);
+INSERT INTO `accidente` VALUES (616, '2016-01-06', 2016, 24, 132, 1, 2, 2);
+INSERT INTO `accidente` VALUES (617, '2016-01-06', 2016, 24, 132, 1, 2, 5);
+INSERT INTO `accidente` VALUES (618, '2016-01-06', 2016, 21, 165, 1, 2, 14);
+INSERT INTO `accidente` VALUES (619, '2016-01-06', 2016, 21, 103, 1, 2, 2);
+INSERT INTO `accidente` VALUES (620, '2016-01-06', 2016, 20, 436, 8, 2, 3);
+INSERT INTO `accidente` VALUES (621, '2016-01-06', 2016, 26, 960, 14, 4, 4);
+INSERT INTO `accidente` VALUES (622, '2016-01-06', 2016, 1, 290, 1, 4, 2);
+INSERT INTO `accidente` VALUES (623, '2016-01-06', 2016, 21, 103, 4, 2, 2);
+INSERT INTO `accidente` VALUES (624, '2016-01-06', 2016, 24, 132, 1, 5, 10);
+INSERT INTO `accidente` VALUES (625, '2016-01-06', 2016, 11, 433, 4, 2, 10);
+INSERT INTO `accidente` VALUES (626, '2016-01-06', 2016, 21, 103, 1, 5, 2);
+INSERT INTO `accidente` VALUES (627, '2016-01-06', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (628, '2016-01-06', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (629, '2016-01-06', 2016, 13, 518, 1, 2, 1);
+INSERT INTO `accidente` VALUES (630, '2016-01-06', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (631, '2016-01-06', 2016, 23, 381, 6, 2, 2);
+INSERT INTO `accidente` VALUES (632, '2016-01-06', 2016, 19, 58, 1, 4, 2);
+INSERT INTO `accidente` VALUES (633, '2016-01-06', 2016, 4, 151, 4, 2, 1);
+INSERT INTO `accidente` VALUES (634, '2016-01-06', 2016, 12, 635, 4, 5, 2);
+INSERT INTO `accidente` VALUES (635, '2016-01-06', 2016, 13, 518, 1, 5, 2);
+INSERT INTO `accidente` VALUES (636, '2016-01-06', 2016, 6, 468, 4, 2, 2);
+INSERT INTO `accidente` VALUES (637, '2016-01-06', 2016, 9, 918, 1, 5, 2);
+INSERT INTO `accidente` VALUES (638, '2016-01-06', 2016, 2, 78, 4, 2, 1);
+INSERT INTO `accidente` VALUES (639, '2016-01-06', 2016, 21, 165, 1, 5, 14);
+INSERT INTO `accidente` VALUES (640, '2016-01-06', 2016, 24, 132, 1, 2, 5);
+INSERT INTO `accidente` VALUES (641, '2016-01-06', 2016, 23, 381, 4, 2, 1);
+INSERT INTO `accidente` VALUES (642, '2016-01-06', 2016, 1, 478, 1, 5, 2);
+INSERT INTO `accidente` VALUES (643, '2016-01-06', 2016, 21, 103, 1, 2, 2);
+INSERT INTO `accidente` VALUES (644, '2016-01-06', 2016, 2, 78, 8, 2, 3);
+INSERT INTO `accidente` VALUES (645, '2016-01-06', 2016, 18, 231, 1, 4, 2);
+INSERT INTO `accidente` VALUES (646, '2016-01-06', 2016, 3, 95, 8, 2, 3);
+INSERT INTO `accidente` VALUES (647, '2016-01-06', 2016, 3, 95, 8, 4, 3);
+INSERT INTO `accidente` VALUES (648, '2016-01-06', 2016, 20, 776, 1, 4, 5);
+INSERT INTO `accidente` VALUES (649, '2016-01-06', 2016, 17, 566, 4, 2, 1);
+INSERT INTO `accidente` VALUES (650, '2016-01-06', 2016, 24, 557, 1, 5, 16);
+INSERT INTO `accidente` VALUES (651, '2016-01-06', 2016, 21, 75, 10, 2, 7);
+INSERT INTO `accidente` VALUES (652, '2016-01-06', 2016, 1, 478, 1, 7, 1);
+INSERT INTO `accidente` VALUES (653, '2016-01-06', 2016, 3, 95, 8, 2, 3);
+INSERT INTO `accidente` VALUES (654, '2016-01-06', 2016, 3, 95, 8, 4, 3);
+INSERT INTO `accidente` VALUES (655, '2016-01-06', 2016, 10, 589, 1, 4, 14);
+INSERT INTO `accidente` VALUES (656, '2016-01-06', 2016, 23, 291, 2, 2, 5);
+INSERT INTO `accidente` VALUES (657, '2016-01-06', 2016, 20, 575, 3, 3, 2);
+INSERT INTO `accidente` VALUES (658, '2016-01-06', 2016, 16, 946, 4, 4, 1);
+INSERT INTO `accidente` VALUES (659, '2016-01-06', 2016, 21, 103, 4, 5, 14);
+INSERT INTO `accidente` VALUES (660, '2016-01-06', 2016, 3, 95, 4, 5, 2);
+INSERT INTO `accidente` VALUES (661, '2016-01-06', 2016, 23, 226, 6, 5, 4);
+INSERT INTO `accidente` VALUES (662, '2016-01-06', 2016, 6, 940, 1, 4, 9);
+INSERT INTO `accidente` VALUES (663, '2016-01-06', 2016, 3, 95, 1, 2, 1);
+INSERT INTO `accidente` VALUES (664, '2016-01-06', 2016, 3, 95, 2, 2, 2);
+INSERT INTO `accidente` VALUES (665, '2016-01-06', 2016, 16, 946, 1, 3, 13);
+INSERT INTO `accidente` VALUES (666, '2016-01-06', 2016, 16, 619, 3, 2, 1);
+INSERT INTO `accidente` VALUES (667, '2016-01-06', 2016, 24, 132, 1, 4, 2);
+INSERT INTO `accidente` VALUES (668, '2016-01-06', 2016, 18, 231, 1, 2, 2);
+INSERT INTO `accidente` VALUES (669, '2016-01-06', 2016, 11, 479, 1, 2, 3);
+INSERT INTO `accidente` VALUES (670, '2016-01-06', 2016, 19, 58, 4, 2, 12);
+INSERT INTO `accidente` VALUES (671, '2016-01-06', 2016, 22, 540, 1, 5, 2);
+INSERT INTO `accidente` VALUES (672, '2016-01-06', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (673, '2016-01-06', 2016, 3, 95, 1, 2, 3);
+INSERT INTO `accidente` VALUES (674, '2016-01-06', 2016, 24, 557, 1, 2, 2);
+INSERT INTO `accidente` VALUES (675, '2016-01-06', 2016, 20, 436, 4, 2, 1);
+INSERT INTO `accidente` VALUES (676, '2016-01-06', 2016, 10, 497, 6, 5, 3);
+INSERT INTO `accidente` VALUES (677, '2016-01-06', 2016, 3, 95, 1, 4, 2);
+INSERT INTO `accidente` VALUES (678, '2016-01-06', 2016, 18, 450, 1, 2, 2);
+INSERT INTO `accidente` VALUES (679, '2016-01-06', 2016, 11, 504, 2, 2, 9);
+INSERT INTO `accidente` VALUES (680, '2016-01-06', 2016, 1, 478, 8, 3, 3);
+INSERT INTO `accidente` VALUES (681, '2016-01-06', 2016, 21, 335, 3, 4, 10);
+INSERT INTO `accidente` VALUES (682, '2016-01-06', 2016, 3, 95, 2, 4, 12);
+INSERT INTO `accidente` VALUES (683, '2016-01-06', 2016, 13, 518, 1, 3, 4);
+INSERT INTO `accidente` VALUES (684, '2016-01-06', 2016, 8, 594, 1, 2, 2);
+INSERT INTO `accidente` VALUES (685, '2016-01-06', 2016, 13, 518, 1, 2, 1);
+INSERT INTO `accidente` VALUES (686, '2016-01-06', 2016, 4, 151, 4, 2, 16);
+INSERT INTO `accidente` VALUES (687, '2016-01-06', 2016, 3, 95, 2, 5, 1);
+INSERT INTO `accidente` VALUES (688, '2016-01-06', 2016, 21, 103, 3, 3, 2);
+INSERT INTO `accidente` VALUES (689, '2016-01-06', 2016, 21, 103, 4, 4, 2);
+INSERT INTO `accidente` VALUES (690, '2016-01-06', 2016, 23, 381, 1, 5, 2);
+INSERT INTO `accidente` VALUES (691, '2016-01-06', 2016, 1, 645, 3, 2, 4);
+INSERT INTO `accidente` VALUES (692, '2016-01-06', 2016, 16, 619, 3, 4, 1);
+INSERT INTO `accidente` VALUES (693, '2016-01-06', 2016, 21, 103, 4, 4, 2);
+INSERT INTO `accidente` VALUES (694, '2016-01-06', 2016, 21, 103, 1, 5, 2);
+INSERT INTO `accidente` VALUES (695, '2016-01-07', 2016, 2, 78, 4, 2, 2);
+INSERT INTO `accidente` VALUES (696, '2016-01-07', 2016, 16, 619, 15, 5, 1);
+INSERT INTO `accidente` VALUES (697, '2016-01-07', 2016, 21, 439, 1, 4, 1);
+INSERT INTO `accidente` VALUES (698, '2016-01-07', 2016, 21, 439, 1, 2, 1);
+INSERT INTO `accidente` VALUES (699, '2016-01-07', 2016, 3, 95, 3, 2, 2);
+INSERT INTO `accidente` VALUES (700, '2016-01-07', 2016, 20, 575, 4, 4, 1);
+INSERT INTO `accidente` VALUES (701, '2016-01-07', 2016, 1, 84, 7, 5, 12);
+INSERT INTO `accidente` VALUES (702, '2016-01-07', 2016, 27, 616, 1, 4, 1);
+INSERT INTO `accidente` VALUES (703, '2016-01-07', 2016, 23, 200, 8, 2, 3);
+INSERT INTO `accidente` VALUES (704, '2016-01-07', 2016, 21, 439, 1, 4, 1);
+INSERT INTO `accidente` VALUES (705, '2016-01-07', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (706, '2016-01-07', 2016, 3, 95, 1, 2, 7);
+INSERT INTO `accidente` VALUES (707, '2016-01-07', 2016, 21, 335, 1, 2, 10);
+INSERT INTO `accidente` VALUES (708, '2016-01-07', 2016, 9, 180, 3, 2, 10);
+INSERT INTO `accidente` VALUES (709, '2016-01-07', 2016, 24, 663, 1, 4, 1);
+INSERT INTO `accidente` VALUES (710, '2016-01-07', 2016, 21, 46, 1, 2, 6);
+INSERT INTO `accidente` VALUES (711, '2016-01-07', 2016, 9, 180, 3, 2, 10);
+INSERT INTO `accidente` VALUES (712, '2016-01-07', 2016, 23, 381, 1, 4, 2);
+INSERT INTO `accidente` VALUES (713, '2016-01-07', 2016, 1, 84, 1, 2, 3);
+INSERT INTO `accidente` VALUES (714, '2016-01-07', 2016, 18, 231, 1, 2, 2);
+INSERT INTO `accidente` VALUES (715, '2016-01-07', 2016, 1, 673, 1, 2, 1);
+INSERT INTO `accidente` VALUES (716, '2016-01-07', 2016, 17, 387, 4, 2, 5);
+INSERT INTO `accidente` VALUES (717, '2016-01-07', 2016, 20, 436, 2, 5, 1);
+INSERT INTO `accidente` VALUES (718, '2016-01-07', 2016, 2, 462, 1, 3, 13);
+INSERT INTO `accidente` VALUES (719, '2016-01-07', 2016, 21, 103, 1, 2, 3);
+INSERT INTO `accidente` VALUES (720, '2016-01-07', 2016, 16, 619, 1, 2, 11);
+INSERT INTO `accidente` VALUES (721, '2016-01-07', 2016, 20, 575, 1, 2, 2);
+INSERT INTO `accidente` VALUES (722, '2016-01-07', 2016, 11, 292, 7, 2, 3);
+INSERT INTO `accidente` VALUES (723, '2016-01-07', 2016, 1, 290, 4, 4, 1);
+INSERT INTO `accidente` VALUES (724, '2016-01-07', 2016, 24, 347, 1, 5, 2);
+INSERT INTO `accidente` VALUES (725, '2016-01-07', 2016, 24, 122, 1, 2, 2);
+INSERT INTO `accidente` VALUES (726, '2016-01-07', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (727, '2016-01-07', 2016, 1, 478, 8, 2, 3);
+INSERT INTO `accidente` VALUES (728, '2016-01-07', 2016, 5, 815, 4, 4, 2);
+INSERT INTO `accidente` VALUES (729, '2016-01-07', 2016, 24, 132, 4, 5, 2);
+INSERT INTO `accidente` VALUES (730, '2016-01-07', 2016, 21, 578, 4, 5, 1);
+INSERT INTO `accidente` VALUES (731, '2016-01-07', 2016, 8, 594, 4, 5, 1);
+INSERT INTO `accidente` VALUES (732, '2016-01-07', 2016, 16, 3, 1, 5, 2);
+INSERT INTO `accidente` VALUES (733, '2016-01-07', 2016, 11, 968, 4, 2, 12);
+INSERT INTO `accidente` VALUES (734, '2016-01-07', 2016, 2, 322, 3, 5, 12);
+INSERT INTO `accidente` VALUES (735, '2016-01-07', 2016, 27, 616, 1, 4, 1);
+INSERT INTO `accidente` VALUES (736, '2016-01-07', 2016, 19, 58, 1, 2, 1);
+INSERT INTO `accidente` VALUES (737, '2016-01-07', 2016, 3, 95, 4, 2, 9);
+INSERT INTO `accidente` VALUES (738, '2016-01-07', 2016, 11, 504, 2, 5, 9);
+INSERT INTO `accidente` VALUES (739, '2016-01-07', 2016, 20, 436, 3, 3, 7);
+INSERT INTO `accidente` VALUES (740, '2016-01-07', 2016, 3, 95, 1, 4, 2);
+INSERT INTO `accidente` VALUES (741, '2016-01-07', 2016, 24, 132, 1, 2, 9);
+INSERT INTO `accidente` VALUES (742, '2016-01-07', 2016, 23, 381, 1, 2, 2);
+INSERT INTO `accidente` VALUES (743, '2016-01-07', 2016, 9, 414, 3, 2, 10);
+INSERT INTO `accidente` VALUES (744, '2016-01-07', 2016, 3, 95, 4, 4, 12);
+INSERT INTO `accidente` VALUES (745, '2016-01-07', 2016, 17, 695, 1, 5, 1);
+INSERT INTO `accidente` VALUES (746, '2016-01-07', 2016, 22, 808, 1, 2, 1);
+INSERT INTO `accidente` VALUES (747, '2016-01-07', 2016, 6, 468, 1, 2, 2);
+INSERT INTO `accidente` VALUES (748, '2016-01-07', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (749, '2016-01-07', 2016, 3, 95, 3, 2, 2);
+INSERT INTO `accidente` VALUES (750, '2016-01-07', 2016, 21, 103, 1, 4, 1);
+INSERT INTO `accidente` VALUES (751, '2016-01-07', 2016, 1, 478, 4, 2, 1);
+INSERT INTO `accidente` VALUES (752, '2016-01-07', 2016, 3, 95, 3, 5, 2);
+INSERT INTO `accidente` VALUES (753, '2016-01-07', 2016, 1, 84, 8, 4, 12);
+INSERT INTO `accidente` VALUES (754, '2016-01-07', 2016, 2, 78, 1, 4, 9);
+INSERT INTO `accidente` VALUES (755, '2016-01-07', 2016, 1, 290, 1, 2, 2);
+INSERT INTO `accidente` VALUES (756, '2016-01-07', 2016, 2, 78, 4, 2, 12);
+INSERT INTO `accidente` VALUES (757, '2016-01-07', 2016, 20, 575, 1, 5, 1);
+INSERT INTO `accidente` VALUES (758, '2016-01-07', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (759, '2016-01-07', 2016, 27, 616, 10, 2, 3);
+INSERT INTO `accidente` VALUES (760, '2016-01-07', 2016, 3, 95, 4, 7, 16);
+INSERT INTO `accidente` VALUES (761, '2016-01-07', 2016, 9, 414, 3, 5, 10);
+INSERT INTO `accidente` VALUES (762, '2016-01-07', 2016, 6, 468, 4, 4, 2);
+INSERT INTO `accidente` VALUES (763, '2016-01-07', 2016, 1, 478, 1, 5, 2);
+INSERT INTO `accidente` VALUES (764, '2016-01-07', 2016, 24, 122, 1, 2, 2);
+INSERT INTO `accidente` VALUES (765, '2016-01-07', 2016, 3, 95, 2, 2, 1);
+INSERT INTO `accidente` VALUES (766, '2016-01-07', 2016, 3, 95, 1, 3, 2);
+INSERT INTO `accidente` VALUES (767, '2016-01-07', 2016, 1, 84, 8, 2, 12);
+INSERT INTO `accidente` VALUES (768, '2016-01-07', 2016, 1, 478, 4, 4, 1);
+INSERT INTO `accidente` VALUES (769, '2016-01-07', 2016, 10, 497, 3, 5, 2);
+INSERT INTO `accidente` VALUES (770, '2016-01-07', 2016, 1, 478, 1, 4, 2);
+INSERT INTO `accidente` VALUES (771, '2016-01-07', 2016, 2, 78, 8, 2, 3);
+INSERT INTO `accidente` VALUES (772, '2016-01-07', 2016, 3, 95, 4, 4, 2);
+INSERT INTO `accidente` VALUES (773, '2016-01-07', 2016, 2, 612, 1, 5, 3);
+INSERT INTO `accidente` VALUES (774, '2016-01-07', 2016, 10, 175, 1, 2, 3);
+INSERT INTO `accidente` VALUES (775, '2016-01-07', 2016, 1, 478, 4, 2, 1);
+INSERT INTO `accidente` VALUES (776, '2016-01-07', 2016, 20, 575, 1, 5, 14);
+INSERT INTO `accidente` VALUES (777, '2016-01-07', 2016, 24, 663, 1, 2, 1);
+INSERT INTO `accidente` VALUES (778, '2016-01-07', 2016, 1, 334, 4, 2, 10);
+INSERT INTO `accidente` VALUES (779, '2016-01-07', 2016, 1, 478, 8, 5, 3);
+INSERT INTO `accidente` VALUES (780, '2016-01-07', 2016, 4, 151, 3, 4, 9);
+INSERT INTO `accidente` VALUES (781, '2016-01-07', 2016, 23, 758, 4, 4, 1);
+INSERT INTO `accidente` VALUES (782, '2016-01-07', 2016, 21, 103, 1, 5, 1);
+INSERT INTO `accidente` VALUES (783, '2016-01-07', 2016, 21, 103, 1, 2, 2);
+INSERT INTO `accidente` VALUES (784, '2016-01-07', 2016, 3, 95, 1, 2, 5);
+INSERT INTO `accidente` VALUES (785, '2016-01-07', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (786, '2016-01-07', 2016, 8, 784, 4, 2, 1);
+INSERT INTO `accidente` VALUES (787, '2016-01-07', 2016, 7, 298, 4, 5, 1);
+INSERT INTO `accidente` VALUES (788, '2016-01-07', 2016, 11, 367, 16, 5, 3);
+INSERT INTO `accidente` VALUES (789, '2016-01-07', 2016, 5, 568, 4, 4, 16);
+INSERT INTO `accidente` VALUES (790, '2016-01-07', 2016, 23, 381, 1, 5, 2);
+INSERT INTO `accidente` VALUES (791, '2016-01-07', 2016, 2, 612, 1, 2, 3);
+INSERT INTO `accidente` VALUES (792, '2016-01-07', 2016, 9, 414, 3, 2, 10);
+INSERT INTO `accidente` VALUES (793, '2016-01-07', 2016, 2, 68, 8, 4, 3);
+INSERT INTO `accidente` VALUES (794, '2016-01-07', 2016, 24, 132, 2, 4, 1);
+INSERT INTO `accidente` VALUES (795, '2016-01-07', 2016, 21, 75, 1, 3, 10);
+INSERT INTO `accidente` VALUES (796, '2016-01-07', 2016, 13, 831, 1, 2, 9);
+INSERT INTO `accidente` VALUES (797, '2016-01-07', 2016, 16, 3, 1, 2, 1);
+INSERT INTO `accidente` VALUES (798, '2016-01-07', 2016, 10, 677, 1, 2, 1);
+INSERT INTO `accidente` VALUES (799, '2016-01-07', 2016, 16, 946, 4, 2, 1);
+INSERT INTO `accidente` VALUES (800, '2016-01-07', 2016, 20, 575, 1, 5, 1);
+INSERT INTO `accidente` VALUES (801, '2016-01-07', 2016, 28, 691, 1, 2, 1);
+INSERT INTO `accidente` VALUES (802, '2016-01-07', 2016, 24, 393, 1, 2, 11);
+INSERT INTO `accidente` VALUES (803, '2016-01-07', 2016, 1, 84, 1, 2, 2);
+INSERT INTO `accidente` VALUES (804, '2016-01-07', 2016, 3, 95, 4, 2, 2);
+INSERT INTO `accidente` VALUES (805, '2016-01-07', 2016, 3, 95, 1, 5, 1);
+INSERT INTO `accidente` VALUES (806, '2016-01-07', 2016, 24, 132, 2, 2, 1);
+INSERT INTO `accidente` VALUES (807, '2016-01-07', 2016, 20, 575, 1, 3, 2);
+INSERT INTO `accidente` VALUES (808, '2016-01-07', 2016, 2, 462, 17, 2, 12);
+INSERT INTO `accidente` VALUES (809, '2016-01-07', 2016, 1, 478, 1, 7, 1);
+INSERT INTO `accidente` VALUES (810, '2016-01-07', 2016, 19, 58, 1, 2, 1);
+INSERT INTO `accidente` VALUES (811, '2016-01-07', 2016, 1, 478, 8, 2, 4);
+INSERT INTO `accidente` VALUES (812, '2016-01-08', 2016, 22, 808, 4, 4, 1);
+INSERT INTO `accidente` VALUES (813, '2016-01-08', 2016, 1, 657, 1, 5, 10);
+INSERT INTO `accidente` VALUES (814, '2016-01-08', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (815, '2016-01-08', 2016, 1, 510, 4, 2, 2);
+INSERT INTO `accidente` VALUES (816, '2016-01-08', 2016, 13, 328, 1, 5, 8);
+INSERT INTO `accidente` VALUES (817, '2016-01-08', 2016, 24, 966, 3, 2, 10);
+INSERT INTO `accidente` VALUES (818, '2016-01-08', 2016, 26, 569, 3, 4, 3);
+INSERT INTO `accidente` VALUES (819, '2016-01-08', 2016, 2, 78, 1, 4, 5);
+INSERT INTO `accidente` VALUES (820, '2016-01-08', 2016, 23, 481, 7, 2, 3);
+INSERT INTO `accidente` VALUES (821, '2016-01-08', 2016, 15, 590, 4, 4, 2);
+INSERT INTO `accidente` VALUES (822, '2016-01-08', 2016, 24, 557, 1, 5, 2);
+INSERT INTO `accidente` VALUES (823, '2016-01-08', 2016, 24, 132, 1, 2, 2);
+INSERT INTO `accidente` VALUES (824, '2016-01-08', 2016, 2, 78, 1, 2, 1);
+INSERT INTO `accidente` VALUES (825, '2016-01-08', 2016, 5, 899, 1, 2, 2);
+INSERT INTO `accidente` VALUES (826, '2016-01-08', 2016, 23, 297, 1, 2, 1);
+INSERT INTO `accidente` VALUES (827, '2016-01-08', 2016, 24, 966, 3, 2, 10);
+INSERT INTO `accidente` VALUES (828, '2016-01-08', 2016, 1, 290, 3, 4, 10);
+INSERT INTO `accidente` VALUES (829, '2016-01-08', 2016, 23, 297, 1, 4, 1);
+INSERT INTO `accidente` VALUES (830, '2016-01-08', 2016, 2, 816, 5, 2, 12);
+INSERT INTO `accidente` VALUES (831, '2016-01-08', 2016, 3, 95, 1, 2, 16);
+INSERT INTO `accidente` VALUES (832, '2016-01-08', 2016, 17, 566, 1, 2, 1);
+INSERT INTO `accidente` VALUES (833, '2016-01-08', 2016, 1, 478, 4, 2, 2);
+INSERT INTO `accidente` VALUES (834, '2016-01-08', 2016, 21, 103, 1, 5, 1);
+INSERT INTO `accidente` VALUES (835, '2016-01-08', 2016, 2, 78, 1, 2, 2);
+INSERT INTO `accidente` VALUES (836, '2016-01-08', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (837, '2016-01-08', 2016, 3, 95, 4, 2, 12);
+INSERT INTO `accidente` VALUES (838, '2016-01-08', 2016, 20, 575, 1, 5, 1);
+INSERT INTO `accidente` VALUES (839, '2016-01-08', 2016, 3, 95, 4, 2, 12);
+INSERT INTO `accidente` VALUES (840, '2016-01-08', 2016, 1, 478, 1, 5, 2);
+INSERT INTO `accidente` VALUES (841, '2016-01-08', 2016, 10, 497, 1, 2, 2);
+INSERT INTO `accidente` VALUES (842, '2016-01-08', 2016, 19, 58, 1, 2, 3);
+INSERT INTO `accidente` VALUES (843, '2016-01-08', 2016, 6, 940, 4, 2, 2);
+INSERT INTO `accidente` VALUES (844, '2016-01-08', 2016, 5, 249, 2, 5, 2);
+INSERT INTO `accidente` VALUES (845, '2016-01-08', 2016, 3, 95, 4, 3, 2);
+INSERT INTO `accidente` VALUES (846, '2016-01-08', 2016, 3, 95, 2, 5, 5);
+INSERT INTO `accidente` VALUES (847, '2016-01-08', 2016, 24, 347, 2, 3, 1);
+INSERT INTO `accidente` VALUES (848, '2016-01-08', 2016, 17, 566, 4, 3, 1);
+INSERT INTO `accidente` VALUES (849, '2016-01-08', 2016, 21, 103, 1, 5, 2);
+INSERT INTO `accidente` VALUES (850, '2016-01-08', 2016, 27, 801, 4, 2, 3);
+INSERT INTO `accidente` VALUES (851, '2016-01-08', 2016, 1, 478, 1, 5, 10);
+INSERT INTO `accidente` VALUES (852, '2016-01-08', 2016, 2, 816, 5, 2, 12);
+INSERT INTO `accidente` VALUES (853, '2016-01-08', 2016, 1, 608, 1, 2, 2);
+INSERT INTO `accidente` VALUES (854, '2016-01-08', 2016, 3, 95, 2, 2, 1);
+INSERT INTO `accidente` VALUES (855, '2016-01-08', 2016, 1, 290, 1, 3, 1);
+INSERT INTO `accidente` VALUES (856, '2016-01-08', 2016, 1, 247, 1, 2, 3);
+INSERT INTO `accidente` VALUES (857, '2016-01-08', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (858, '2016-01-08', 2016, 24, 966, 3, 2, 10);
+INSERT INTO `accidente` VALUES (859, '2016-01-08', 2016, 24, 105, 4, 4, 3);
+INSERT INTO `accidente` VALUES (860, '2016-01-08', 2016, 3, 95, 8, 5, 3);
+INSERT INTO `accidente` VALUES (861, '2016-01-08', 2016, 24, 132, 1, 4, 2);
+INSERT INTO `accidente` VALUES (862, '2016-01-08', 2016, 16, 262, 3, 2, 4);
+INSERT INTO `accidente` VALUES (863, '2016-01-08', 2016, 1, 478, 4, 4, 1);
+INSERT INTO `accidente` VALUES (864, '2016-01-08', 2016, 1, 478, 2, 5, 9);
+INSERT INTO `accidente` VALUES (865, '2016-01-08', 2016, 4, 151, 4, 3, 2);
+INSERT INTO `accidente` VALUES (866, '2016-01-08', 2016, 18, 531, 1, 5, 5);
+INSERT INTO `accidente` VALUES (867, '2016-01-08', 2016, 1, 32, 1, 2, 3);
+INSERT INTO `accidente` VALUES (868, '2016-01-08', 2016, 8, 594, 4, 2, 1);
+INSERT INTO `accidente` VALUES (869, '2016-01-08', 2016, 16, 946, 1, 5, 2);
+INSERT INTO `accidente` VALUES (870, '2016-01-08', 2016, 20, 575, 1, 2, 10);
+INSERT INTO `accidente` VALUES (871, '2016-01-08', 2016, 16, 262, 1, 2, 2);
+INSERT INTO `accidente` VALUES (872, '2016-01-08', 2016, 2, 816, 7, 2, 12);
+INSERT INTO `accidente` VALUES (873, '2016-01-08', 2016, 3, 95, 1, 4, 12);
+INSERT INTO `accidente` VALUES (874, '2016-01-08', 2016, 24, 132, 1, 2, 3);
+INSERT INTO `accidente` VALUES (875, '2016-01-08', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (876, '2016-01-08', 2016, 21, 103, 1, 2, 1);
+INSERT INTO `accidente` VALUES (877, '2016-01-08', 2016, 24, 132, 1, 2, 14);
+INSERT INTO `accidente` VALUES (878, '2016-01-08', 2016, 3, 95, 2, 2, 12);
+INSERT INTO `accidente` VALUES (879, '2016-01-08', 2016, 3, 95, 1, 3, 2);
+INSERT INTO `accidente` VALUES (880, '2016-01-08', 2016, 2, 816, 1, 2, 1);
+INSERT INTO `accidente` VALUES (881, '2016-01-08', 2016, 5, 899, 3, 2, 1);
+INSERT INTO `accidente` VALUES (882, '2016-01-08', 2016, 23, 381, 1, 4, 2);
+INSERT INTO `accidente` VALUES (883, '2016-01-08', 2016, 3, 95, 4, 2, 12);
+INSERT INTO `accidente` VALUES (884, '2016-01-08', 2016, 13, 328, 1, 5, 8);
+INSERT INTO `accidente` VALUES (885, '2016-01-08', 2016, 1, 478, 2, 2, 12);
+INSERT INTO `accidente` VALUES (886, '2016-01-08', 2016, 21, 75, 7, 3, 5);
+INSERT INTO `accidente` VALUES (887, '2016-01-08', 2016, 24, 347, 1, 4, 1);
+INSERT INTO `accidente` VALUES (888, '2016-01-08', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (889, '2016-01-08', 2016, 21, 75, 1, 2, 1);
+INSERT INTO `accidente` VALUES (890, '2016-01-08', 2016, 1, 478, 2, 2, 8);
+INSERT INTO `accidente` VALUES (891, '2016-01-08', 2016, 3, 95, 1, 3, 10);
+INSERT INTO `accidente` VALUES (892, '2016-01-08', 2016, 3, 95, 4, 2, 1);
+INSERT INTO `accidente` VALUES (893, '2016-01-08', 2016, 19, 636, 4, 5, 1);
+INSERT INTO `accidente` VALUES (894, '2016-01-08', 2016, 16, 262, 4, 5, 2);
+INSERT INTO `accidente` VALUES (895, '2016-01-08', 2016, 23, 682, 2, 5, 1);
+INSERT INTO `accidente` VALUES (896, '2016-01-08', 2016, 3, 95, 2, 3, 12);
+INSERT INTO `accidente` VALUES (897, '2016-01-08', 2016, 3, 95, 1, 3, 5);
+INSERT INTO `accidente` VALUES (898, '2016-01-08', 2016, 2, 816, 5, 2, 12);
+INSERT INTO `accidente` VALUES (899, '2016-01-08', 2016, 19, 58, 1, 2, 2);
+INSERT INTO `accidente` VALUES (900, '2016-01-08', 2016, 21, 75, 7, 2, 5);
+INSERT INTO `accidente` VALUES (901, '2016-01-08', 2016, 3, 95, 1, 4, 5);
+INSERT INTO `accidente` VALUES (902, '2016-01-08', 2016, 2, 668, 1, 2, 5);
+INSERT INTO `accidente` VALUES (903, '2016-01-08', 2016, 1, 478, 4, 2, 2);
+INSERT INTO `accidente` VALUES (904, '2016-01-08', 2016, 3, 95, 8, 5, 3);
+INSERT INTO `accidente` VALUES (905, '2016-01-08', 2016, 3, 95, 3, 4, 9);
+INSERT INTO `accidente` VALUES (906, '2016-01-08', 2016, 24, 891, 1, 4, 2);
+INSERT INTO `accidente` VALUES (907, '2016-01-08', 2016, 1, 510, 4, 2, 3);
+INSERT INTO `accidente` VALUES (908, '2016-01-08', 2016, 1, 290, 1, 5, 1);
+INSERT INTO `accidente` VALUES (909, '2016-01-08', 2016, 3, 95, 8, 2, 2);
+INSERT INTO `accidente` VALUES (910, '2016-01-08', 2016, 3, 95, 8, 4, 3);
+INSERT INTO `accidente` VALUES (911, '2016-01-08', 2016, 23, 291, 2, 4, 1);
+INSERT INTO `accidente` VALUES (912, '2016-01-08', 2016, 3, 95, 4, 3, 3);
+INSERT INTO `accidente` VALUES (913, '2016-01-08', 2016, 3, 95, 4, 5, 2);
+INSERT INTO `accidente` VALUES (914, '2016-01-08', 2016, 2, 816, 5, 5, 12);
+INSERT INTO `accidente` VALUES (915, '2016-01-08', 2016, 8, 784, 4, 2, 3);
+INSERT INTO `accidente` VALUES (916, '2016-01-08', 2016, 20, 575, 1, 5, 5);
+INSERT INTO `accidente` VALUES (917, '2016-01-08', 2016, 23, 381, 1, 2, 2);
+INSERT INTO `accidente` VALUES (918, '2016-01-08', 2016, 3, 95, 4, 2, 3);
+INSERT INTO `accidente` VALUES (919, '2016-01-08', 2016, 21, 103, 2, 5, 2);
+INSERT INTO `accidente` VALUES (920, '2016-01-08', 2016, 2, 816, 5, 3, 12);
+INSERT INTO `accidente` VALUES (921, '2016-01-08', 2016, 24, 966, 3, 2, 10);
+INSERT INTO `accidente` VALUES (922, '2016-01-08', 2016, 20, 776, 4, 4, 1);
+INSERT INTO `accidente` VALUES (923, '2016-01-08', 2016, 21, 335, 1, 5, 4);
+INSERT INTO `accidente` VALUES (924, '2016-01-08', 2016, 5, 892, 3, 2, 12);
+INSERT INTO `accidente` VALUES (925, '2016-01-08', 2016, 24, 966, 8, 4, 3);
+INSERT INTO `accidente` VALUES (926, '2016-01-08', 2016, 2, 816, 5, 4, 12);
+INSERT INTO `accidente` VALUES (927, '2016-01-08', 2016, 24, 347, 3, 2, 3);
+INSERT INTO `accidente` VALUES (928, '2016-01-09', 2016, 24, 105, 4, 4, 1);
+INSERT INTO `accidente` VALUES (929, '2016-01-09', 2016, 3, 95, 4, 5, 9);
+INSERT INTO `accidente` VALUES (930, '2016-01-09', 2016, 1, 478, 1, 5, 2);
+INSERT INTO `accidente` VALUES (931, '2016-01-09', 2016, 11, 810, 2, 2, 1);
+INSERT INTO `accidente` VALUES (932, '2016-01-09', 2016, 20, 248, 1, 3, 1);
+INSERT INTO `accidente` VALUES (933, '2016-01-09', 2016, 22, 323, 1, 2, 2);
+INSERT INTO `accidente` VALUES (934, '2016-01-09', 2016, 29, 444, 1, 2, 1);
+INSERT INTO `accidente` VALUES (935, '2016-01-09', 2016, 18, 231, 1, 2, 2);
+INSERT INTO `accidente` VALUES (936, '2016-01-09', 2016, 3, 95, 8, 2, 3);
+INSERT INTO `accidente` VALUES (937, '2016-01-09', 2016, 3, 95, 1, 4, 5);
+INSERT INTO `accidente` VALUES (938, '2016-01-09', 2016, 15, 773, 1, 2, 1);
+INSERT INTO `accidente` VALUES (939, '2016-01-09', 2016, 3, 95, 4, 2, 16);
+INSERT INTO `accidente` VALUES (940, '2016-01-09', 2016, 17, 566, 3, 5, 9);
+INSERT INTO `accidente` VALUES (941, '2016-01-09', 2016, 3, 95, 2, 4, 12);
+INSERT INTO `accidente` VALUES (942, '2016-01-09', 2016, 17, 566, 3, 3, 9);
+INSERT INTO `accidente` VALUES (943, '2016-01-09', 2016, 18, 231, 1, 4, 2);
+INSERT INTO `accidente` VALUES (944, '2016-01-09', 2016, 24, 891, 1, 2, 2);
+INSERT INTO `accidente` VALUES (945, '2016-01-09', 2016, 9, 7, 4, 2, 1);
+INSERT INTO `accidente` VALUES (946, '2016-01-09', 2016, 19, 129, 1, 5, 2);
+INSERT INTO `accidente` VALUES (947, '2016-01-09', 2016, 24, 132, 3, 2, 10);
+INSERT INTO `accidente` VALUES (948, '2016-01-09', 2016, 21, 103, 1, 4, 2);
+INSERT INTO `accidente` VALUES (949, '2016-01-09', 2016, 21, 103, 1, 2, 1);
+INSERT INTO `accidente` VALUES (950, '2016-01-09', 2016, 24, 132, 3, 2, 10);
+INSERT INTO `accidente` VALUES (951, '2016-01-09', 2016, 23, 381, 4, 4, 1);
+INSERT INTO `accidente` VALUES (952, '2016-01-09', 2016, 3, 95, 1, 5, 2);
+INSERT INTO `accidente` VALUES (953, '2016-01-09', 2016, 2, 78, 1, 2, 2);
+INSERT INTO `accidente` VALUES (954, '2016-01-09', 2016, 23, 381, 1, 2, 2);
+INSERT INTO `accidente` VALUES (955, '2016-01-09', 2016, 29, 444, 1, 2, 1);
+INSERT INTO `accidente` VALUES (956, '2016-01-09', 2016, 15, 773, 1, 2, 1);
+INSERT INTO `accidente` VALUES (957, '2016-01-09', 2016, 16, 946, 2, 2, 1);
+INSERT INTO `accidente` VALUES (958, '2016-01-09', 2016, 3, 95, 4, 3, 2);
+INSERT INTO `accidente` VALUES (959, '2016-01-09', 2016, 21, 103, 1, 5, 5);
+INSERT INTO `accidente` VALUES (960, '2016-01-09', 2016, 3, 95, 1, 2, 5);
+INSERT INTO `accidente` VALUES (961, '2016-01-09', 2016, 20, 575, 1, 2, 1);
+INSERT INTO `accidente` VALUES (962, '2016-01-09', 2016, 19, 58, 3, 2, 2);
+INSERT INTO `accidente` VALUES (963, '2016-01-09', 2016, 17, 566, 7, 4, 2);
+INSERT INTO `accidente` VALUES (964, '2016-01-09', 2016, 3, 95, 3, 4, 2);
+INSERT INTO `accidente` VALUES (965, '2016-01-09', 2016, 4, 151, 4, 4, 1);
+INSERT INTO `accidente` VALUES (966, '2016-01-09', 2016, 11, 927, 3, 5, 1);
+INSERT INTO `accidente` VALUES (967, '2016-01-09', 2016, 24, 347, 1, 4, 10);
+INSERT INTO `accidente` VALUES (968, '2016-01-09', 2016, 11, 333, 1, 2, 2);
+INSERT INTO `accidente` VALUES (969, '2016-01-09', 2016, 8, 594, 1, 2, 3);
+INSERT INTO `accidente` VALUES (970, '2016-01-09', 2016, 3, 95, 4, 2, 2);
+INSERT INTO `accidente` VALUES (971, '2016-01-09', 2016, 3, 95, 1, 5, 4);
+INSERT INTO `accidente` VALUES (972, '2016-01-09', 2016, 21, 103, 1, 2, 5);
+INSERT INTO `accidente` VALUES (973, '2016-01-09', 2016, 4, 151, 1, 2, 1);
+INSERT INTO `accidente` VALUES (974, '2016-01-09', 2016, 20, 575, 1, 2, 1);
+INSERT INTO `accidente` VALUES (975, '2016-01-09', 2016, 1, 478, 1, 2, 1);
+INSERT INTO `accidente` VALUES (976, '2016-01-09', 2016, 15, 773, 1, 2, 1);
+INSERT INTO `accidente` VALUES (977, '2016-01-09', 2016, 3, 95, 1, 2, 14);
+INSERT INTO `accidente` VALUES (978, '2016-01-09', 2016, 17, 566, 4, 2, 1);
+INSERT INTO `accidente` VALUES (979, '2016-01-09', 2016, 12, 209, 2, 5, 1);
+INSERT INTO `accidente` VALUES (980, '2016-01-09', 2016, 10, 497, 1, 3, 2);
+INSERT INTO `accidente` VALUES (981, '2016-01-09', 2016, 1, 478, 1, 2, 2);
+INSERT INTO `accidente` VALUES (982, '2016-01-09', 2016, 17, 566, 3, 2, 9);
+INSERT INTO `accidente` VALUES (983, '2016-01-09', 2016, 14, 656, 4, 4, 14);
+INSERT INTO `accidente` VALUES (984, '2016-01-09', 2016, 24, 122, 4, 5, 1);
+INSERT INTO `accidente` VALUES (985, '2016-01-09', 2016, 3, 95, 1, 5, 5);
+INSERT INTO `accidente` VALUES (986, '2016-01-09', 2016, 18, 172, 1, 2, 2);
+INSERT INTO `accidente` VALUES (987, '2016-01-09', 2016, 19, 58, 3, 2, 2);
+INSERT INTO `accidente` VALUES (988, '2016-01-09', 2016, 26, 853, 1, 4, 2);
+INSERT INTO `accidente` VALUES (989, '2016-01-09', 2016, 24, 132, 3, 2, 10);
+INSERT INTO `accidente` VALUES (990, '2016-01-09', 2016, 13, 518, 1, 4, 2);
+INSERT INTO `accidente` VALUES (991, '2016-01-09', 2016, 13, 425, 1, 2, 1);
+INSERT INTO `accidente` VALUES (992, '2016-01-09', 2016, 24, 347, 1, 2, 10);
+INSERT INTO `accidente` VALUES (993, '2016-01-09', 2016, 3, 95, 3, 2, 2);
+INSERT INTO `accidente` VALUES (994, '2016-01-09', 2016, 19, 195, 1, 4, 1);
+INSERT INTO `accidente` VALUES (995, '2016-01-09', 2016, 23, 381, 2, 2, 1);
+INSERT INTO `accidente` VALUES (996, '2016-01-09', 2016, 21, 103, 2, 3, 2);
+INSERT INTO `accidente` VALUES (997, '2016-01-09', 2016, 11, 858, 1, 3, 3);
+INSERT INTO `accidente` VALUES (998, '2016-01-09', 2016, 3, 95, 1, 2, 2);
+INSERT INTO `accidente` VALUES (999, '2016-01-09', 2016, 4, 151, 1, 2, 9);
+INSERT INTO `accidente` VALUES (1000, '2016-01-09', 2016, 2, 78, 1, 2, 10);
