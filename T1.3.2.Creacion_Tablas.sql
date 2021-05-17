@@ -11,7 +11,7 @@
  Target Server Version : 50542
  File Encoding         : 65001
 
- Date: 17/05/2021 06:40:16
+ Date: 17/05/2021 06:53:35
 */
 
 SET NAMES utf8mb4;
@@ -55,12 +55,6 @@ CREATE TABLE `departamento` (
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
--- Records of departamento
--- ----------------------------
-BEGIN;
-COMMIT;
-
--- ----------------------------
 -- Table structure for lesionado
 -- ----------------------------
 DROP TABLE IF EXISTS `lesionado`;
@@ -92,26 +86,6 @@ CREATE TABLE `objeto_colision` (
   `nombre` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Table structure for tipo_vehiculo
--- ----------------------------
-DROP TABLE IF EXISTS `tipo_vehiculo`;
-CREATE TABLE `tipo_vehiculo` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Table structure for objeto_colision
--- ----------------------------
-DROP TABLE IF EXISTS `objeto_colision`;
-CREATE TABLE `objeto_colision` (
-  `id_objeto` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tipo_vehiculo
