@@ -13,7 +13,9 @@ Diego Leon Zapata Ruiz - C.C. 71367417
 Juan Pablo Vasquez Builes - C.C. 1035428558
 </strong>
 <br/>
-Este repositorio contiene los archivos relacionados al primer taller.
+Este repositorio contiene los archivos relacionados al primer taller, adicionalmente contiene el [trabajo de Spark](https://github.com/darmandovargas/agd-2021-1s/tree/main/Trabajo%20-%20An%C3%A1lisis%20e%20Implementaci%C3%B3n%20en%20SparkQL) y el [trabajo de Arquitectura de la Información](https://drive.google.com/file/d/1-j5ZQn7Vq7rxGhFGeOItFNrJmEgr-4bc/view?usp=sharing
+
+A continuación presentamos los diagramas solicitados:
 
 ## Modelo del Dominio
 
